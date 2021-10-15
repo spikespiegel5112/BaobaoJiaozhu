@@ -1,0 +1,2484 @@
+[
+    {
+        "name": "",
+        "points": []
+    },
+    {
+        "name": "x",
+        "unicode": 120,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 20,
+                "y": 20
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 50,
+                "y": 20
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 50,
+                "y": -20
+            }
+        ]
+    },
+    {
+        "name": "uniEF5F",
+        "unicode": 61279,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 515,
+                "y": 60
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 515,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 31,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 31,
+                "y": 6
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 42,
+                "y": 52
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 52,
+                "y": 62
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 66,
+                "y": 86
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 68,
+                "y": 110
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 105,
+                "y": 134
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 121,
+                "y": 158
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 150,
+                "y": 185
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 227,
+                "y": 256
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 278,
+                "y": 294
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 358,
+                "y": 370
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 380,
+                "y": 400
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 422,
+                "y": 457
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 422,
+                "y": 561
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 384,
+                "y": 598
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 358,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 284,
+                "y": 640
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 219,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 180,
+                "y": 596
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 141,
+                "y": 568
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 140,
+                "y": 488
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 48,
+                "y": 498
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 63,
+                "y": 603
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 119,
+                "y": 656
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 180,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 391,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 450,
+                "y": 652
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 512,
+                "y": 593
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 514,
+                "y": 506
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 514,
+                "y": 460
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 480,
+                "y": 381
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 436,
+                "y": 330
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 416,
+                "y": 307
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 381,
+                "y": 274
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 352,
+                "y": 245
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 298,
+                "y": 210
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 257,
+                "y": 167
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 231,
+                "y": 144
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 198,
+                "y": 121
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 194,
+                "y": 109
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 182,
+                "y": 97
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 173,
+                "y": 96
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 164,
+                "y": 73
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 166,
+                "y": 60
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 510,
+                "y": 60
+            }
+        ]
+    },
+    {
+        "name": "uniE5B2",
+        "unicode": 58802,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 33,
+                "y": 335
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 43,
+                "y": 463
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 95,
+                "y": 624
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 139,
+                "y": 667
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 202,
+                "y": 721
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 282,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 410,
+                "y": 701
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 473,
+                "y": 624
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 487,
+                "y": 574
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 504,
+                "y": 508
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 520,
+                "y": 447
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 520,
+                "y": 335
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 520,
+                "y": 271
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 514,
+                "y": 219
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 508,
+                "y": 174
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 494,
+                "y": 126
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 480,
+                "y": 46
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 404,
+                "y": -6
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 362,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 282,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 176,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 115,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 43,
+                "y": 127
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 43,
+                "y": 335
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 135,
+                "y": 340
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 126,
+                "y": 154
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 177,
+                "y": 99
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 218,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 343,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 428,
+                "y": 155
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 428,
+                "y": 515
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 384,
+                "y": 576
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 344,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 281,
+                "y": 644
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 218,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 181,
+                "y": 583
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 135,
+                "y": 515
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 135,
+                "y": 335
+            }
+        ]
+    },
+    {
+        "name": "uniE0EA",
+        "unicode": 57578,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 181,
+                "y": 371
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 71,
+                "y": 412
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 71,
+                "y": 510
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 71,
+                "y": 598
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 128,
+                "y": 656
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 185,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 282,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 378,
+                "y": 706
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 436,
+                "y": 654
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 495,
+                "y": 596
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 495,
+                "y": 531
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 495,
+                "y": 404
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 386,
+                "y": 371
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 454,
+                "y": 363
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 489,
+                "y": 300
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 524,
+                "y": 251
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 524,
+                "y": 184
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 524,
+                "y": 77
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 458,
+                "y": 25
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 391,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 174,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 108,
+                "y": 25
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 42,
+                "y": 86
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 55,
+                "y": 186
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 42,
+                "y": 247
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 78,
+                "y": 306
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": false,
+                "x": 114,
+                "y": 354
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 163,
+                "y": 524
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 163,
+                "y": 470
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 230,
+                "y": 406
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 284,
+                "y": 406
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 333,
+                "y": 406
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 369,
+                "y": 439
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 402,
+                "y": 465
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 402,
+                "y": 519
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 402,
+                "y": 567
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 334,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 229,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 197,
+                "y": 600
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": false,
+                "x": 174,
+                "y": 570
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 134,
+                "y": 186
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 134,
+                "y": 144
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 152,
+                "y": 116
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 169,
+                "y": 75
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 207,
+                "y": 42
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 242,
+                "y": 49
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 270,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 316,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 369,
+                "y": 57
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 390,
+                "y": 77
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 432,
+                "y": 117
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 432,
+                "y": 248
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 346,
+                "y": 332
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 270,
+                "y": 330
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 217,
+                "y": 332
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": false,
+                "x": 134,
+                "y": 249
+            }
+        ]
+    },
+    {
+        "name": "uniE36C",
+        "unicode": 58220,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 342,
+                "y": -21
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 331,
+                "y": 154
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 5,
+                "y": 146
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 13,
+                "y": 232
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 344,
+                "y": 702
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 421,
+                "y": 695
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 421,
+                "y": 219
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 520,
+                "y": 241
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 532,
+                "y": 154
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 421,
+                "y": 139
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 421,
+                "y": -31
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 335,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 331,
+                "y": 217
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 331,
+                "y": 572
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 90,
+                "y": 227
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 324,
+                "y": 232
+            }
+        ]
+    },
+    {
+        "name": "uniEC03",
+        "unicode": 60419,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 61,
+                "y": 597
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 48,
+                "y": 698
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 514,
+                "y": 698
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 523,
+                "y": 633
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 487,
+                "y": 598
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 444,
+                "y": 541
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 419,
+                "y": 486
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 384,
+                "y": 429
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 349,
+                "y": 367
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 308,
+                "y": 304
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 305,
+                "y": 241
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 285,
+                "y": 175
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 254,
+                "y": 83
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 244,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 151,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 152,
+                "y": 17
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 169,
+                "y": 121
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 185,
+                "y": 183
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 220,
+                "y": 306
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 279,
+                "y": 418
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 294,
+                "y": 478
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 341,
+                "y": 525
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 369,
+                "y": 565
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 408,
+                "y": 611
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 62,
+                "y": 605
+            }
+        ]
+    },
+    {
+        "name": "uniF6E3",
+        "unicode": 63203,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 383,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 294,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 292,
+                "y": 557
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 274,
+                "y": 516
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 202,
+                "y": 481
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 145,
+                "y": 455
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 112,
+                "y": 439
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 112,
+                "y": 525
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 172,
+                "y": 561
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 242,
+                "y": 612
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 271,
+                "y": 650
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 292,
+                "y": 657
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 304,
+                "y": 686
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 326,
+                "y": 699
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 377,
+                "y": 705
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 380,
+                "y": -26
+            }
+        ]
+    },
+    {
+        "name": "uniEBE7",
+        "unicode": 60391,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 142,
+                "y": 151
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 154,
+                "y": 89
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 215,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 264,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 307,
+                "y": 22
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 337,
+                "y": 54
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 373,
+                "y": 62
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 388,
+                "y": 105
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 408,
+                "y": 137
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 410,
+                "y": 191
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 428,
+                "y": 213
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 432,
+                "y": 245
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 435,
+                "y": 273
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 435,
+                "y": 305
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 435,
+                "y": 303
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 435,
+                "y": 313
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 434,
+                "y": 319
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 409,
+                "y": 276
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 360,
+                "y": 255
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 315,
+                "y": 223
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 254,
+                "y": 223
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 168,
+                "y": 223
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 105,
+                "y": 288
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 53,
+                "y": 354
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 43,
+                "y": 462
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 43,
+                "y": 574
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 108,
+                "y": 641
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 173,
+                "y": 711
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 273,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 343,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 463,
+                "y": 633
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 524,
+                "y": 489
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 524,
+                "y": 356
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 524,
+                "y": 214
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 464,
+                "y": 49
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 343,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 262,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 175,
+                "y": -50
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 132,
+                "y": 9
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 63,
+                "y": 57
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 50,
+                "y": 144
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 142,
+                "y": 156
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 425,
+                "y": 468
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 425,
+                "y": 544
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 383,
+                "y": 606
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 341,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 284,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 223,
+                "y": 644
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 179,
+                "y": 586
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 135,
+                "y": 539
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 135,
+                "y": 459
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 135,
+                "y": 387
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 177,
+                "y": 345
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 220,
+                "y": 301
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 344,
+                "y": 301
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 425,
+                "y": 391
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 425,
+                "y": 466
+            }
+        ]
+    },
+    {
+        "name": "uniE639",
+        "unicode": 58937,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 137,
+                "y": 173
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 147,
+                "y": 103
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 222,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 278,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 343,
+                "y": 39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 388,
+                "y": 84
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 437,
+                "y": 136
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 439,
+                "y": 214
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 433,
+                "y": 292
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 389,
+                "y": 336
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 345,
+                "y": 367
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 276,
+                "y": 380
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 232,
+                "y": 380
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 164,
+                "y": 341
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 143,
+                "y": 299
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 58,
+                "y": 320
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 123,
+                "y": 697
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 494,
+                "y": 697
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 489,
+                "y": 611
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 215,
+                "y": 611
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 162,
+                "y": 414
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 195,
+                "y": 437
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 229,
+                "y": 442
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 264,
+                "y": 460
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 300,
+                "y": 460
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 401,
+                "y": 460
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 463,
+                "y": 394
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 516,
+                "y": 328
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 519,
+                "y": 234
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 513,
+                "y": 136
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 470,
+                "y": 51
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 409,
+                "y": -37
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 272,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 177,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 100,
+                "y": 17
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 51,
+                "y": 74
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 43,
+                "y": 181
+            }
+        ]
+    },
+    {
+        "name": "uniF8C9",
+        "unicode": 63689,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 133,
+                "y": 180
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 148,
+                "y": 103
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 221,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 263,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 339,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 427,
+                "y": 123
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 427,
+                "y": 250
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 387,
+                "y": 290
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 345,
+                "y": 331
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 284,
+                "y": 334
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 257,
+                "y": 330
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 220,
+                "y": 321
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 230,
+                "y": 400
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 236,
+                "y": 394
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 239,
+                "y": 399
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 253,
+                "y": 399
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 245,
+                "y": 399
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 303,
+                "y": 399
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 348,
+                "y": 428
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 394,
+                "y": 445
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 394,
+                "y": 522
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 394,
+                "y": 571
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 330,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 274,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 222,
+                "y": 623
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 187,
+                "y": 604
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 166,
+                "y": 572
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 158,
+                "y": 504
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 52,
+                "y": 520
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 69,
+                "y": 612
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 127,
+                "y": 660
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 186,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 272,
+                "y": 701
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 332,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 383,
+                "y": 683
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 433,
+                "y": 666
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 460,
+                "y": 614
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 487,
+                "y": 569
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 480,
+                "y": 520
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 487,
+                "y": 470
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 446,
+                "y": 432
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 424,
+                "y": 391
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 381,
+                "y": 371
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 451,
+                "y": 356
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 523,
+                "y": 262
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 523,
+                "y": 190
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 523,
+                "y": 95
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 383,
+                "y": -40
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 276,
+                "y": -40
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 179,
+                "y": -40
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 116,
+                "y": 31
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 52,
+                "y": 75
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 36,
+                "y": 157
+            }
+        ]
+    },
+    {
+        "name": "uniF8E6",
+        "unicode": 63718,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 426,
+                "y": 521
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 408,
+                "y": 574
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 386,
+                "y": 597
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 349,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 296,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 253,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 220,
+                "y": 612
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 177,
+                "y": 580
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 154,
+                "y": 526
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 138,
+                "y": 492
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 135,
+                "y": 449
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 128,
+                "y": 407
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 128,
+                "y": 352
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 167,
+                "y": 406
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 207,
+                "y": 425
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 254,
+                "y": 449
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 306,
+                "y": 449
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 395,
+                "y": 445
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 459,
+                "y": 382
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 522,
+                "y": 301
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 522,
+                "y": 217
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 522,
+                "y": 143
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 463,
+                "y": 24
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 360,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 293,
+                "y": -25
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 180,
+                "y": -39
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 39,
+                "y": 124
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 39,
+                "y": 317
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 39,
+                "y": 530
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 117,
+                "y": 626
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 174,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 301,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 388,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 440,
+                "y": 664
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 498,
+                "y": 614
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 510,
+                "y": 541
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 420,
+                "y": 521
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 139,
+                "y": 211
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 134,
+                "y": 166
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 162,
+                "y": 122
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 182,
+                "y": 79
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 230,
+                "y": 57
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 253,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 292,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 360,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 393,
+                "y": 81
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 430,
+                "y": 127
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 430,
+                "y": 206
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 430,
+                "y": 281
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 349,
+                "y": 370
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 228,
+                "y": 370
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 142,
+                "y": 282
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 142,
+                "y": 211
+            }
+        ]
+    }
+]

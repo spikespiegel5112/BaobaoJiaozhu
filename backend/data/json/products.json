@@ -1,0 +1,183 @@
+{
+  "products": {
+    "3498": {
+      "id": 3498,
+      "name": "baccarat -  水晶杯套装",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20product.jpg",
+      "slideshow": [
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20detail1.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20detail5.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20detail3.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20detail4.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20detail2.jpg"
+      ],
+      "price": 195,
+      "website": null,
+      "description": "Baccarat水晶杯，不同的酒搭配不同的酒杯。一支香槟杯、一支葡萄酒杯、一支鸡尾酒杯、一支软饮杯，带给品尝爱好者的你，极致体验。",
+      "brand": 3447,
+      "article": [
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20brand.jpg"
+        },
+        {
+          "type": "text",
+          "content": "一支香槟杯、一支葡萄酒杯、一支鸡尾酒杯、一支软饮杯，带给品尝爱好者的你，极致体验。"
+        }
+      ],
+      "favorite": 1,
+      "productType": [
+        15
+      ],
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/baccarat%20product.jpg",
+      "weight": 37,
+      "type": "products"
+    },
+    "3953": {
+      "id": 3953,
+      "name": "Gas bijoux - Bague Olympie 戒指",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/gas%20bijoux_0.jpg",
+      "slideshow": [
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/gas%20bijoux_2.jpg"
+      ],
+      "price": 105,
+      "website": null,
+      "description": "24k镀金戒指，交错圆环的设计个性百搭，尺寸可调节",
+      "brand": 2868,
+      "article": [],
+      "favorite": 1,
+      "productType": [
+        14
+      ],
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/gas%20bijoux_0.jpg",
+      "weight": 41,
+      "type": "products"
+    },
+    "3954": {
+      "id": 3954,
+      "name": "Gas bijoux - Boucles d'oreilles Zanzibar 耳环",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9C%AA%E6%A0%87%E9%A2%98-1_4.jpg",
+      "slideshow": [
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/gas%20bijoux2_0.jpg"
+      ],
+      "price": 80,
+      "website": null,
+      "description": "24k镀金耳环，长7cm，宽3.5cm。吊坠部分缠绕红色棉线，搭配金色非常抢眼。<br />\r\n",
+      "brand": 2868,
+      "article": [],
+      "favorite": 1,
+      "productType": [
+        14
+      ],
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/%E6%9C%AA%E6%A0%87%E9%A2%98-1_4.jpg",
+      "weight": 42,
+      "type": "products"
+    },
+    "4435": {
+      "id": 4435,
+      "name": "Guerlain - Rouge G De Guerlain臻彩宝石唇膏",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/guerlain%20rough3.jpg",
+      "slideshow": [
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/guerlain%20rough1.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/guerlain%20rough.jpg"
+      ],
+      "price": 49.5,
+      "website": null,
+      "description": "饱和的鲜明色泽与细润质地间的完美平衡。精妙的配方能充盈并平滑唇纹，令双唇呈现宝石般的动人色泽。",
+      "brand": 442,
+      "article": [],
+      "favorite": 1,
+      "productType": [
+        12
+      ],
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/guerlain%20rough3.jpg",
+      "weight": 40,
+      "type": "products"
+    },
+    "4436": {
+      "id": 4436,
+      "name": "Guerlain - Mon Guerlain我的娇兰香水",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/guerlain%20main.jpg",
+      "slideshow": [
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/guerlain3.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/guerlain.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/guerlain2.jpg"
+      ],
+      "price": 92,
+      "website": null,
+      "description": "清新的东方香调，完美融合普罗旺斯的卡拉薰衣草、印度的桑巴茉莉、澳大利亚的檀香以及巴布亚新几内亚的塔希提香草。玻璃瓶身与哑光金色的经典搭配，碰撞出令人无法抗拒的自由与性感的女性美。",
+      "brand": 442,
+      "article": [],
+      "favorite": 1,
+      "productType": [
+        12
+      ],
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/guerlain%20main.jpg",
+      "weight": 39,
+      "type": "products"
+    },
+    "4664": {
+      "id": 4664,
+      "name": "baccarat -  水晶烛台",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20product%20.jpg",
+      "slideshow": [
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20product3.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20product%202.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20product4.jpg",
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/baccarat%20product10_0.jpg"
+      ],
+      "price": 440,
+      "website": null,
+      "description": "波浪形设计，令烛台的灯光愈加温柔圣洁，高端典雅，是高品位人士首选。",
+      "brand": 3447,
+      "article": [],
+      "favorite": 1,
+      "productType": [
+        15
+      ],
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/baccarat%20product%20.jpg",
+      "weight": 38,
+      "type": "products"
+    },
+    "5004": {
+      "id": 5004,
+      "name": "TARA Jarmon-深灰高腰复古超长阔裤",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2.1.jpg",
+      "slideshow": [
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2.2.jpg"
+      ],
+      "price": 245,
+      "website": null,
+      "description": "高腰长裤，配有系带，腰部舒适褶皱设计，率性阔腿裤型，尽显优雅复古色。",
+      "brand": 1804,
+      "article": [],
+      "favorite": 1,
+      "productType": [
+        6
+      ],
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/2.1.jpg",
+      "weight": 2,
+      "type": "products"
+    },
+    "5005": {
+      "id": 5005,
+      "name": "Tara Jarmon-黑色羊毛混纺大衣",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1.1.jpg",
+      "slideshow": [
+        "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1.2.jpg"
+      ],
+      "price": 425,
+      "website": null,
+      "description": "秉承品牌一贯的庄重高雅的学院风格，长版的俐落设计，结合现代款廓形，呈现摩登百搭的通勤造型。",
+      "brand": 1804,
+      "article": [],
+      "favorite": 1,
+      "productType": [
+        6
+      ],
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/1.1.jpg",
+      "weight": 2,
+      "type": "products"
+    }
+  }
+}

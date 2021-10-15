@@ -1,0 +1,3183 @@
+{
+  "good_deals": {
+    "2016": {
+      "id": 2016,
+      "name": "Lancaster法国时尚皮具品牌全场九折优惠",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/lancaster.jpg",
+      "website": null,
+      "validity": "长期有效",
+      "description": "- 商户介绍 -<br />\r\n源于巴黎的轻奢皮具Lancaster，时髦轻松，色彩靓丽，时尚的设计及亲民的价格令其成为法国国民皮具品牌。<br />\r\n<br />\r\n- 优惠内容 -<br />\r\nLancaster法国时尚皮具品牌9折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n到巴黎Lancaster专卖店出示以下内容给店员，即享优惠。最终解释权归商家所有。<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ -10% pour tout achat dans la boutique.<br />\r\n",
+      "brands": [
+        510
+      ],
+      "shops": [
+        2409,
+        1163
+      ],
+      "productType": [
+        5
+      ],
+      "article": [],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/lancaster.jpg",
+      "weight": 47,
+      "type": "good_deals"
+    },
+    "3920": {
+      "id": 3920,
+      "name": "蒙日药妆店 全场9折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E8%92%99%E6%97%A510.png",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        2127
+      ],
+      "shops": [
+        3927,
+        3866,
+        5111
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\n巴黎性价比最高药妆店之一的蒙日药妆，交通方便，商品齐全，还有中文护肤美容顾问，是巴黎购买药妆的最佳选择。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户出示下方二维码，即可享受全场9折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在蒙日药妆店消费后，结账时出示下方二维码，即可享受全场9折优惠，无最低消费限制，只适用于非促销产品，不可与其他优惠叠加，游客折后消费满175欧，可享受15%现场退税，最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/good%20deal%20qr%20code_0.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n蒙日药妆铁塔新店<br />\r\n地址：15 Rue du Commerce，75015 Paris<br />\r\n地铁：6.8.10号线 La Motte Piquet Grenelle<br />\r\n营业时间：周一至周六08：00-21：00<br />\r\n周日09 :00-20 :00<br />\r\n<br />\r\n蒙日药妆圣母院店 <br />\r\n地址：78 Rue Monge，75005 Paris<br />\r\n地铁：7号线Place Monge<br />\r\n营业时间：周一至周五08：00-23：00，<br />\r\n周六08：30-23：00，周日8：30-20：00<br />\r\n<br />\r\n蒙日药妆圣心堂新店<br />\r\n地址：68 Boulevard de Rochechouart, 75018 Paris<br />\r\n地铁：2号线 Anvers<br />\r\n营业时间：周一至周日 10:00-21:00<br />\r\n<br />\r\n- 法语说明-<br />\r\nGrâce au QR code, bénéficiez de 10% de réduction lors de vos achats. Détaxe à partir de 175€ d'achat.<br />\r\nL'offre Ai Shopping n'est pas cumulable avec d'autres offres et ne fonctionne pas sur les produits en promotion."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/%E8%92%99%E6%97%A510.png",
+      "weight": 34,
+      "type": "good_deals"
+    },
+    "4046": {
+      "id": 4046,
+      "name": "蒙日香水店 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E8%92%99%E6%97%A5%E9%A6%99%E6%B0%B485_0.png",
+      "website": null,
+      "validity": "即日起至至2019年12月31日",
+      "description": null,
+      "brands": [
+        3445
+      ],
+      "shops": [
+        2128
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n巴黎性价比最高香水店之一的蒙日香水店，交通方便，商品齐全，还有中文顾问，是巴黎购买香水及高端护肤产品的最佳选择。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户出示下方二维码，即可享受全场85折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在蒙日香水店消费后，结账时出示下方二维码，即可享受全场85折优惠，无最低消费限制，只适用于非促销产品，不可与其他优惠叠加，游客折后消费满175欧，可享受15%现场退税，最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/good%20deal%20qr%20code_1.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n79 Rue Monge, 75005 Paris<br />\r\n地铁：7号线 Place Monge<br />\r\n营业时间：周一至周六09:00-20:00<br />\r\n<br />\r\n- 法语说明-<br />\r\nGrâce au QR code, bénéficiez de 15% de réduction lors de vos achats. Détaxe à partir de 175€ d'achat.<br />\r\nL'offre Ai Shopping n'est pas cumulable avec d'autres offres et ne fonctionne pas pour les produits en promotion."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/%E8%92%99%E6%97%A5%E9%A6%99%E6%B0%B485_0.png",
+      "weight": 35,
+      "type": "good_deals"
+    },
+    "4600": {
+      "id": 4600,
+      "name": "Cinabre男士配饰 全场9折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/88_2.png",
+      "website": null,
+      "validity": "即日起至2019年08月31日",
+      "description": null,
+      "brands": [
+        4595
+      ],
+      "shops": [
+        4596
+      ],
+      "productType": [
+        13
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nCinabre是一个法国时尚男士奢侈配饰品牌，精致的设计、稀有的面料，加上传统工坊的优良技艺，被GQ杂志称为“全世界最奢侈的领结”，捕获了一批批高品质用户，比如法国现任总统马克龙等，它还是巴黎圣日尔曼足球俱乐部的官方指定领带合作品牌。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户，在Cinabre门店消费任意商品，即可享受9折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎Cinabre门店购买任意商品，在结账时出示本福利页面，即可享受9折优惠，优惠不可叠加。最终解释权归品牌所有。"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n20 Rue d'Hauteville, 75010 Paris<br />\r\n电话：＋33 1 48 24 72 28<br />\r\n<br />\r\n- 法语说明 -<br />\r\nPour tout achat, Cinabre vous offre une remise de 10% pour tout le magasin, non-cumulable et valable de maintenant au 31/08/19."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/88_2.png",
+      "weight": 19,
+      "type": "good_deals"
+    },
+    "4604": {
+      "id": 4604,
+      "name": "美妆连锁三巨头之一Nocibé 全场7.5折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe1.png",
+      "website": null,
+      "validity": "2019年04月01日至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3948,
+        3949
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n法国美妆连锁三巨头之一，彩妆护肤应有尽有。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户，在Nocibé门店消费，可享受全场7.5折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在以下巴黎美妆连锁店Nocibé门店消费，出示折扣码P82915或下面的条形码，即可享受全场7.5折优惠。（部分特价产品不适用，并不能与其他优惠同时享用)"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe%20bar%20code%2007.2018.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez d'une remise de 25% sur les produits chez Nocibé  grâce au code-barre ou au code promo : P82915 (Non-valable sur certains produits; Non cumulable et non substituable avec toutes autres offres promotionnelles, soldes ou remises en cours)."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/nocibe1.png",
+      "weight": 8,
+      "type": "good_deals"
+    },
+    "4633": {
+      "id": 4633,
+      "name": "携程全球购 返现送不停",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/xiecheng.jpg",
+      "website": "http://m.ctrip.com/webapp/gshop/search/search?storeids=52842,19813,19655,19653,19654,19657,19658,19659,19755,19763,19777,19783,19796,19798,19800,19801,757575,10342,767060,778411,742853,778412&allianceid=109001&sid=1413754&autoawaken=close&popup=close",
+      "validity": "长期有效",
+      "description": null,
+      "brands": [
+        4628
+      ],
+      "shops": [],
+      "productType": [],
+      "article": [
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/xiecheng%20dubail.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nDubail，高级腕表珠宝名店，精致的装潢、美轮美奂的高级腕表珠宝、优质贴心的中文服务，是高端巴黎旅游不可或缺的一站。<br />\r\n<br />\r\n-优惠内容-<br />\r\n结账时出示码券，即可享受携程返现5%。<br />\r\n<br />\r\n-使用细则-<br />\r\n点击上方“去官网”，即可跳转至携程官方网站领取相应优惠券，结账时出示相应优惠券，并提醒商家记录相应券码，即可享受携程返现5%，返现以现金形式返至携程钱包，可提现。<br />\r\n<br />\r\n-商户地址-<br />\r\n21, Place Vendôme 75001 Paris<br />\r\n电话： +33 1 42 61 11 17"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/xiecheng%20versace.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户介绍-\t<br />\r\n意大利品牌Versace是全球奢华典范，备受众多演艺名人、摇滚巨星喜爱，以精湛工艺、唯美细节、明亮色彩与个性印花享誉全球。<br />\r\n<br />\r\n-优惠内容-<br />\r\n结账时出示码券，即可享受携程返现4%。<br />\r\n<br />\r\n-使用细则-<br />\r\n点击上方“去官网”，即可跳转至携程官方网站领取相应优惠券，结账时出示相应优惠券，并提醒商家记录相应券码，即可享受携程返现4%，返现以现金形式返至携程钱包，可提现。<br />\r\n<br />\r\n-商户地址-<br />\r\n45 Avenue Montaigne, 75008 Paris<br />\r\n电话： +33 1 47 42 88 02"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/par.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户介绍-\t<br />\r\n帕玛强尼（巴黎概念店）为追求高品质腕表的客户，提供量身打造的完美服务，还有爱马仕表带、钱包、卡包等特色礼物相送。<br />\r\n<br />\r\n-优惠内容-<br />\r\n结账时出示码券，即可享受携程返现6%。<br />\r\n<br />\r\n-使用细则-<br />\r\n点击上方“去官网”，即可跳转至携程官方网站领取相应优惠券，结账时出示相应优惠券，并提醒商家记录相应券码，即可享受携程返现6%，返现以现金形式返至携程钱包，可提现。<br />\r\n<br />\r\n-商户地址-<br />\r\n125- 126 Galerie de Valois, 75001 Paris<br />\r\n电话： +33 1 40 13 93 93"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/laborde.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户介绍-\t<br />\r\nMarquise de Laborde的童装均采用有机棉，用心保护宝宝的肌肤，品牌的纯天然护肤品十分温和，完美护肤婴儿娇嫩的皮肤，敏感肌也适用。<br />\r\n<br />\r\n-优惠内容-<br />\r\n结账时出示码券，立减5%，同时可享受2%携程返现。<br />\r\n<br />\r\n-使用细则-<br />\r\n点击上方“去官网”，即可跳转至携程官方网站领取相应优惠券，结账时出示相应优惠券，并提醒商家记录相应券码，即可立减5%，同时享受2%携程返现。返现以现金形式返至携程钱包，可提现。<br />\r\n<br />\r\n-商户地址-<br />\r\n125- 126 Galerie de Valois, 75001 Paris<br />\r\n电话： +33 1 40 13 93 93"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/j3.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户介绍-\t<br />\r\n创立于2010年的J3眼镜店，在这里你可以找到最前卫的国际品牌眼镜，也可以找到爆款潮牌眼镜。<br />\r\n<br />\r\n-优惠内容-<br />\r\n结账时出示码券，消费享9折优惠，同时可享受2%携程返现。<br />\r\n<br />\r\n-使用细则-<br />\r\n点击上方“去官网”，即可跳转至携程官方网站领取相应优惠券，结账时出示相应优惠券，并提醒商家记录相应券码，即可享受9折优惠，同时获得2%携程返现。返现以现金形式返至携程钱包，可提现。<br />\r\n<br />\r\n-商户地址-<br />\r\n89 Rue de Provence, 75009 Paris<br />\r\n电话： +33 1 48 74 11 43"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/beauty.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户介绍-\t<br />\r\n巴黎大堂免税店（Beauty Succes）靠近Chatelet，交通便捷，全Wi-Fi覆盖，提供中文服务及邮寄服务。<br />\r\n<br />\r\n-优惠内容-<br />\r\n结账时出示码券，消费享9折优惠，同时可享受10%携程返现。<br />\r\n<br />\r\n-使用细则-<br />\r\n点击上方“去官网”，即可跳转至携程官方网站领取相应优惠券，结账时出示相应优惠券，并提醒商家记录相应券码，即可享受9折优惠，同时获得10%携程返现。返现以现金形式返至携程钱包，可提现。<br />\r\n<br />\r\n-商户地址-<br />\r\n47 Boulevard de Sébastopol, 75001 Paris<br />\r\n电话： +33 9 54 57 84 94"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/hu.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\n在Hu Horlogerie，你可以找到意大利的高级珠宝，也能找到瑞士的高端腕表，单品价格从3000欧至15万欧不等，满足高端人士需求。<br />\r\n<br />\r\n-优惠内容-<br />\r\n结账时出示码券，消费享携程返现5%，携程会员还可享受20%全额退税。<br />\r\n<br />\r\n-使用细则-<br />\r\n点击上方“去官网”，即可跳转至携程官方网站领取相应优惠券，结账时出示相应优惠券，并提醒商家记录相应券码，即可享受10%携程返现。返现以现金形式返至携程钱包，可提现。携程会员还可享受20%全额退税。<br />\r\n<br />\r\n-商户地址-<br />\r\n112-114 Rue La Boétie, 75008 Paris<br />\r\n电话： +33 1 53 75 18 88"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/lancel.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nLancel在保持品牌传统风格的同时，又让品牌富有时代感，既高雅又时尚，无论你是商务出行还是出街购物，Lancel都能为你提供适合的包袋。<br />\r\n<br />\r\n-优惠内容-<br />\r\n结账时出示码券，消费享携程返现6%，部分店铺还为携程会员提供免费刻字及皮具保养服务。<br />\r\n<br />\r\n-使用细则-<br />\r\n点击上方“去官网”，即可跳转至携程官方网站领取相应优惠券，结账时出示相应优惠券，并提醒商家记录相应券码，即可享受6%携程返现。返现以现金形式返至携程钱包，可提现。部分店铺为携程会员提供免费刻字及皮具保养服务。<br />\r\n<br />\r\n-商户地址-<br />\r\n99 Rue de Rivoli, 75001 Paris<br />\r\n电话：+33 1 44 50 31 60<br />\r\n<br />\r\n40 Boulevard Haussmann, 75009 Paris（携程会员服务）<br />\r\n电话：+33 1 48 78 77 08<br />\r\n<br />\r\n107 Rue de Provence, 75009 Paris（携程会员服务）<br />\r\n电话：+33 1 42 82 59 22<br />\r\n<br />\r\n43 Rue de Rennes, 75006 Paris<br />\r\n电话：+33 1 42 22 94 73<br />\r\n<br />\r\n43 Rue des Francs Bourgeois, 75004 Paris<br />\r\n电话：+33 1 40 09 55 0<br />\r\n<br />\r\n8 Place de l'Opéra, 75002 Paris（携程会员服务）<br />\r\n电话： +33 1 47 42 37 29<br />\r\n<br />\r\n127 Avenue des Champs-Élysées, 75008 Paris（携程会员服务）<br />\r\n电话： +33 1 56 89 15 70<br />\r\n<br />\r\nN68 - La Vallée Outlet Shopping Village - 3 cours de la Garonne 77700 Serris<br />\r\n电话：+33 1 60 42 43 79<br />\r\n<br />\r\n4 Rond-Point des Champs-Élysées, 75008 Paris<br />\r\n电话： +33 1 42 25 18 35<br />\r\n<br />\r\nCentre McArthurGlen - 319 Voie du Bois, 10150 Point Sainte Marie<br />\r\n电话：+33 3 25 49 46 69<br />\r\n<br />\r\nC. Cal Les 4 Temps 92092 Paris La Defense<br />\r\n电话：+33 1 49 01 98 86<br />\r\n<br />\r\nCentre Commercial Italie 2 - 30 Avenue d’Italie 75013 Paris<br />\r\n电话：+33 1 45 80 63 13<br />\r\n<br />\r\n22 Rue du Départ, 75015 Paris<br />\r\n电话：+33 1 43 35 34 28<br />\r\n<br />\r\n21/25 Cours de Vincennes, 75020 Paris<br />\r\n电话：+33 1 43 71 07 68<br />\r\n<br />\r\n55 Rue de la Verrerie, 75004 Paris<br />\r\n电话：+33 1 42 72 52 39"
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/xiecheng.jpg",
+      "weight": 47,
+      "type": "good_deals"
+    },
+    "4646": {
+      "id": 4646,
+      "name": "花宫娜香水博物馆",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/fragonard_0.jpg",
+      "website": null,
+      "validity": "2018年07月01日至2019年06月17日",
+      "description": null,
+      "brands": [
+        241
+      ],
+      "shops": [
+        2298
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n花宫娜香水博物馆位于巴黎市中心，紧邻巴黎歌剧院和老佛爷百货，是一个奥斯曼风格的香水博物馆，从古埃及到现代，博物馆里珍藏着几个世纪的各种香水藏品，奇珍异宝琳琅满目。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n1. 活动期间，爱Shopping用户提前报名，即可在专业香水讲解员的陪伴下，领略几千年的香水发展历史，香水调香规则，并且品鉴七大香调的香水。<br />\r\n<br />\r\n2. 活动期间，爱Shopping用户，可享受花宫娜香水博物馆九折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping用户通过扫描下方二维码，添加Ai Shopping私人买手号，即可免费报名参观花宫娜香水博物馆，并领取九折优惠券，活动一周一次，具体时间与Ai Shopping私人买手协商。最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/xiaoshouji.jpg"
+        },
+        {
+          "type": "text",
+          "content": "-商户地址-<br />\r\n 3-5 square Louis Jouvet，75009<br />\r\n电话：+33 6 48 38 38 80<br />\r\n<br />\r\n-法语说明-<br />\r\nScannez le QR code pour ajouter Ai Shopping afin de bénéficier d'une visite gratuite et d'une réduction de 10% dans la boutique"
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/fragonard_0.jpg",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "4855": {
+      "id": 4855,
+      "name": "名钻坊Galeries du Diamant 优享9.5折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/GD%20Paris%20-%20Code%20Promo.png",
+      "website": null,
+      "validity": "即日起至2019年09月14日",
+      "description": null,
+      "brands": [
+        4802
+      ],
+      "shops": [
+        4803
+      ],
+      "productType": [
+        14
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nGaleries du Diamant是全球首家钻石认证销售中心。品牌不仅代表着比利时安特卫普严谨的钻石工艺及品质，更传承了法国巴黎卓越的珠宝工艺与艺术品位。知名的巴黎珠宝设计师和资深工匠，与您共同携手设计和制作个性化的订婚钻戒或钻石饰品。<br />\r\n<br />\r\n-优惠内容-<br />\r\n爱Shopping用户在巴黎Galeries du Diamant门店消费均可享受商品 9.5 折优惠。<br />\r\n<br />\r\n-使用细则-<br />\r\n在巴黎 Galeries du Diamant 门店购物时,出示优惠码:<br />\r\nAishopping5%ParisLovesAntwerp 即可享受优惠。最终解释权归商家所有。<br />\r\n<br />\r\n-商户地址<br />\r\n巴黎钻石认证销售中心 33 Rue de Mogador, 75009 Paris, France<br />\r\n安特卫普钻石交易中心总部 Hoveniersstraat 2, Box 328 2018 Antwerpen, Belgium<br />\r\n<br />\r\n-联系方式-<br />\r\n巴黎钻石认证销售中心 +33 (1) 84 88 77 88<br />\r\n安特卫普钻石交易中心总部 +32 (3) 770 86 86<br />\r\n\f中文客服微信预约及咨询 : GDParis_David<br />\r\n<br />\r\n-法语说明-<br />\r\nBénéficiez de 5% de remise sur présentation de ce visuel de code promo en magasin."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/GD%20Paris%20-%20Code%20Promo.png",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "5032": {
+      "id": 5032,
+      "name": "Marella买即赠",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/marella.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31号",
+      "description": null,
+      "brands": [
+        543
+      ],
+      "shops": [
+        1228
+      ],
+      "productType": [
+        13,
+        10,
+        6
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nMarella是隶属于意大利Max Mara集团下的高级女装品牌。以做工精致，风格优雅，廓型简洁著称。产品包括女装，配饰，包袋等，是时尚知性女性的衣橱必备。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n活动期间，爱Shopping巴黎用户持本福利页面进店任意消费即可获取精美礼品一份。<br />\r\n<br />\r\n- 使用细则 - <br />\r\n在巴黎Marella专卖店任意消费，出示下方法语说明，即可获取精美礼品一份, 不可与其他福利叠加使用。最终解释权归品牌所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n18 Place de la Madeleine, 75008 Paris <br />\r\n电话：+33 1 53 30 73 13<br />\r\n<br />\r\n- 法语说明 - <br />\r\nPour tout achat, Marella vous offre un cadeau exclusif."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/marella.jpg",
+      "weight": 43,
+      "type": "good_deals"
+    },
+    "5086": {
+      "id": 5086,
+      "name": "Roger & Gallet全场8折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/99_1.png",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        2446
+      ],
+      "shops": [
+        2447
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n法国百年贵族香氛品牌Roger & Gallet继承了世界上第一瓶古龙香水配方，是贵族名流的最爱。“拿破仑一个月要用六十瓶，一天两瓶用来洗澡”，甚至有些法国家庭世代只用它家的香水，所以Roger & Gallet的香气都带着满满回忆的味道。<br />\r\n<br />\r\n- 优惠内容 -<br />\r\n爱Shopping巴黎用户，持本福利页面，在Roger & Gallet巴黎专卖店任意消费，即可享受全场8折优惠 ( 除了香皂套盒和护手霜除外 )。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎Roger & Gallet专卖店出示本福利页及下方法语说明给店员，即可享受全场8折优惠 ( 除了香皂套盒和护手霜除外 )，本福利不可与其他福利叠加使用，最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n195 Rue Saint Honoré, 75001 Paris<br />\r\n电话：+33 1 42 60 10 68<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez de 20% de remise sur tout le magasin, hors coffrets et ballotins savons et crèmes mains. Offre non-cumulable, valable uniquement à la boutique Roger & Gallet au 195 Rue Saint-Honoré."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/99_1.png",
+      "weight": 40,
+      "type": "good_deals"
+    },
+    "5092": {
+      "id": 5092,
+      "name": "BHV百货商城全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/99_3.png",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        28,
+        26,
+        13,
+        16,
+        15,
+        10,
+        6,
+        7,
+        11,
+        8,
+        5
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n巴黎人最爱的法国巴诗威百货公司，位于玛黑区，涵盖时尚美妆、生活家居、美食餐饮等商铺，是巴黎最时尚的购物天堂。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即享全场85折优惠，优惠可叠加使用，除红点产品外；此外，凭借下方礼品券和你的购物小票，还可免费领取精美礼品托特包一个。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示优惠条形码，即享全场85折优惠，优惠可叠加使用，除红点产品外。此外，至BHV 0层的退税柜台，同时出示下方礼品券和你的购物小票，还可免费领取精美礼品托特包一个。商场周日照常营业。最终解释权归商家所有。<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1111111111.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/78.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable avec les autres promotions en cours. Montrez votre ticket de caisse ainsi que le coupon à la détaxe pour obtenir un cadeau"
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/99_3.png",
+      "weight": 14,
+      "type": "good_deals"
+    },
+    "5108": {
+      "id": 5108,
+      "name": "TopBridal Paris全场95折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/99_4.png",
+      "website": null,
+      "validity": "即日起至2019年09月14日",
+      "description": null,
+      "brands": [
+        5100
+      ],
+      "shops": [
+        5101
+      ],
+      "productType": [
+        6,
+        7
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍-<br />\r\nTopBridal Paris是源自上海的高端婚纱品牌，如今在巴黎落户，成为巴黎奥斯曼大道的一家高级婚纱成衣店，品质上乘，风格高贵优雅，为所有在巴黎的女人甄选梦想中的奢华嫁衣。无论你喜欢充满现代感的华丽设计，还是喜欢宫廷式大裙摆的复古设计，都可以在这里找到满意的答案。<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/brand_2.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 优惠内容-<br />\r\n爱Shopping巴黎用户，在TopBridal巴黎门店购买或租赁婚纱礼服，可尊享95折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在TopBridal巴黎门店购买或租赁婚纱礼服，结账时出示本福利页面，即可享受95折的优惠，本福利不可与其他优惠叠加使用。最终解释权归品牌所有。<br />\r\n<br />\r\n- 商户地址-<br />\r\n 61 Boulevard Haussmann, 75008 Paris <br />\r\n<br />\r\n- 法语说明 -<br />\r\nBénéficiez de 5% de réduction pour l'achat ou la location de votre robe de mariée chez TopBridal Paris. Offre non-cumulable avec d'autres offres en cours."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/99_4.png",
+      "weight": 46,
+      "type": "good_deals"
+    },
+    "5271": {
+      "id": 5271,
+      "name": "La Mer海蓝之谜限时85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/la%20mer.png",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        3445
+      ],
+      "shops": [
+        2128
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n雅诗兰黛集团旗下顶级护肤品牌 LA MER 海蓝之谜，其面霜被誉为来自海洋的奇迹，利用天然生物性发酵技术，将蕴含强大修护力的深海巨藻，与多种天然矿植物营养成分精纯融合，使肌肤焕发新生，您可以在巴黎性价比最高的蒙日香水店选购到该品牌产品。蒙日香水店交通方便，商品齐全，还有中文顾问，是巴黎购买香水及高端护肤产品的最佳选择。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户出示下方二维码，即可享受全场85折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在蒙日香水店消费后，结账时出示下方二维码，即可享受全场85折优惠，无最低消费限制，只适用于非促销产品，不可与其他优惠叠加，游客折后消费满175欧，可享受15%现场退税，最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-05%20%E4%B8%8A%E5%8D%8811.51.19.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n79 Rue Monge, 75005 Paris<br />\r\n地铁：7号线 Place Monge<br />\r\n营业时间：周一至周六09:00-20:00<br />\r\n<br />\r\n- 法语说明-<br />\r\nGrâce au QR code, bénéficiez de 15% de réduction lors de vos achats. Détaxe à partir de 175€ d'achat.<br />\r\nL'offre Ai Shopping n'est pas cumulable avec d'autres offres et ne fonctionne pas pour les produits en promotion."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/la%20mer.png",
+      "weight": 44,
+      "type": "good_deals"
+    },
+    "5277": {
+      "id": 5277,
+      "name": "La Prairie莱珀妮限时85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/la%20prairie_0.png",
+      "website": null,
+      "validity": "即日起至至2019年12月31日",
+      "description": null,
+      "brands": [
+        3445
+      ],
+      "shops": [
+        2128
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n来自瑞士的高端护肤品牌La Prairie莱珀妮，它在肌肤保养、抗衰老领域享誉级高地位，其明星产品鱼子精华液，完美满足了紧致肌肤，抵抗衰老的要求，使用一个月后，皮肤变得细腻，甚至看不见毛孔，因而成为天后王菲的不老秘诀，英国皇室的最爱。您可以在巴黎性价比最高的蒙日香水店选购到该品牌产品。蒙日香水店交通方便，商品齐全，还有中文顾问，是巴黎购买香水及高端护肤产品的最佳选择。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户出示下方二维码，即可享受全场85折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在蒙日香水店消费后，结账时出示下方二维码，即可享受全场85折优惠，无最低消费限制，只适用于非促销产品，不可与其他优惠叠加，游客折后消费满175欧，可享受15%现场退税，最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-05%20%E4%B8%8A%E5%8D%8811.51.19_0.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n79 Rue Monge, 75005 Paris<br />\r\n地铁：7号线 Place Monge<br />\r\n营业时间：周一至周六09:00-20:00<br />\r\n<br />\r\n- 法语说明 -<br />\r\nGrâce au QR code, bénéficiez de 15% de réduction lors de vos achats. Détaxe à partir de 175€ d'achat.<br />\r\nL'offre Ai Shopping n'est pas cumulable avec d'autres offres et ne fonctionne pas pour les produits en promotion."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/la%20prairie_0.png",
+      "weight": 32,
+      "type": "good_deals"
+    },
+    "5281": {
+      "id": 5281,
+      "name": "Valmont 法尔曼限时85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/valmont.png",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        3445
+      ],
+      "shops": [
+        2128
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n源自于瑞士的高端医学美容品牌VALMONT法尔曼，被誉为抗老界的专家，其明星产品幸福面膜能活化细胞，使皮肤会焕然一新，您可以在巴黎性价比最高的蒙日香水店选购到该品牌产品。蒙日香水店交通方便，商品齐全，还有中文顾问，是巴黎购买香水及高端护肤产品的最佳选择。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户出示下方二维码，即可享受全场85折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在蒙日香水店消费后，结账时出示下方二维码，即可享受全场85折优惠，无最低消费限制，只适用于非促销产品，不可与其他优惠叠加，游客折后消费满175欧，可享受15%现场退税，最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-05%20%E4%B8%8A%E5%8D%8811.51.19_1.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n79 Rue Monge, 75005 Paris<br />\r\n地铁：7号线 Place Monge<br />\r\n营业时间：周一至周六09:00-20:00<br />\r\n<br />\r\n- 法语说明-<br />\r\nGrâce au QR code, bénéficiez de 15% de réduction lors de vos achats. Détaxe à partir de 175€ d'achat.<br />\r\nL'offre Ai Shopping n'est pas cumulable avec d'autres offres et ne fonctionne pas pour les produits en promotion."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/valmont.png",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "5286": {
+      "id": 5286,
+      "name": "Buly 1803限时85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/buiy1985.png",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        3445
+      ],
+      "shops": [
+        2128
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n在拿破仑时代是盛极一时的香氛品牌Buly 1803，它的主打产品包括护手霜，香水等，包装精致典雅，明星吴谨言也曾安利过它家的大马士革玫瑰香水，气味不媚俗甜腻，是带着木质感的玫瑰香味，您可以在巴黎性价比最高的蒙日香水店选购到该品牌产品。蒙日香水店交通方便，商品齐全，还有中文顾问，是巴黎购买香水及高端护肤产品的最佳选择。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户出示下方二维码，即可享受全场85折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在蒙日香水店消费后，结账时出示下方二维码，即可享受全场85折优惠，无最低消费限制，只适用于非促销产品，不可与其他优惠叠加，游客折后消费满175欧，可享受15%现场退税，最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-05%20%E4%B8%8A%E5%8D%8811.51.19_2.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n79 Rue Monge, 75005 Paris<br />\r\n地铁：7号线 Place Monge<br />\r\n营业时间：周一至周六09:00-20:00<br />\r\n<br />\r\n- 法语说明-<br />\r\nGrâce au QR code, bénéficiez de 15% de réduction lors de vos achats. Détaxe à partir de 175€ d'achat.<br />\r\nL'offre Ai Shopping n'est pas cumulable avec d'autres offres et ne fonctionne pas pour les produits en promotion."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/buiy1985.png",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "5289": {
+      "id": 5289,
+      "name": "Guerlain满即赠",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/guerlain_0.png",
+      "website": null,
+      "validity": "2019年02月11日至2019年12月31日",
+      "description": null,
+      "brands": [
+        442
+      ],
+      "shops": [
+        3034,
+        3897
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n拥有百年历史的法国高端品牌Guerlain,为全球女性带来最奢华的护肤美妆体验。位于香街的旗舰店娇兰之家更是不可错过的美学殿堂，极富才华的艺术家与工匠们赋予它精美的装潢设计，使它美如一个璀璨的珠宝，在这，您还能选购到限量版的娇兰香水。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n活动期间，爱Shopping巴黎用户持本福利页面进店消费满150欧，即赠价值36欧的娇兰皇家蜂王乳双导精华一盒(14袋)。消费满150欧用银联卡支付还能享受85折( 不包括限量版产品，Exclusif香水，及私人高级定制蜂瓶)。<br />\r\n<br />\r\n- 使用细则 - <br />\r\n爱Shopping巴黎用户在娇兰门店消费满150欧，付账时出示下方优惠券，即赠价值36欧的娇兰皇家蜂王乳双导精华一盒(14袋)。消费满150欧用银联卡支付还能享受85折( 不包括限量版产品，Exclusif香水，及私人高级定制蜂瓶。本福利不可与其他福利叠加使用，仅限于香街的娇兰之家和旺多姆门店适用。最终解释权归品牌所有。<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/WechatIMG356.jpeg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nLa Maison Guerlain<br />\r\n68 avenue des Champs- Elysées，75008 Paris<br />\r\n电话：+33 1 58 56 70 01<br />\r\n<br />\r\nGuerlain Boutique Vendôme<br />\r\n356 rue Saint-Honoré, 75001 Paris<br />\r\n电话：+33 1 42 60 68 61<br />\r\n<br />\r\n- 法语说明 - <br />\r\n1 boite de 14 doses de Abeille Royale Serum Double R offerte dès 150€ d’achat. Valable uniquement pour la Maison Guerlain et Guerlain Boutique Vendôme."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/guerlain_0.png",
+      "weight": 30,
+      "type": "good_deals"
+    },
+    "5301": {
+      "id": 5301,
+      "name": "日出茶太全场9折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%97%A5%E5%87%BA%E8%8C%B6%E5%A4%AAgood%20deal2.png",
+      "website": null,
+      "validity": "永远有效",
+      "description": null,
+      "brands": [
+        5218
+      ],
+      "shops": [
+        5297,
+        5298,
+        5299
+      ],
+      "productType": [
+        16
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n人在巴黎，你也可以品尝到最地道的台式奶茶，因为日出茶太Chatime始终坚持传统的台湾奶茶制作方式，所有优质原料均从台湾进口，细致化客户口味，客户可以选择甜度，冰块多寡等。如今，日出茶太已遍布全球35个国家，近800多家分店，将台式奶茶风味带到各地。<br />\r\n<br />\r\n- 优惠内容 -<br />\r\n活动期间，爱Shopping巴黎用户持本福利页面进店任意消费，即可享受全场9折优惠。<br />\r\n<br />\r\n- 使用细则 - <br />\r\n爱Shopping巴黎用户在日出茶太指定门店任意消费，付账时出示本福利页面，即可享受全场9折优惠，本福利不可叠加使用。最终解释权归品牌所有。<br />\r\n"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nChatime, 99 Rue de Rivoli, 75001 Paris<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-08%20%E4%B8%8B%E5%8D%885.29.15.png"
+        },
+        {
+          "type": "text",
+          "content": "Chatime, 4 Rue Mouffetard, 75005 Paris"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/12.png"
+        },
+        {
+          "type": "text",
+          "content": "Chatime, 188 boulevard voltaire 75011 Paris"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E7%94%BB%E6%9D%BF%201.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\nBénéficiez de 10% de remise pour tous les achats chez Chatime à Paris. Valable uniquement pour Chatime de Carrousel du Louvre et de Mouffetard et de Voltaire."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/%E6%97%A5%E5%87%BA%E8%8C%B6%E5%A4%AAgood%20deal2.png",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "5347": {
+      "id": 5347,
+      "name": "Marc Jacobs 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/WechatIMG654.jpeg",
+      "website": null,
+      "validity": "即日起至2019年07月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        29
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n路易威登创意总监个人品牌。设计追求年轻大胆俏皮的街头美学。相机包是秦岚、霍思燕的街拍必备。你可以在巴黎人最爱的巴诗威百货找到Marc Jacobs专柜，该百货位于玛黑区，涵盖时尚美妆、生活家居、美食餐饮等商铺，是巴黎最时尚的购物天堂。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利不可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-01%20%E4%B8%8B%E5%8D%884.10.07.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre non-cumulable."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/WechatIMG654.jpeg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "5351": {
+      "id": 5351,
+      "name": "Vanessa Bruno 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/WechatIMG658.jpeg",
+      "website": null,
+      "validity": "即日起至2019年07月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        29
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n法国女生最爱，设计柔和浪漫充满诗意。要感受法国女人的优雅，就不能错过帆布亮片包。你可以在巴黎人最爱的巴诗威百货找到Vanessa Bruno专柜，该百货位于玛黑区，涵盖时尚美妆、生活家居、美食餐饮等商铺，是巴黎最时尚的购物天堂。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利不可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-01%20%E4%B8%8B%E5%8D%884.10.07_0.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/WechatIMG658.jpeg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "5355": {
+      "id": 5355,
+      "name": "Furla 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/WechatIMG657.jpeg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        29
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n意大利百年皮具品牌，以\"少女系果冻包\"风靡世界。百年老店质量保障，可爱设计加仙女配色，你应该拥有。你可以在巴黎人最爱的巴诗威百货找到Furla专柜，该百货位于玛黑区，涵盖时尚美妆、生活家居、美食餐饮等商铺，是巴黎最时尚的购物天堂。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-01%20%E4%B8%8B%E5%8D%884.10.07_1.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/WechatIMG657.jpeg",
+      "weight": 37,
+      "type": "good_deals"
+    },
+    "5359": {
+      "id": 5359,
+      "name": "COACH 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/WechatIMG653.jpeg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        29
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nCOACH是时尚与实用完美平衡的美式风格。从Parker铆钉山茶花到今年新款圆筒包，引领复古美学风潮。你可以在巴黎人最爱的巴诗威百货找到COACH 专柜，该百货位于玛黑区，涵盖时尚美妆、生活家居、美食餐饮等商铺，是巴黎最时尚的购物天堂。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-01%20%E4%B8%8B%E5%8D%884.10.07_2.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/WechatIMG653.jpeg",
+      "weight": 38,
+      "type": "good_deals"
+    },
+    "5363": {
+      "id": 5363,
+      "name": "KARL LAGERFELD 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/WechatIMG656.jpeg",
+      "website": null,
+      "validity": "即日起至2019年07月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        29
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n\"老佛爷\"的个人品牌，超前时尚嗅觉是KARL LAGERFELD最鲜明的DNA，为欧洲年轻人热爱。你可以在巴黎人最爱的巴诗威百货找到KARL LAGERFELD专柜，该百货位于玛黑区，涵盖时尚美妆、生活家居、美食餐饮等商铺，是巴黎最时尚的购物天堂。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利不可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-01%20%E4%B8%8B%E5%8D%884.10.07_3.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre non-cumulable."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/WechatIMG656.jpeg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "5367": {
+      "id": 5367,
+      "name": "Kate Spade New York  全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/WechatIMG655.jpeg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        29
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n品牌旨在给生活添上明亮的色彩。包包设计偏好年轻造型和跳跃色彩，来满足你的少女心。你可以在巴黎人最爱的巴诗威百货找到Kate Spade New York 专柜，该百货位于玛黑区，涵盖时尚美妆、生活家居、美食餐饮等商铺，是巴黎最时尚的购物天堂。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-01%20%E4%B8%8B%E5%8D%884.10.07_4.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/WechatIMG655.jpeg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "5377": {
+      "id": 5377,
+      "name": "Maison Brémond 1830 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/78777.png",
+      "website": null,
+      "validity": "2019年03月01号起至2019年08月31号",
+      "description": null,
+      "brands": [
+        5328
+      ],
+      "shops": [
+        5329
+      ],
+      "productType": [],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nMaison Brémond创始于1830年，售卖各种普罗旺斯风味特产，比如杏仁，香料，橄榄油，松露，特色甜点和熟食等。经过快两百年的家族传承和发展，他们逐步将南法美食推向了全世界。<br />\r\n<br />\r\n- 优惠内容 -<br />\r\n爱Shopping巴黎用户，持本福利页面，在Maison Brémond 1830巴黎专卖店任意消费，即可享受全场85折优惠 ( 除折扣商品外 )。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在Maison Brémond 1830巴黎专卖店出示本福利页及下方法语说明给店员，即可享受全场85折优惠 ( 除折扣商品外 )，本福利不可与其他福利叠加使用，最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\nMaison Brémond 1830 ( 6区 )<br />\r\n地址： 8, Cour du Commerce Saint-André, 75006 Paris<br />\r\n营业时间：周一至周三11h00 - 14h30     15h30 - 20h00<br />\r\n                  周四至周六11h00 - 20h00<br />\r\n                  周日11h - 18h30<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise sur tout le magasin, hors promotions en cours. Offre non-cumulable et valable uniquement pour la boutique Maison Brémond dans le 6ème arrondissement."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/78777.png",
+      "weight": 25,
+      "type": "good_deals"
+    },
+    "5451": {
+      "id": 5451,
+      "name": "每周好物 | 厨具界的爱马仕 Le Creuset",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90.jpg",
+      "website": null,
+      "validity": "即日起至2019年07月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "本周，我们想要推荐的是一只来自法国的高颜值锅子。Le Creuset告诉我们：与幸福生活匹配的不一定非得是LV，一口可以传代的好锅也许来得更实在些。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/app1_8.jpg"
+        },
+        {
+          "type": "text",
+          "content": "1925年，Le Creuset在法国北部小镇FRESNOY-LE-GRAND建立，至今工厂没有换过地方。Le Creuset锅具由100%生铁打磨而成，有防锈珐琅层，它使用标准的沙铸方法，全部由手工制作。品牌的铸铁锅以色彩靓丽而著称。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/app2_3.jpg"
+        },
+        {
+          "type": "text",
+          "content": "不止于颜值，这个法国顶尖锅具品牌的优质铸铁锅有非常多的好处。<br />\r\n<br />\r\n首先，铸铁锅既可以上明火，又可以进烤箱，还能用在电磁炉和电陶炉上。<br />\r\n<br />\r\n其次，锅盖厚重，使蒸汽不容易流失，良好的密封性可以引导出食材原有的美味和营养，用铸铁锅炖菜不必把水没过食材，炖煮过程中也不需不断加水。<br />\r\n<br />\r\n再者，铸铁锅的保温性好，菜肴既不易冷却，能保持最佳的食用状态，又可以做一些节能操作，小火烹饪，也不需要将食物熬制很久，离火后可借余温继续焖煮。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/app3.jpg"
+        },
+        {
+          "type": "text",
+          "content": "Le Creuset针对不同的烹饪目的，设计了各类型号。我想重点推荐两个。<br />\r\n<br />\r\n第一个是Dutch Oven（荷兰锅），法国人叫它French Oven（法式烧锅）。<br />\r\n<br />\r\n这种锅主要是圆形锅，也有少量变形，比如椭圆形、心形、南瓜锅。内部涂层是白珐琅，适合砂锅菜、炖煮、烘焙。而且大家可以根据家庭人口数和生活状态来选择具体尺寸。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/app4.jpg"
+        },
+        {
+          "type": "text",
+          "content": "第二是深烧锅。其缓慢的弧度与中式的炒菜锅非常相似，适合煸炒，所以更适合中国人使用。内部涂层有黑珐琅和白珐琅两种，强烈建议买黑珐琅的，能抗造一些，即使把它当炒菜锅用也完全没问题。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/app5.jpg"
+        },
+        {
+          "type": "text",
+          "content": "这样高颜值的厨房神器，爱Shopping巴黎当然要给你送福利！巴黎人最爱的巴诗威百货公司里，就有Le Creuset的专柜，凭借以下条形码，可享受85折优惠~"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/app6.png"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90.jpg",
+      "weight": 1008,
+      "type": "good_deals"
+    },
+    "5479": {
+      "id": 5479,
+      "name": "Ines de La Fressange Paris折上85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/786.png",
+      "website": "https://inesdelafressange.fr/fr/",
+      "validity": "2019年04月01日起至2019年08月31日",
+      "description": null,
+      "brands": [
+        2271
+      ],
+      "shops": [
+        2272,
+        5478
+      ],
+      "productType": [
+        13,
+        15,
+        10,
+        6
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nInes de La Fressange Paris是由香奈儿专属模特，老佛爷的缪斯女神Ines de La Fressange创建的同名品牌。品牌出品女装、鞋履、配饰以及家居用品。它自然率性的设计，被当作法式优雅的代表。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在Ines de La Fressange巴黎门店购买任意产品(包括香水)，结账时出示本福利页面，即可享受折上85折优惠，优惠可叠加使用，点击上方【去官网】，结款时输入优惠码AISHOPPING同样享有该折扣。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping巴黎用户在Ines de la Fressange巴黎门店购买任意产品(包括香水)，结账时出示本福利页面，即可享受折上85折优惠，优惠可叠加使用，点击上方【去官网】，结款时输入优惠码AISHOPPING同样享有该折扣。最终解释权归品牌所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\nInes de La Fressange巴黎门店 <br />\r\n地址：24 rue de Grenelle, 75007 Paris<br />\r\n地铁：4号线Saint-Sulpice<br />\r\n           12号线Sèvres - Babylone<br />\r\n营业时间：周一至周六11：00-19：00"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/99_6.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明-<br />\r\n◆ Bénéficiez d'une remise de 15% sur les produits chez Ines de la Fressange Paris. L'offre est valable sur les parfums et cumulable avec les soldes, également disponible sur le e-shop avec le code AISHOPPING. "
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/786.png",
+      "weight": 26,
+      "type": "good_deals"
+    },
+    "5694": {
+      "id": 5694,
+      "name": "每周好物 | Patrick Roger 独家罗勒口味巧克力",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/qiaokeli%E5%B0%8F.jpg",
+      "website": null,
+      "validity": "从2019年4月15日起到2019年4月24日",
+      "description": null,
+      "brands": [
+        253
+      ],
+      "shops": [
+        1185
+      ],
+      "productType": [
+        16
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "本周想要推荐的是巴黎当地非常出名的一个巧克力大师和他的个人作品。<br />\r\n<br />\r\nPatrick Roger无疑是巴黎最有腔调的巧克力大师。他叛逆，他不羁，他热爱机车的轰鸣，他用巧克力雕塑作品跟这个世界说话。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_1.png"
+        },
+        {
+          "type": "text",
+          "content": "坐落在玛德琳广场的门店，店面光怪陆离，落地玻璃、绿色的圆筒堆砌的组合给人强烈的视觉震撼力和现代感，好像古老的外星文明祭祀所用的圣殿。店内往往还陈列有大师的个人雕塑作品，定期更换。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2_3.jpg"
+        },
+        {
+          "type": "text",
+          "content": "Patrick Roger偏爱追求巧克力原有的可可焦苦与淡淡的甜酸度。他遍访各地，从印尼、秘鲁等世外之地寻求灵感，尝试巧克力跟香料的完美融合，一切都为了。就比如罗勒。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/3_5.jpg"
+        },
+        {
+          "type": "text",
+          "content": "一般而言，罗勒本身带有丁香花的芳香，也略有薄荷的冲击性，尝起来稍甜带有轻轻的辣味。罗勒会给酸甜甘苦的巧克力原味带来清新感，一扫甜腻，可谓巧克力的绝配。<br />\r\n<br />\r\n大师Patrick Roger似乎有着一定偏爱，他开发了罗勒系列的多种口味，比如罗勒柠檬巧克力，酸爽柠檬配合罗勒，带来极致的狂野冲击力，令人沉迷。再比如罗勒辣椒巧克力，这个组合虽听起来有些违和，但尝起来却意外的令人印象深刻，带给巧克力原有的酸甜味更立体化的陪衬。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/4_1.png"
+        },
+        {
+          "type": "text",
+          "content": "当然复活节临近，在这个大日子，Patrick Roger会出品各类节日特供。比如可爱的巧克力公鸡。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/5_7.jpg"
+        },
+        {
+          "type": "text",
+          "content": "还有外观看起来跟鸡蛋没什么两样的复活节巧克力蛋。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/6.png"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/qiaokeli%E5%B0%8F.jpg",
+      "weight": 1005,
+      "type": "good_deals"
+    },
+    "5782": {
+      "id": 5782,
+      "name": "IOMA PARIS 全场75折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/121_0.png",
+      "website": null,
+      "validity": "即日起至2019年10月31日",
+      "description": null,
+      "brands": [
+        5780
+      ],
+      "shops": [
+        5781
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nIOMA PARIS创建于2010年，是依托于高等科技和先进科学研究的护肤品牌。IOMA在镜子里是à moi，意为我的专属。品牌认为每个人的皮肤都是独一无二的，他们会为消费者进行皮肤测试，再根据测试结果推荐适合的产品，满足每个人的不同需求。IOMA重视每一位爱美的人，希望每一位顾客都可以在专属产品的帮助下，更加美丽。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在IOMA PARIS巴黎门店购买任意产品( 折扣产品除外 )，结账时出示本福利页面，即可享受75折优惠, 及免费测试皮肤一次。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping巴黎用户在IOMA PARIS巴黎门店购买任意产品( 折扣产品除外 )，结账时出示本福利页面，即可享受75折优惠，及免费测试皮肤一次。本福利不可与其他优惠叠加使用。最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9C%AA%E6%A0%87%E9%A2%98-1_0.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/121.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nIOMA PARIS 巴黎门店<br />\r\n地址：77 boulevard Saint-Germain, 75006 Paris<br />\r\n地铁：4号线Odéon<br />\r\n           RER B线Saint-Michel Notre-Dame<br />\r\n           RER C线Saint-Michel Notre-Dame<br />\r\n营业时间：周一至周六10：00-19：00<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez d'une remise de 25% sur toute la boutique sur présentation de l’application, non cumulable avec d’éventuelles offres en cours."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/121_0.png",
+      "weight": 13,
+      "type": "good_deals"
+    },
+    "5787": {
+      "id": 5787,
+      "name": "每周好物 | Marella 繁花似锦的法式长裙，爱到想给她写情书",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/haowutuijian%20marella.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        543
+      ],
+      "shops": [
+        1228
+      ],
+      "productType": [
+        6
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "今天想要推荐的是一席长裙。适逢春末夏初时节，日光渐长夜风渐暖，也唯有一袭繁花似锦的长裙，可以在行走间拍打着小腿、缠绕在脚踝，于奔忙日常中，唤醒心底那些极易被遗忘的情愫，生出些不知名的浪漫心思。"
+        },
+        {
+          "type": "text",
+          "content": "第一眼看到这条裙，就被上面这意象打动，这样一袭裙上身，赤脚踩落花，以身骑白马，梦里走天涯。这是来自意大利女装品牌Marella 2019春夏发布的罗马系列。<br />\r\n<br />\r\n细细系带，交叉V领前襟，七分垂坠半透明泡泡袖，层层荷叶边裙摆，浓郁又暧昧的红。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/11_meitu_3.jpg"
+        },
+        {
+          "type": "text",
+          "content": "身为Max Mara同集团的姐妹品牌，你在Marella的基因里同样看得到意大利人对于材质和手工的执着，面料的精致度和舒适的细节穿着感受（比如说很多职场裤装却采用松紧裤腰），比贵出它许多的Max Mara也完全不输。<br />\r\n<br />\r\n风格上当然它是松快和放肆的，你可以这款长裙上找到托斯卡纳艳阳下才有的饱满色彩，但款式又不是加州品牌多有的那种完全追捧少女感，它是性感的，但从不会裸露大片肌肤。"
+        },
+        {
+          "type": "text",
+          "content": "除了美感本身恰合口味，面料亲肤舒适之外，作为一个经验丰富的高端女装品牌，Marella还有许多playful的到位细节，比如上面这条裙，内衬短及膝盖以上、半透明裙摆更有视觉层次感，虽是百褶、却也有侧边开衩，不仅比例更好、能够晒出长腿，还更有度假感。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/22_meitu_5.jpg"
+        },
+        {
+          "type": "text",
+          "content": "这样的魅力长裙，爱Shopping巴黎当然会给你送福利，点击上方【去这买】跳转至相关福利页面。活动期间，爱Shopping巴黎用户持Marella福利页面进店任意消费即可获取精美礼品一份。"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/haowutuijian%20marella.jpg",
+      "weight": 1006,
+      "type": "good_deals"
+    },
+    "5919": {
+      "id": 5919,
+      "name": "Patrick Roger满即赠",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/qiaokeli.jpg",
+      "website": null,
+      "validity": "即日起至2019年10月31日",
+      "description": null,
+      "brands": [
+        253
+      ],
+      "shops": [
+        1185,
+        1071,
+        1529,
+        5260,
+        5261,
+        5263,
+        5264
+      ],
+      "productType": [
+        16
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nPatrick Roger是代表了巴黎顶尖巧克力制作水准的品牌，由同名天才巧克力大师创建。品牌追求巧克力原有的可可焦苦与淡淡的甜酸味道，并且尝试将巧克力跟香料诸如罗勒、辣椒完美融合。一切的努力，都为了完美地呈现美食愉悦、平衡的味蕾余韵。<br />\r\n<br />\r\n-优惠内容-<br />\r\n爱Shopping用户，在Patrick Roger任意门店购买商品，消费满150欧即可获赠独家巧克力一盒，见下图。<br />\r\n<br />\r\n-使用细则-<br />\r\n活动期间，爱Shopping用户持本福利页面，至Patrick Roger任意门店，购买产品消费满150欧，结账时将本页面出示给店员，即可获赠Patrick Roger独家巧克力一盒，见下图。本福利不可与其他福利叠加使用，最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E8%B5%A0%E5%93%81.png"
+        },
+        {
+          "type": "text",
+          "content": "-法语说明-<br />\r\n◆Une boîte métal 4 chocolats offerte pour 150€ d’achat sous présentation de l'application Ai Shopping Paris"
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/qiaokeli.jpg",
+      "weight": 17,
+      "type": "good_deals"
+    },
+    "5953": {
+      "id": 5953,
+      "name": "Chanel彩妆 全场75折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/11_5.png",
+      "website": null,
+      "validity": "2019年04月01日起至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3949,
+        3948
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n自20世纪初Chanel创立以来，在时尚、香水、美妆以及护肤的领域就深深影响全球女性。品牌主打山茶花保湿系列，面霜、粉底霜，滋养补水，拯救了干皮星人。另外Chanel的口红、唇釉产品上唇效果出彩，同样令人心水。经过近百年来的经营，Chane已l成为全球爱美人士的标杆。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户，在Nocibé相应门店消费Chanel任意产品，可享受全场75折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在以下巴黎美妆连锁店Nocibé门店消费Chanel任意产品，出示折扣码P82915或下面的条形码，即可享受全场75折优惠。（部分特价产品不适用，并不能与其他优惠叠加使用)。最终解释权由商家所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe%20bar%20code%2007.2018_0.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez d'une remise de 25% sur les produits chez Nocibé  grâce au code-barre ou au code promo : P82915 (Non-valable sur certains produits; Non cumulable et non substituable avec toutes autres offres promotionnelles, soldes ou remises en cours)."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/11_5.png",
+      "weight": 47,
+      "type": "good_deals"
+    },
+    "5957": {
+      "id": 5957,
+      "name": "Giorgio Armani 全场75折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/22_2.png",
+      "website": null,
+      "validity": "2019年04月01日起至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3948,
+        3949
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n2000年，知名时尚品牌Giorgio Armani开始进军彩妆领域，承袭顶级、低调以及优雅的时尚态度，品牌彩妆一经推出，便获得世界名流巨星以及全球专业彩妆师的热烈拥戴。现在Giorgio Armani已成为一个在护肤、彩妆、香水领域都高居金字塔顶端的专业美容品牌。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户，在Nocibé相应门店消费Giorgio Armani任意产品，可享受全场75折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在以下巴黎美妆连锁店Nocibé门店消费Giorgio Armani任意产品，出示折扣码P82915或下面的条形码，即可享受全场75折优惠。（部分特价产品不适用，并不能与其他优惠叠加使用)。最终解释权由商家所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe%20bar%20code%2007.2018_1.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez d'une remise de 25% sur les produits chez Nocibé  grâce au code-barre ou au code promo : P82915 (Non-valable sur certains produits; Non cumulable et non substituable avec toutes autres offres promotionnelles, soldes ou remises en cours)."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/22_2.png",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "5964": {
+      "id": 5964,
+      "name": "Givenchy 全场75折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/44_0.png",
+      "website": null,
+      "validity": "2019年04月01日起至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3948,
+        3949
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n自1952年Givenchy创立以来，就一直在释放现代女性的独特优雅。Givenchy从最初的香水发展到彩妆、护肤领域。目前品牌以彩妆，特别是底妆产品闻名。品牌同时致力于新的护肤技术和配方的研究。优雅体现法式护肤艺术的典雅与细致，令护肤轻松而愉快。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户，在Nocibé相应门店消费Givenchy任意产品，可享受全场75折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在以下巴黎美妆连锁店Nocibé门店消费Givenchy任意产品，出示折扣码P82915或下面的条形码，即可享受全场75折优惠。（部分特价产品不适用，并不能与其他优惠叠加使用)。最终解释权由商家所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe%20bar%20code%2007.2018_2.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez d'une remise de 25% sur les produits chez Nocibé  grâce au code-barre ou au code promo : P82915 (Non-valable sur certains produits; Non cumulable et non substituable avec toutes autres offres promotionnelles, soldes ou remises en cours)."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/44_0.png",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "5965": {
+      "id": 5965,
+      "name": "Dior 全场75折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/33_0.png",
+      "website": null,
+      "validity": "2019年04月01日起至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3948,
+        3949
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n自1947年创立以来，Dior作为华贵与高雅的代名词，是LVMH集团旗下重要的化妆品品牌，其彩妆系列出过许多明星产品，如凝脂粉底液，幽蓝魅惑五色眼影、烈艳蓝金唇膏等等。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户，在Nocibé相应门店消费Dior任意产品，可享受全场75折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在以下巴黎美妆连锁店Nocibé门店消费Dior任意产品，出示折扣码P82915或下面的条形码，即可享受全场75折优惠。（部分特价产品不适用，并不能与其他优惠叠加使用)。最终解释权由商家所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe%20bar%20code%2007.2018_3.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez d'une remise de 25% sur les produits chez Nocibé  grâce au code-barre ou au code promo : P82915 (Non-valable sur certains produits; Non cumulable et non substituable avec toutes autres offres promotionnelles, soldes ou remises en cours)."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/33_0.png",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "5972": {
+      "id": 5972,
+      "name": "Lancôme 全场75折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/55_1.png",
+      "website": null,
+      "validity": "2019年04月01日起至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3948,
+        3949
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nLancôme在香水、护肤品和彩妆方面都极有建树。其护肤品种类众多，强调对消费者个别差异的尊重。在彩妆部分，品牌强调做自己的彩妆大师，以色彩的冷暖概念提出个人色彩主张。品牌坚持优雅的风格，目的在于凸显品牌亲和平实的形象。小黑瓶精华肌底液，大明星睫毛膏等都是该品牌的明星产品。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户，在Nocibé相应门店消费Lancôme任意产品，可享受全场75折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在以下巴黎美妆连锁店Nocibé门店消费Lancôme任意产品，出示折扣码P82915或下面的条形码，即可享受全场75折优惠。（部分特价产品不适用，并不能与其他优惠叠加使用)。最终解释权由商家所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe%20bar%20code%2007.2018_4.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez d'une remise de 25% sur les produits chez Nocibé  grâce au code-barre ou au code promo : P82915 (Non-valable sur certains produits; Non cumulable et non substituable avec toutes autres offres promotionnelles, soldes ou remises en cours)."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/55_1.png",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "5976": {
+      "id": 5976,
+      "name": "Yves Saint Laurent 全场75折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/66_2.png",
+      "website": null,
+      "validity": "2019年04月01日起至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3948,
+        3949
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n1978年，Yves Saint Lauret带着彩妆作品涉足美妆界。标志性的金色外盒和专属极品女人的惊艳色彩，足以让一个女人抛开禁忌，用匹配不同心情的各种色彩装扮她的生活。品牌通过彩妆、香水和护肤品传递品牌灵魂和精神，永无止息地维护这样一个信条：优雅是脸庞的美丽，是一道谜，也是活动的姿态。品牌的各类明星口红有一种公开的魅惑力，令人欲罢不能。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户，在Nocibé相应门店消费Yves Saint Laurent任意产品，可享受全场75折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在以下巴黎美妆连锁店Nocibé门店消费Yves Saint Laurent任意产品，出示折扣码P82915或下面的条形码，即可享受全场75折优惠。（部分特价产品不适用，并不能与其他优惠叠加使用)。最终解释权由商家所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe%20bar%20code%2007.2018_5.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez d'une remise de 25% sur les produits chez Nocibé  grâce au code-barre ou au code promo : P82915 (Non-valable sur certains produits; Non cumulable et non substituable avec toutes autres offres promotionnelles, soldes ou remises en cours)."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/66_2.png",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "5977": {
+      "id": 5977,
+      "name": "每周好物 | Yves Saint Laurent 圆管桃心口红",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%A5%BD%E7%89%A9.jpg",
+      "website": null,
+      "validity": "2019年04月01日起至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3948,
+        3949
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "本周我们要推荐的好物呢，是Yves Saint Laurent在2019年春季推出的限定版圆管桃心口红。这款限量版颜值非常吸引人，内嵌一颗桃心。<br />\r\n<br />\r\n现有上新的色调涵盖了偏粉调还有偏橘调，还有裸色和正红，几乎可以满足所有的需求。这样的黑色桃心可爱小心机真是少女心，可以让掏出唇膏补妆时的心情变好！"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_4.png"
+        },
+        {
+          "type": "text",
+          "content": "另外，它的外层为感温护唇精华，能随着肌肤温度、慢慢释放出滋润配方，延长护唇效果；内芯为专利「晶透亮色粒子」，系列不同色号有不同的内层配色，旨在营造出自然不刻意的粉嫩好气色。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/4_2.png"
+        },
+        {
+          "type": "text",
+          "content": "再说它的上唇效果。YSL的圆管口红，上唇的水润感自然是不用讲的，这个系列各类色号的选择都为了尽力透出自然的红润血色感，衬托出良好的气色，同时配合牛油澳洲坚果、荷荷芭油、石榴提取物等护理成分，帮助呵护唇部肌肤，唇膏体散发淡淡的水果香味和芒果香味。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/3_2.png"
+        },
+        {
+          "type": "text",
+          "content": "这样的好物，爱Shopping巴黎当然要给你奉上福利！我们的用户，在以下巴黎美妆连锁店Nocibé门店消费Yves Saint Laurent任意产品，出示折扣码P82915或下面的条形码，即可享受全场75折优惠。（部分特价产品不适用，并不能与其他优惠叠加使用)。最终解释权由商家所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nocibe%20bar%20code%2007.2018_5_0.jpg"
+        },
+        {
+          "type": "text",
+          "content": "在这里，我也把参加打折活动的两家Nocibé门店地址及联系方式贴心地放上来。<br />\r\n<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/%E5%A5%BD%E7%89%A9.jpg",
+      "weight": 1007,
+      "type": "good_deals"
+    },
+    "6200": {
+      "id": 6200,
+      "name": "Fred Perry 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/Fred%20Perry_0.jpg",
+      "website": null,
+      "validity": "即日起至2019年07月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        26,
+        13,
+        10,
+        6,
+        7,
+        11
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nFred Perry最早是英国著名的网球用品品牌，由Tibby Wegner联同网球手Fred Perry创立于1940年代末期。经过六十年的发展，Fred Perry已经成为正宗的英伦街头时尚品牌，其产品包括男装，女装，鞋履和配饰系列。<br />\r\n<br />\r\nFred Perry的服饰设计简单，多以纯色为主，都很耐看。其中最经典的产品当属英伦风的POLO衫。另外，同样秉承着简洁明快的设计风格的Fred Perry小白鞋，在当下风靡的小白鞋风潮中有着极低的撞鞋率，同时兼具舒适感，柔软贴脚。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利不可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre non-cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/Fred%20Perry_0.jpg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "6207": {
+      "id": 6207,
+      "name": "Bialetti 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/bilaletti.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nBialettiI公司成立于1933年。其创始人Bialetti Alfonso经过了无数次的试验，最终使用铝材制作出世界上第一只通过蒸汽压力而萃取咖啡的家用咖啡壶。它家的咖啡壶价格亲民，便利性高，操作上也相当简单。经过百年的发展，BialettiI几乎成为了家用咖啡壶的代表，每十个意大利家庭中，就有九家在使用BialettiI的咖啡壶。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利不可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_0.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/bilaletti.jpg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "6208": {
+      "id": 6208,
+      "name": "Le Creuset 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/Le%20Creuset_0.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nLe Creuset于1925年在法国创立。曾被全球知名权威时尚杂志评选为“TOP30”法国品牌。以精益求精的品质、时尚前卫的设计而闻名，被誉为“厨房中的爱马仕”，拥有全球珐琅铸铁锅市场高达75%以上的市场占有率。<br />\r\n<br />\r\n品牌是法国厨具的骄傲，也是铸钢锅的代表。它使用标准的沙铸方法，全部由手工制作，坚硬度和耐久性几乎完全可以对抗任何损伤。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_1.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/Le%20Creuset_0.jpg",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "6213": {
+      "id": 6213,
+      "name": "Milk&Pepper 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/milk%26pepper.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n创立于2009年，这个年轻的宠物服饰品牌，凭借其精致、时尚的设计，服装质量，获得了全世界铲屎官们的喜爱。品牌同样为宠物提供篮子、沙发、床垫一类的生活用品。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_2.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/milk%26pepper.jpg",
+      "weight": 47,
+      "type": "good_deals"
+    },
+    "6219": {
+      "id": 6219,
+      "name": "Calvin Klein 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/CK.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        6,
+        7
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n创立自1968年，Calvin Klein以极简风格美学设计，成为美国第一大设计师品牌。它传递了一种现代、极简、舒适、华丽、休闲又不失优雅气息的美式时尚。品牌旗下的衬衫、西装品牌满足现代都市审美，是时尚百搭的万能基础款。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_9.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/CK.jpg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "6223": {
+      "id": 6223,
+      "name": "de Buyer 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/de%20buyer.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nde Buyer是创建于1830年的法国老牌厨具品牌。它家的铁炒锅一直保持着非常高的品质和声誉。Mineral B iron 系列炒锅尤其受欢迎，既有铁锅特有的富含铁元素的特点（对人体有利），又有着和不粘锅类似的不粘特性。<br />\r\n<br />\r\nde Buyer的炒锅的性能也会随着进一步的使用而提升，当锅子吸收了炒菜中的脂肪之后，会形成一层薄薄的油膜，达到类似不粘锅的效果，但没有任何有害化学物质。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_8.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/de%20buyer.jpg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "6227": {
+      "id": 6227,
+      "name": "Delsey 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/delsey.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        29
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nDelsey是来自法国的标志性箱包品牌，从 1946 年开始就致力于箱包的制造。Delsey将箱包的设计与功用完美结合在一起。品牌一直以来都秉持着用最佳的价钱做最好的品质，在品牌发展历史中曾经赢得无数奖项。<br />\r\n<br />\r\n品牌新系列行李箱设计得十分轻巧，无论你走到哪里，极轻的重量，箱内扩展空间都会使它成为路途中最为完美的旅行配件。精细的设计以及经典的黑、蓝、棕三色让这款实用的旅行箱满足消费者对简约而不失精致的生活需求。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_3.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/delsey.jpg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "6228": {
+      "id": 6228,
+      "name": "Nat & Nin 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nat.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        5
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nNat ＆ Nin由两位充满灵感的姐妹Natalie和Ninny于2005年在巴黎创立。她们致力于设计出永恒不败的作品，灵感來自于当代女性生活的复古潮流。产品设计充充满了女性化风格，以及低调的优雅，同时伴有浪漫的法国复古风情。品牌注重细节，坚持选用优质意大利皮革，并发展出多种原创色彩。细节精致，纹理细腻，尺寸经过精心设计。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_10.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/nat.jpg",
+      "weight": 47,
+      "type": "good_deals"
+    },
+    "6235": {
+      "id": 6235,
+      "name": "Royal Canin 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/Royal%20canin.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nRoyal Canin成立于1968年，经过50多年的发展已经成为全球宠物食品行业的领军人物。所有法国皇家工厂共同秉持一个经营理念：Lean Production （精简实效)，强调知识与尊重（knowledge and respect），强调动物第一（animal first），一切都为了给犬猫提供最好的服务。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_11.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/Royal%20canin.jpg",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "6239": {
+      "id": 6239,
+      "name": "Rains 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/rains.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        10,
+        6
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n成立于2012年的丹麦哥本哈根户外品牌Rains，是以当地的气候条件和北欧极简生活方式为灵感，设计出来的主打高科技户外运动服饰，极好地把雨衣和街头风联系到一起。Rains 将现代摩登时尚元素融入品牌设计之中，让人们享受雨季，在雨中也保持时尚。产品风格以简约为主，应用大片干净纯粹的色彩，搭配简单利落的剪裁，独特的外形设计，在任何一种风景中都不会因为你穿了一件雨衣而造成冲突感。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_4.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/rains.jpg",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "6243": {
+      "id": 6243,
+      "name": "Samsonite 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/samsonite.jpg",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        29
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nSamsonite是一个拥有百年历史、享誉世界的箱包品牌。Samsonite的产品已经延伸至三大领域，分别是旅行、公文和休闲，为全世界的旅行者提供了一套全面的旅行配备方案。在近一百年的发展历程中，作为箱包行业的引领者和先行者，Samsonite一直致力于为全球的旅行者提供舒适而可靠的高品质创新产品。以其优秀而卓越的产品质量、与时代同步的设计风格、考虑周到的实用性和可靠性以及完善的售后服务，使Samsonite赢得了世界各地消费者的喜爱和认同。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_12.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/samsonite.jpg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "6247": {
+      "id": 6247,
+      "name": "Staub 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/88_1.png",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nStaub珐琅铸铁锅被誉为“法国国宝”，由欧洲最大的锅具生产公司——法国Staub公司生产。凭借其独特创新的设计和绚丽的色彩，Staub在欧洲市场上取得巨大成功。Staub锅具采用世界上最好的铸铁材料，这种材料具有热胀冷缩幅度小、传热迅速、长效保温、坚固耐用等明显于其他金属材料的优势。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_5.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre non-cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/88_1.png",
+      "weight": 48,
+      "type": "good_deals"
+    },
+    "6251": {
+      "id": 6251,
+      "name": "TAMMY & BENJAMIN 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/tammy.jpg",
+      "website": null,
+      "validity": "即日起至2019年07月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        5
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n2010年，设计师Tammy Lo和男友Benjamin Pincemaille在巴黎创立了Tammy & Benjamin。品牌专注于女性皮革手袋品牌，主打简约与复古，称“只推出不受时间时代限制、不受流行左右的包款设计”。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利不可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_6.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre non-cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/tammy.jpg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "6255": {
+      "id": 6255,
+      "name": "Trussardi 全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/trussardi.jpg",
+      "website": null,
+      "validity": "即日起至2019年07月31日",
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        6,
+        7
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nNicola Trussardi在意大利是与阿玛尼、范思哲和瓦伦蒂诺等齐名的大设计师。Trussardi创建于1911年，是国际著名的顶级意大利品牌。Trussardi的皮具设计高贵、优雅，吸引了不少白领人士的垂青。品牌的男装、女装以休闲类为主，面料以棉、麻、蚕丝为主，设计风格 简约、大方、飘逸，能衬托出穿着者的高尚气质。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n在优惠活动期间，结账时出示下方法语说明及条形码，即可享受全场85折优惠，除了红点产品外。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎BHV百货每层楼的收银总台（Caisse Central）出示下方内容及条形码，即享全场85折优惠，除了红点产品外。本福利不可叠加使用。商场周日照常营业。最终解释权归商家所有。<br />\r\n<br />\r\n- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de Ville"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9D%A1%E5%BD%A2%E7%A0%81_7.png"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre non-cumulable."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/trussardi.jpg",
+      "weight": 49,
+      "type": "good_deals"
+    },
+    "6256": {
+      "id": 6256,
+      "name": "每周好物 | Lancôme兰蔻525人间小樱桃",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%B5%B7%E6%8A%A5.jpg",
+      "website": null,
+      "validity": "2019年04月01日起至2020年03月31日",
+      "description": null,
+      "brands": [
+        3947
+      ],
+      "shops": [
+        3948,
+        3949
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "本周我们要推荐的好物呢，是Lancôme夏日菁纯小姐525色号人间小樱桃。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_9.jpg"
+        },
+        {
+          "type": "text",
+          "content": "它的外包装做成了非常亮眼的玫瑰金色圆管包装，看着更加年轻、时尚，但又不失一丝优雅。而且包装小巧、轻便，随身放在包包里没有负担。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/5_12.jpg"
+        },
+        {
+          "type": "text",
+          "content": "就像是初恋的味道，这款人间小樱桃色简直甜到齁！鲜嫩爆汁的樱桃红，比正红更活泼，又没有玫红色那么挑人。薄涂是日常的玫调色，厚涂是饱满多汁的樱桃红，给人一种通透感，显白显嫩，黄皮肤也可以轻松驾驭。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/4_9.jpg"
+        },
+        {
+          "type": "text",
+          "content": "另外，它的质地非常水润，比唇釉颜色浓郁又有唇釉的水润感。一笑起来会有玻璃唇的感觉，并且不粘腻，不会出现一阵风吹过头发粘在嘴巴上的尴尬。因为膏体比较水润所以用的也是比较快～感觉今年夏天可以用完一支。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/3_7.jpg"
+        },
+        {
+          "type": "text",
+          "content": "江疏影和鞠婧炜代言这款口红，带来夏日少女气息的清新美感。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2_10.jpg"
+        },
+        {
+          "type": "text",
+          "content": "宝宝们不要犹豫啦，再不入手就要断货啦！"
+        },
+        {
+          "type": "text",
+          "content": "- 进店福利 -<br />\r\n<br />\r\n这样的好物，爱Shopping巴黎当然要给你送福利！我们的粉丝在以下巴黎美妆连锁店Nocibé门店消费Lancôme任意产品，出示折扣码P82915或下面的条形码，即可享受全场75折优惠。（部分特价产品不适用，并不能与其他优惠叠加使用)。最终解释权由商家所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E4%BC%98%E6%83%A0%E7%A0%81.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 店铺地址 -<br />\r\n6 boulevard des Capucines, 75009 Paris<br />\r\n电话：＋33 1 43 87 81 52<br />\r\n<br />\r\n187 rue Saint-Honoré, 75001 Paris<br />\r\n电话：＋33 1 40 15 91 73"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/%E6%B5%B7%E6%8A%A5.jpg",
+      "weight": 1015,
+      "type": "good_deals"
+    },
+    "6307": {
+      "id": 6307,
+      "name": "巴黎河谷购物村 | VIP非凡折扣季",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/767.png",
+      "website": "LaValleeVillage.com/shoppingexpress",
+      "validity": "2019年05月30日起至2019年09月01日",
+      "description": null,
+      "brands": [
+        1755
+      ],
+      "shops": [
+        3889
+      ],
+      "productType": [
+        29,
+        14,
+        16,
+        12,
+        10,
+        6,
+        7,
+        11
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n交通便利且全年无休的巴黎河谷购物村，拥有超过百家国际知名品牌精品店，全年可享受基于往季零售价基础上最高50%的卓越优惠，还能叠加退税服务，是巴黎性价比最高的购物地标。距离巴黎市中心40分钟车程，离迪士尼5分钟车程。<br />\r\n<br />\r\n- 优惠内容 -<br />\r\n爱Shopping巴黎用户前往河谷购物村欢迎中心Welcome Center，出示下方电子版邀请函和二维码即可获一份VIP超前折扣季入场凭证 ( 低至3折 )，以及享受VIP专属福利 : <br />\r\n<br />\r\n- 1张贵宾卡，可在您选择的6家精品店中进一步享受10%的折扣*<br />\r\n- 1张Ladurée下午茶券，可凭券至购物村Ladurée店内挑选3个任意口味的迷你马卡龙<br />\r\n- 往返巴黎市中心豪华大巴,点击上方【去官网】即可预定大巴，免费优惠码是LVCSAI。注意：请至少提前24小时预定，车票售完即止。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/98.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/115.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/113_0.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/887_0.png"
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/767.png",
+      "weight": 20,
+      "type": "good_deals"
+    },
+    "6336": {
+      "id": 6336,
+      "name": "每周好物 | Ines de la Fressange浓香Or Choc",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%A5%BD%E7%89%A9.png",
+      "website": "https://inesdelafressange.fr/fr/",
+      "validity": "即日起至2019年08月31日",
+      "description": null,
+      "brands": [
+        2271
+      ],
+      "shops": [
+        2272
+      ],
+      "productType": [
+        13,
+        12,
+        10,
+        6
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "今天我们要介绍的好物呢，是Ines de La Fressange Paris最新推出的一款香水Or Choc。<br />\r\n<br />\r\n这款香水还未在国内发售，但是在巴黎的我们已经亲身体验过了，在这里分享给你们。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2_4.png"
+        },
+        {
+          "type": "text",
+          "content": "首先它的颜值已经是非常能打了，玻璃瓶身质感似水晶，阳光穿过清澈干净的液体，产生波光粼粼的效果。瓶口是高贵华美的金色，还系一根咖啡色的编织细绳，外观就很令人心动了。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/6_1.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_11.jpg"
+        },
+        {
+          "type": "text",
+          "content": "这款香水的实测感觉：刚喷出来是浓烈袭人的玫瑰和柑橘香味，富有感染力。后调是的黑香豆味和黑檀木香。这款香水自然且直接，符合法国女人率性独立的偏中性化审美，带有一种成熟的性感味道。当然，男士也是可以使用这款香水的哦。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/5_4.png"
+        },
+        {
+          "type": "text",
+          "content": "- 进店福利 -<br />\r\n<br />\r\n这样的好物，身在巴黎的你一定要优先入手。我们的粉丝在Ines de la Fressange巴黎指定门店购买任意产品(包括香水)，结账时出示Ines de la Fressange的福利页面，即可享受折上85折优惠，优惠可叠加使用，点击上方【去官网】，结款时输入优惠码AISHOPPING同样享有该折扣。最终解释权归品牌所有。"
+        },
+        {
+          "type": "text",
+          "content": "- 店铺地址 -<br />\r\nInes de La Fressange巴黎门店<br />\r\n地址：24 rue de Grenelle, 75007 Paris<br />\r\n地铁：4号线Saint-Sulpice<br />\r\n           12号线Sèvres - Babylone<br />\r\n营业时间：周一至周六11：00-19：00"
+        },
+        {
+          "type": "text",
+          "content": "- 如何找到相关福利页面 -<br />\r\n<br />\r\n1. 在本文上部点击【去这买】，进入地图页。<br />\r\n<br />\r\n2. 点击红色店铺坐标Rue de Grenelle门店，下滑。点击【有福利】。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/7.png"
+        },
+        {
+          "type": "text",
+          "content": "3. 进入福利页面。"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/%E5%A5%BD%E7%89%A9.png",
+      "weight": 2015,
+      "type": "good_deals"
+    },
+    "6362": {
+      "id": 6362,
+      "name": "NYM 满三即享85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/NYM_1.png",
+      "website": null,
+      "validity": "即日起至2019年09月30日",
+      "description": null,
+      "brands": [
+        2127
+      ],
+      "shops": [
+        3866,
+        3927,
+        5111
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nNYM是法国新兴的高端护肤品牌，拥有自己的实验室。NYM以印度北部的楝树提取物为配方，研发独特的皮肤护理产品，致力于消除脸部细菌日常活动带来的有害影响，保持美丽、健康肌肤，并对抗皮肤老化现象。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在指定蒙日药妆店消费NYM旗下三件及以上产品，可凭借二维码享受85折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping巴黎用户在指定蒙日药妆店消费NYM旗下三件及以上产品，付款时出示下方二维码，即可享受85折优惠。此福利不可与其他福利叠加使用，最终解释权由品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/NYM.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n蒙日药妆铁塔新店<br />\r\n地址：15 Rue du Commerce，75015 Paris<br />\r\n地铁：6.8.10号线 La Motte Piquet Grenelle<br />\r\n营业时间：周一至周六08：00-21：00<br />\r\n周日09 :00-20 :00<br />\r\n<br />\r\n蒙日药妆圣母院店 <br />\r\n地址：78 Rue Monge，75005 Paris<br />\r\n地铁：7号线Place Monge<br />\r\n营业时间：周一至周五08：00-23：00，<br />\r\n周六08：30-23：00，周日8：30-20：00<br />\r\n<br />\r\n蒙日药妆圣心堂新店<br />\r\n地址：68 Boulevard de Rochechouart, 75018 Paris<br />\r\n地铁：2号线 Anvers<br />\r\n营业时间：周一至周日 10:00-21:00<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ -15 % dès l’achat de 3 ou plus produits NYM ( offre non cumulable avec d’autres offres)."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/NYM_1.png",
+      "weight": 28,
+      "type": "good_deals"
+    },
+    "6548": {
+      "id": 6548,
+      "name": "每周好物 | FOREO LUNA 洁面仪",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/55_2.png",
+      "website": null,
+      "validity": "即日起至2019年09月14日",
+      "description": null,
+      "brands": [
+        6549
+      ],
+      "shops": [
+        6550,
+        6551
+      ],
+      "productType": [
+        12,
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "大家好呀，在爱美的路上，许多小仙女都会经历如下困扰：毛孔粗大、黑头粉刺、难以控油等等。<br />\r\n<br />\r\n其实仔细分析一下，这些的问题背后存在一个共同成因——清洁不到位。有一句话是这样说的：清洁是最不花钱的护肤。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_7.png"
+        },
+        {
+          "type": "text",
+          "content": "洗脸，真的不是很随便的事情，用手洗脸和用工具洗脸，结果真的会不一样。<br />\r\n<br />\r\n有合适的工具，才能达到更好的目的，洗脸仪这时就应运而生了，对皮肤关注度最高的明星们，也都带头用了起来。<br />\r\n<br />\r\n国民妹妹关晓彤就曾经晒出过她用洁面仪洗脸的照片。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2_10.png"
+        },
+        {
+          "type": "text",
+          "content": "关晓彤推荐的这款洁面仪是FOREO LUNA洁面仪。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/3_8.png"
+        },
+        {
+          "type": "text",
+          "content": "FOREO 是来自瑞典的一家美容仪器设计公司，得到过很多国际美容设计奖项，可以说是鼎鼎有名哦~<br />\r\n<br />\r\n FOREO LUNA 刷头采用医用硅胶，柔软细腻，温和抗敏，对应敏感、中性、混合、油性肤质有不同刷头，还有专门针对男性皮肤的黑色款哦。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/4_13.png"
+        },
+        {
+          "type": "text",
+          "content": "洁面仪造型小巧，只有半个手掌大。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/5_13.jpg"
+        },
+        {
+          "type": "text",
+          "content": "这个版本有三个机型，区别在于刷头。"
+        },
+        {
+          "type": "text",
+          "content": "它家卖得最火的一款是针对敏感肌/中性肌肤的粉色款。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/6_4.png"
+        },
+        {
+          "type": "text",
+          "content": "这款是适用人群最广的，如果你想不好选哪一种，买粉色最不容易出错。粉色的刷头分两部分，上半部触点较粗，力度比较大，适合用来按摩鼻翼，下巴这些易出油部位。下半部的触点较细，可以用来按摩脸颊。<br />\r\n<br />\r\n因为FOREO本身是硅胶质地，所以不用担心粉色款会太刺激 。"
+        },
+        {
+          "type": "text",
+          "content": "洁面仪那么多，那FOREO LUNA为什么能长时间占据消费者心中的C位呢？<br />\r\n<br />\r\n首先是使用起来方面，FOREO LUNA 具有密封的充电插口，完全防水，可以在澡盆泡澡或淋浴时放心使用。内置电池充满一次电可使用450次，方便旅行携带。<br />\r\n<br />\r\n其次就是品牌的独家专有黑科技。FOREO LUNA 采用专有 T-Sonic 技术，在清洁模式下每分钟最多可产生8000次声波震动，疏通毛孔，有效去除杂质及死皮，令肌肤更清爽光滑，让剃须更顺滑舒适。<br />\r\n<br />\r\n还有，就是产品的亲肤性。因为FOREO LUNA 是硅胶材质，就算触点做的再粗，清洁力也有限，也许有人会更喜欢Clarisonic那种爽快的摩擦感。对于普通皮来说可能刷头的区别不是很大，但是对于敏感皮肤来讲，FOREO真的温和很多很多。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/8_10.jpg"
+        },
+        {
+          "type": "text",
+          "content": "1. 挤出适量洗面奶在洗脸仪上，开启开关，轻轻在脸上打圈按摩。<br />\r\n2. 用起泡网把洗面奶打出丰富泡沫，把泡沫涂满脸部之后用洗脸仪打圈按摩。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/9_0.png"
+        },
+        {
+          "type": "text",
+          "content": "总而言之，用了洁面仪，皮肤会明显变得嫩滑白皙。你还会产生，以前的脸白洗了的奇妙体验！"
+        },
+        {
+          "type": "text",
+          "content": "- 进店福利 -<br />\r\n <br />\r\n介绍完了好物，现在是福利时间！我们的粉丝在Le drugstore Parisien指定门店购买任意产品（同样包括了FOREO洁面仪哦~），在结账时出示下方优惠码，即可享受85折优惠。如果消费满25欧，还可再获赠店家提供的托特包和试用装小样。<br />\r\n<br />\r\n以上福利不可与其他福利叠加使用，一切解释权归品牌所有。<br />\r\n<br />\r\n打折优惠加好礼相赠，是不是很划算！"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E4%BC%98%E6%83%A0%E7%A0%81.png"
+        },
+        {
+          "type": "text",
+          "content": "- 店铺地址 -<br />\r\n<br />\r\nLe drugstore Parisien<br />\r\n66 Rue de la Chaussée d'Antin, 75009 Paris<br />\r\n电话：+33 1 42 40 21 50<br />\r\n<br />\r\nLe drugstore Parisien<br />\r\n122 Rue du Bac, 75007 Paris<br />\r\n电话：+33 1 43 21 18 93"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/55_2.png",
+      "weight": 0,
+      "type": "good_deals"
+    },
+    "6574": {
+      "id": 6574,
+      "name": "Le drugstore parisien 全场85折加满即赠",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/888_0.png",
+      "website": null,
+      "validity": "即日起至2019年09月14日",
+      "description": null,
+      "brands": [
+        6549
+      ],
+      "shops": [
+        6550,
+        6551
+      ],
+      "productType": [
+        12,
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nLe drugstore Parisien是由化妆品巨头欧莱雅（L'Oreal）和法国著名超市连锁品牌（Casino）联合推出的生活概念店。概念店销售一系列法国本地或者外国的化妆品，家居用品，以及生活好物。品牌旨在引领一种高质量的，艺术化的愉悦生活。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在Le drugstore Parisien指定门店购买任意产品(除了Nab cosmetics化妆品之外)，结账时出示下方优惠码，即可享受85折优惠。如果消费满25欧，还可再获赠店家提供的托特包和试用装小样。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping巴黎用户在Le drugstore Parisien指定门店购买任意产品(除了Nab cosmetics化妆品之外)，结账时出示下方优惠码，即可享受85折优惠。如果消费满25欧，还可再获赠店家提供的托特包和试用装小样。本福利可与其他优惠叠加使用。最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E4%BC%98%E6%83%A0%E7%A0%81_1.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nLe drugstore Parisien 巴黎门店<br />\r\n地址：122 Rue du Bac, 75007 Paris<br />\r\n地铁：10号线、12号线Sevres - Babylone<br />\r\n           4号线 Saint-Placide<br />\r\n营业时间：周一至周六10：00-21：00<br />\r\n                  周日12：00-20：00"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%BA%97%E9%9D%A2Bac.jpg"
+        },
+        {
+          "type": "text",
+          "content": "Le drugstore Parisien 巴黎门店<br />\r\n地址：66 Rue de la Chaussée d'Antin, 75009 Paris<br />\r\n地铁：9号线 Chaussée d'Antin La Fayette<br />\r\n          14号线 Saint Lazare Train Station<br />\r\n           RER A 线 Auber<br />\r\n营业时间：周一至周五08：30-21：00<br />\r\n                  周六10：00-21：00<br />\r\n                  周日12：00-20：00"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%BA%97%E9%9D%A2%E4%BD%9B%E7%88%B7.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 -<br />\r\n◆ -15% sur le panier en caisse + tote bag et échantillons offert à partir de 25€ d’achat."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/888_0.png",
+      "weight": 2,
+      "type": "good_deals"
+    },
+    "6593": {
+      "id": 6593,
+      "name": "Estée Lauder 高能小棕瓶买即赠",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/88_5.png",
+      "website": null,
+      "validity": "2019年7月1日起至2019年8月15日",
+      "description": null,
+      "brands": [
+        6591
+      ],
+      "shops": [
+        6592
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\n雅诗兰黛（Estée Lauder）创立于1946年，旨在“为每个女性带来美丽”。产品涵盖化妆品、香水、护肤品，历经半个多世纪，它以领先科技和卓越功效使其护肤品在全球赢得广泛美誉，尤其是Advanced Night Repair修护系列的明星产品小棕瓶精华最受欢迎，主打抗衰老，保湿维稳。2019全新推出的小棕瓶急救修复精华，以独家专利科技有效修复因熬夜、污染、紫外线等受损的肌肤。使用1小时后，可有效缓解肌肤敏感问题，舒缓镇定，并且能做到24小时长效补水保湿, 全欧洲仅在巴黎老佛爷奥斯曼旗舰店有售。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在老佛爷奥斯曼旗舰店的的雅诗兰黛专柜购买新品高能小棕瓶一件，结账时出示下方优惠码，即可获赠星空眼罩一副。购买两件及以上雅诗兰黛护肤产品，其中一件必须为小棕瓶特润修护精华50ml。结账时出示下方二维码，即可获赠雅诗兰黛大礼包(抗蓝光眼霜5ml➕肌底精华7ml➕洗面奶30ml➕倾慕口红#420玫瑰豆沙色)一个。此福利不可与其他叠加。最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9C%AA%E6%A0%87%E9%A2%98-1_6.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/333_0.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/88_4.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/876_1.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nGaleries Lafayette Paris（巴黎老佛爷奥斯曼旗舰店）<br />\r\n0层 雅诗兰黛专柜<br />\r\n40 Boulevard Haussmann, 75009 Paris<br />\r\n电话：+33 1 42 82 34 56"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E5%BA%97%E9%9D%A2.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 法语说明 - <br />\r\n◆Votre masque de nuit offert dès l’achat du Nouveau Advanced Night Repair concentré régénération intense. Votre trousse et ses 3 essentiels beauté offerts* dès l’achat de deux produits dans la gamme soin Estée Lauder dont un sérum 50ml."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/88_5.png",
+      "weight": 3,
+      "type": "good_deals"
+    },
+    "6596": {
+      "id": 6596,
+      "name": "每周好物 | Estée Lauder新品高能小棕瓶",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/67.png",
+      "website": null,
+      "validity": "2019年7月1日起至2019年7月31日",
+      "description": null,
+      "brands": [
+        6591
+      ],
+      "shops": [
+        6592
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "本周我们要推荐给大家的是雅诗兰黛（Estée Lauder ）最新升级的小棕瓶急救修复精华。雅诗兰黛的护肤品系列一直以来都以强大的抗老、修复、舒缓能力著称。它家的小棕瓶修复系列近年来一直都是口碑极好的护肤单品。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_9.png"
+        },
+        {
+          "type": "text",
+          "content": "产品的理念依旧注重皮肤在夜间的自身修护。睡觉的6到8个小时里，皮肤是不受到刺激物污染，或是蓝光、紫外线伤害的，这个时间段正是不断吸收营养，修护白天造成皮肤损伤的最好时机。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2_11.png"
+        },
+        {
+          "type": "text",
+          "content": "最新一代的精华，因为采用了全新ChronoluxSOS技术，可以在涂抹1个小时内，减少皮肤刺激，达到舒缓镇定的效果。这是一种超级柔和舒缓的抗刺激剂，可以速效促进皮肤自然恢复反应。<br />\r\n<br />\r\n就算当天晚上有熬夜，早上起来也皮肤也会显得精神有光泽。<br />\r\n<br />\r\n经过一夜的修护保养，皮肤的显著改善是可以持续24小时的。相当于使用后的24小时，皮肤每时每刻都在补水，整一天皮肤透亮弹润。另外，配方里蕴含的凝胶乳液，可以提升皮肤的透明度和光滑度。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/4_14.png"
+        },
+        {
+          "type": "text",
+          "content": "精华液除了强效舒缓效果，夜间修复肌肤，一夜回春外，还具有抗老效果。<br />\r\n<br />\r\n众所周知，皮肤老化的过程，就是持续氧化的过程。产品中含有的抗污染抗氧化剂，可以帮助对抗可刺激皮肤的环境伤害。减缓氧化速度，可以使皮肤呈现滑嫩的少女感。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/5_8.png"
+        },
+        {
+          "type": "text",
+          "content": "讲完了产品的突出优点，下面再来讲讲这款精华液的使用方法。"
+        },
+        {
+          "type": "text",
+          "content": "这款产品的质地是淡黄色液体，涂抹后很好吸收不油腻。我会推荐你在晚上洁面、爽肤水后使用。取少量精华在脸颊、额头、下巴停留3秒，再用指腹从面部中心向外轻柔推开加以按摩。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/6_6.png"
+        },
+        {
+          "type": "text",
+          "content": "使用频率上，不需要刻意控制。只要感觉皮肤状况不好，需要保养，一个月一次，一周一次，还是一天一次，都能即刻产生明显的改善效果。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/3_9.jpg"
+        },
+        {
+          "type": "text",
+          "content": "- 进店福利 -<br />\r\n <br />\r\n介绍完了好物，现在是福利时间！我们的粉丝在老佛爷奥斯曼旗舰店购买新品小棕瓶急救修复精华一件，结账时出示下方优惠码，即可获赠星空眼罩一副。<br />\r\n<br />\r\n购买两件及以上雅诗兰黛护肤Advanced Night Repair修护系列产品，其中一件必须为小棕瓶特润修护精华50ml。结账时出示下方二维码，即可获赠雅诗兰黛大礼包(抗蓝光眼霜5ml➕肌底精华7ml➕倾慕口红#420玫瑰豆沙色)一个。<br />\r\n<br />\r\n此福利不可与其他叠加。最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E6%9C%AA%E6%A0%87%E9%A2%98-1_5.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/%E8%B5%A0%E5%93%81%E5%9B%BE_0.png"
+        },
+        {
+          "type": "text",
+          "content": "- 店铺地址 -<br />\r\n<br />\r\nGaleries Lafayette Paris（巴黎老佛爷百货）<br />\r\n0层雅诗兰黛专柜<br />\r\n40 Boulevard Haussmann, 75009 Paris<br />\r\n电话：+33 1 42 82 34 56"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/67.png",
+      "weight": 2025,
+      "type": "good_deals"
+    },
+    "6618": {
+      "id": 6618,
+      "name": "巴黎万娜打折村折上9折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/77.png",
+      "website": "https://shuttle.onenation.fr/en/produits?field_categorieproduit_tid=45",
+      "validity": "即日起至2020年06月14日",
+      "description": null,
+      "brands": [
+        6616
+      ],
+      "shops": [
+        6617
+      ],
+      "productType": [
+        26,
+        13,
+        16,
+        15,
+        10,
+        6,
+        7,
+        11,
+        8
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nOne Nation Paris巴黎万娜打折村距离巴黎市中心仅30分钟车程，距离凡尔赛宫仅10分钟车程，是巴黎地区最大的购物中心。精选法国设计师品牌和国际知名品牌，全年折扣最低3折起，让你尽情享受一站式完美购物体验。<br />\r\n<br />\r\n-优惠内容-<br />\r\n1 活动期间，爱Shopping巴黎用户持优惠码WB-0027，至万娜打折村欢迎中心，即可领取VIP贵宾卡，购物时可享受折上9折的优惠 (仅当日有效)；<br />\r\n<br />\r\n2 使用银行卡支付的用户，可点击上方【去官网】进入官网, 输入优惠码WB-0027，则可免费线上预定万娜打折村-巴黎市区往返车票(不包含万娜打折村-凡尔赛宫-巴黎市区往返车票）"
+        },
+        {
+          "type": "text",
+          "content": "-法语说明-<br />\r\n<br />\r\n1 Obtenez une carte VIP de -10% en montrant le code  WB-0027 à l'accueil de One Nation** Valable une journée dans les boutiques participantes, hors offres en cours et soldes.<br />\r\n<br />\r\n2 Obtenez gratuitement votre billet de navette  A/R Paris >One Nation**  en cliquant sur le bouton ci-dessous et en utilisant le code WB-0027."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/77.png",
+      "weight": 10,
+      "type": "good_deals"
+    },
+    "6626": {
+      "id": 6626,
+      "name": "Beaugrenelle巴黎宝格格大牌优惠券",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/878.png",
+      "website": null,
+      "validity": "即日起至2019年12月31日",
+      "description": null,
+      "brands": [
+        4119
+      ],
+      "shops": [
+        4120
+      ],
+      "productType": [
+        29,
+        14,
+        28,
+        26,
+        13,
+        16,
+        12,
+        15,
+        10,
+        6,
+        7,
+        11,
+        5,
+        9
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nBeaugrenelle巴黎宝格格购物中心是巴黎新崛起的时尚地标，位于巴黎市中心的15区，塞纳河边，距埃菲尔铁塔仅20分钟的步行路程，风光独美。商场一周七天营业无休，不仅满足了游客的观光和购物需求，也方便了本地人的生活，是一座拥有五层楼高，现代风格，集美食，购物，娱乐和观光一体的大型艺术购物中心。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户可免费领取神秘礼品，和各大品牌最低5折起的独家优惠券。<br />\r\n<br />\r\n- 使用细则 - <br />\r\n爱Shopping用户前往至Beaugrenelle巴黎宝格格购物中心的接待处，出示本福利页面即可免费领取神秘礼品，和各大品牌最低5折起的独家优惠券。本福利不可与其他优惠叠加使用。最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/00.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nBeaugrenelle 巴黎宝格格购物中心<br />\r\n地址：12 Rue Linois, 75015 Paris<br />\r\n地铁：10号线 Charles Michels站 1号口<br />\r\n           RER C线 Javel站<br />\r\n营业时间：周一至周六 10：00 - 20: 30<br />\r\n                  周日 11: 00 - 19: 00<br />\r\n<br />\r\n- 法语说明 -<br />\r\noffre exclusive jusqu'au 31/12/19 :  un cadeau + chéquier d’offres spéciales à récupérer à l’accueil du centre "
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/878.png",
+      "weight": 1,
+      "type": "good_deals"
+    },
+    "6681": {
+      "id": 6681,
+      "name": "Algologie全场85折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/algologie%20cover.png",
+      "website": null,
+      "validity": "即日起至2019年8月31日",
+      "description": null,
+      "brands": [
+        2127
+      ],
+      "shops": [
+        3866,
+        3927,
+        5111
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nAlgologie是来自法国布列塔尼海岛上的实验室品牌，纯净的海水以及超过800种的珍稀优质海藻，使得Algologie能够充分提取高纯度的海洋精华，满足肌肤深层补水需求，焕活幼嫩肌肤。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在指定蒙日药妆店消费Algologie旗下任意产品可享受85折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping巴黎用户在指定蒙日药妆店消费Algologie旗下任意产品，付款时出示下方二维码，即可享受85折优惠。此福利不可与其他福利叠加使用，最终解释权由品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/algologie.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n蒙日药妆铁塔新店<br />\r\n地址：15 Rue du Commerce，75015 Paris<br />\r\n地铁：6.8.10号线 La Motte Piquet Grenelle<br />\r\n营业时间：周一至周六08：00-21：00<br />\r\n周日09 :00-20 :00<br />\r\n<br />\r\n蒙日药妆圣母院店 <br />\r\n地址：78 Rue Monge，75005 Paris<br />\r\n地铁：7号线Place Monge<br />\r\n营业时间：周一至周五08：00-23：00，<br />\r\n周六08：30-23：00，周日8：30-20：00<br />\r\n<br />\r\n蒙日药妆圣心堂新店<br />\r\n地址：68 Boulevard de Rochechouart, 75018 Paris<br />\r\n地铁：2号线 Anvers<br />\r\n营业时间：周一至周日 10:00-21:00<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Pour l’achat du produit d'Algologie, vous pouvez profiter d'une remise de 15%."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/algologie%20cover.png",
+      "weight": 7,
+      "type": "good_deals"
+    },
+    "6761": {
+      "id": 6761,
+      "name": "Pronuptia法式婚纱晚宴裙 低至6折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/99_10.png",
+      "website": null,
+      "validity": "即日起至2019年08月06日",
+      "description": null,
+      "brands": [
+        4681
+      ],
+      "shops": [
+        4682,
+        4683
+      ],
+      "productType": [
+        6
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍-<br />\r\n1958年成立的法国婚纱礼服品牌Pronuptia以优雅简洁著称。几十年来，它一直致力于在设计中注入复古和浪漫元素，点亮每个选择Pronuptia的女孩儿时的梦。不止于婚纱，它家的晚宴礼服，无论是从设计，还是做工，都可以称得上是法式精致的代表。该品牌每年都会为法国小姐提供礼服，是不折不扣的国宝级品牌。<br />\r\n<br />\r\n- 优惠内容-<br />\r\n爱Shopping巴黎用户，在Pronuptia门店购买婚纱礼服，可享受夏季限时折扣，低至6折。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n在巴黎Pronuptia门店购买婚纱礼服，结账时出示本福利页面，即可享受低至6折的优惠 ( 2020新款系列除外 )，不可与其他优惠叠加。最终解释权归品牌所有。<br />\r\n<br />\r\n- 商户地址-<br />\r\n59 Rue De Châteaudun, 75009 Paris<br />\r\n电话：+33 1 53 20 90 90<br />\r\n<br />\r\n87 Rue De Rivoli, 75001 Paris<br />\r\n电话：+33 1 42 60 16 92<br />\r\n<br />\r\n- 法语说明 -<br />\r\nRendez-vous vite en boutique pour profiter des Soldes Pronuptia. Tous nos produits à partir de -40%. *Hors collection 2020. Offre non-cumulable avec d'autres offres en cours."
+        }
+      ],
+      "favorite": 1,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/99_10.png",
+      "weight": 15,
+      "type": "good_deals"
+    },
+    "6821": {
+      "id": 6821,
+      "name": "每周好物 | Roger & Gallet红姜香水",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/88_3.png",
+      "website": null,
+      "validity": null,
+      "description": null,
+      "brands": [
+        2446
+      ],
+      "shops": [
+        2447
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "本周想要推荐的是法国贵族百年传承的香氛世家Roger & Gallet 香邂格蕾的红姜香水。<br />\r\n<br />\r\n1862年Armand Roger和Charles Gallet用世界第一瓶古龙香水的配方创立了Roger & Gallet 香邂格蕾。<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_11.png"
+        },
+        {
+          "type": "text",
+          "content": "坐落在Saint Honoré大街19号，装修高雅而又不失自然"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2_12.png"
+        },
+        {
+          "type": "text",
+          "content": "Roger&Gallet香邂格蕾凭借出众的品质和绝佳的口碑，曾赢得巴黎世界博览会最高荣誉——评委会金奖，被欧洲王室贵族争相追捧，维多利亚女王，拿破仑都是香邂格蕾的忠实粉丝。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/3_13.png"
+        },
+        {
+          "type": "text",
+          "content": "香邂格蕾推出暖红姜女香，以生姜为基调，前调生姜混合清香的橘子和石榴，中调是生姜混合荔枝和橙花的甜美，后调则混合了雪松和麝香的醇厚，由清爽到甜美再到暖阳入心般的温暖大气。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/4_16.png"
+        },
+        {
+          "type": "text",
+          "content": "来自“太阳国度”坦桑尼亚的异域香调，姜的温暖与橙花的清新，交织着勾人欲望的石榴，荔枝的甜蜜果香，热情而又性感，感觉每个毛孔都浸在热吻中。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/6_9.png"
+        },
+        {
+          "type": "text",
+          "content": "这周末爱Shopping时尚漫步“那些年王室都来买买买的老店”将带你参观这个欧洲王室钟情的香水老店，以及其他Saint Honore大街上充满历史的御用品牌店铺，不仅体验欧洲奢侈品文化，还能收获精美礼品，有兴趣的小伙伴们，微信识别下图二维码，添加客服，咨询报名！"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/11_6.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/Untitled-2_0.png"
+        },
+        {
+          "type": "text",
+          "content": "想要报名的小伙伴们，可以手机截屏下方二维码, 发送至微信，在微信上长按识别二维码，加客服报名参加；或者直接搜索微信号：aishoppingparis，加客服为好友报名参加。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/QR.png"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/88_3.png",
+      "weight": 2033,
+      "type": "good_deals"
+    },
+    "6845": {
+      "id": 6845,
+      "name": "每周好物 | iBride餐具",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/888_4.png",
+      "website": null,
+      "validity": null,
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        15
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "本周想要推荐的是法国网红家居设计师品牌iBride。<br />\r\n<br />\r\n1996年成立，以动物为设计灵感，主打小众ins风。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_12.png"
+        },
+        {
+          "type": "text",
+          "content": "iBride家具以天马行空的动物设计为主，鸟状的台灯，牛型的桌柜，北极熊状的书架，为室内设计带来了无穷趣味。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/Untitled-1_0.png"
+        },
+        {
+          "type": "text",
+          "content": "如果说每一件家具都是一个故事，那么iBride家具已经开始讲述自己的童话故事了，这些产品让人们看到了一幅充满熟悉的视觉形象的亦真亦幻的画面，IBRIDE家具用一条无形的线索将我们从它的产品里，带入到它的童话世界里。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/A_0.png"
+        },
+        {
+          "type": "text",
+          "content": "除了趣味十足的家具，iBride的餐具也别出心裁，大胆地将动物画像和人物肖像印在餐盘上，把实用性和观赏性的界限模糊，让人们在惊艳的瞬间爱上这些充满温度、似乎有生命的器具。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/4_17.png"
+        },
+        {
+          "type": "text",
+          "content": "更让人惊喜的是，他家每个系列的菜碟，碗，盆都是可以合在一起的"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/5_10.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/6_10.png"
+        },
+        {
+          "type": "text",
+          "content": "有的像便当盒，有的像花瓶，充满设计又节省了空间，尽显对生活的热爱与追求。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/8_2.png"
+        },
+        {
+          "type": "text",
+          "content": "-进店福利-<br />\r\n这样堪比艺术品的高颜值餐具，爱Shopping巴黎当然要给你送福利！巴黎人最爱的巴诗威百货公司里，就有iBride的专柜，现值打折季期间，低至6折，凭借以下条形码，还可折上85折，游客还能退税！！！就趁78月了，再迟就没有这么好的优惠啦！<br />\r\n<br />\r\n此外，至BHV 0层的退税柜台，同时出示下方礼品券和你的购物小票，还可免费领取精美礼品托特包一个。<br />\r\n"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/Untitled-1_1.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_13.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable avec les autres promotions en cours. Montrez votre ticket de caisse ainsi que le coupon à la détaxe pour obtenir un cadeau"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/888_4.png",
+      "weight": 2035,
+      "type": "good_deals"
+    },
+    "6863": {
+      "id": 6863,
+      "name": "Diptyque 买即赠",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/88_7.png",
+      "website": null,
+      "validity": "2019年8月1日起至2020年1月31日",
+      "description": null,
+      "brands": [
+        806
+      ],
+      "shops": [
+        2667
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nDiptyque是源自法国的知名香氛品牌，创立于1961年，三位创始人职业分别是室内设计师、画家及剧场布景设计师，所以品牌的香水充满浓郁的艺术气息。每瓶香水瓶上都有一幅黑白色插画，这也是diptyque的独特标志。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在Diptyque圣奥诺雷店任意消费，即可获赠精美礼品一份。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n活动期间，爱Shopping巴黎用户在Diptyque圣奥诺雷店任意消费，出示本福利页面及下方法语说明，即可获赠精美礼品一份。礼品有限，赠完为止。此福利不可与其他福利叠加使用，最终解释权由品牌所有。"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nDiptyque圣奥诺雷街店<br />\r\n地址：330-332, Rue Saint Honoré, 75001 Paris<br />\r\n电话：+33 (0)1 42 33 19 79<br />\r\n营业时间：周一至周六：10：30 - 19：30<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆Un cadeau vous sera offerte à la boutique Saint Honoré lors de votre achat, sur présentation de cette offre dans la limite des stocks disponibles du 01/08/19 au 31/01/20."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/88_7.png",
+      "weight": 9,
+      "type": "good_deals"
+    },
+    "6885": {
+      "id": 6885,
+      "name": "NUXE玫瑰洁面卸妆两件八折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/nuxe%20cover.png",
+      "website": null,
+      "validity": "即日起至2019年8月31日",
+      "description": null,
+      "brands": [
+        2127
+      ],
+      "shops": [
+        3866,
+        3927,
+        5111
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nNUXE是有62年历史的法国纯植物美容品牌，巧妙结合现代科技和植物及芳香精油能量，创造出蕴含丰富天然活性成份的温和护肤产品。玫瑰洁面卸妆凝胶，深度清洁，去角质黑头，细腻舒缓清洁肌肤。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在指定蒙日药妆店购买NUXE玫瑰花瓣系列洁面及卸妆产品可享受两件八折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping巴黎用户在指定蒙日药妆店购买NUXE玫瑰花瓣洁面及卸妆产品，付款时出示下方二维码，即可享受两件八折优惠。此福利不可与其他福利叠加使用，最终解释权由品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/NUXE.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n蒙日药妆铁塔新店<br />\r\n地址：15 Rue du Commerce，75015 Paris<br />\r\n地铁：6.8.10号线 La Motte Piquet Grenelle<br />\r\n营业时间：周一至周六08：00-21：00<br />\r\n周日09 :00-20 :00<br />\r\n<br />\r\n蒙日药妆圣母院店 <br />\r\n地址：78 Rue Monge，75005 Paris<br />\r\n地铁：7号线Place Monge<br />\r\n营业时间：周一至周五08：00-23：00，<br />\r\n周六08：30-23：00，周日8：30-20：00<br />\r\n<br />\r\n蒙日药妆圣心堂新店<br />\r\n地址：68 Boulevard de Rochechouart, 75018 Paris<br />\r\n地铁：2号线 Anvers<br />\r\n营业时间：周一至周日 10:00-21:00<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ -20% sur la gamme Démaquillante et Nettoyante aux Pétales de Rose Nuxe, dès 2 produits achetés."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/nuxe%20cover.png",
+      "weight": 6,
+      "type": "good_deals"
+    },
+    "6889": {
+      "id": 6889,
+      "name": "Darphin买即送",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/cover%20darphin.png",
+      "website": null,
+      "validity": "即日起至2019年8月31日",
+      "description": null,
+      "brands": [
+        2127
+      ],
+      "shops": [
+        3866,
+        3927,
+        5111
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "-商户介绍-<br />\r\nDarphin朵梵是来自巴黎的专业皮肤保养品牌，隶属雅诗兰黛集团，运用植物生物学、芳香疗法及植物疗法等推出“三层效肌肤保养”概念，专业呵护女性肌肤健康。<br />\r\nPrédermine鸢尾精粹系列为中端抗老系列，提亮肤色，密集抗皱，重返年轻。Stimulskin plus深海紧致赋活系列为高端抗老系列，全方位活化肌肤， 冻龄美肌，好莱坞明星推荐产品。<br />\r\n<br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在指定蒙日药妆店购买Prédermine鸢尾精粹系列或Stimulskin plus深海紧致赋活系列任意产品可获赠价值39欧元的明星卸妆膏一份。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping巴黎用户在指定蒙日药妆店购买Prédermine鸢尾精粹系列或Stimulskin plus深海紧致赋活系列任意产品，付款时出示下方二维码，即可获赠价值39欧元的明星卸妆膏一份。数量有限，赠完为止。此福利不可与其他福利叠加使用，最终解释权由品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/darphin.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n蒙日药妆铁塔新店<br />\r\n地址：15 Rue du Commerce，75015 Paris<br />\r\n地铁：6.8.10号线 La Motte Piquet Grenelle<br />\r\n营业时间：周一至周六08：00-21：00<br />\r\n周日09 :00-20 :00<br />\r\n<br />\r\n蒙日药妆圣母院店 <br />\r\n地址：78 Rue Monge，75005 Paris<br />\r\n地铁：7号线Place Monge<br />\r\n营业时间：周一至周五08：00-23：00，<br />\r\n周六08：30-23：00，周日8：30-20：00<br />\r\n<br />\r\n蒙日药妆圣心堂新店<br />\r\n地址：68 Boulevard de Rochechouart, 75018 Paris<br />\r\n地铁：2号线 Anvers<br />\r\n营业时间：周一至周日 10:00-21:00<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Pour l'achat d'un soin de la gamme Stimulskin Plus ou Prédermine, 1 baume aromatique à la rose offert d'une valeur de 39 euros."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/cover%20darphin.png",
+      "weight": 5,
+      "type": "good_deals"
+    },
+    "6898": {
+      "id": 6898,
+      "name": "Melvita全场9折",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/MELVITA.png",
+      "website": null,
+      "validity": "2019年8月5日至2020年2月4日",
+      "description": null,
+      "brands": [
+        533
+      ],
+      "shops": [
+        1073,
+        1752,
+        6891,
+        6892,
+        6893
+      ],
+      "productType": [
+        12
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "- 商户介绍 -<br />\r\nMelvita蜜葳特是于1983年创立的，主打蜂蜜美肤的法国有机保养品牌，隶属L’Occitane欧舒丹集团，崇尚环保,是法国首批ECOCERT及BIO认证的品牌，也是全球拥有最多有机认证产品的美容品牌。30年来，Melvita就像蜜蜂一样，只选取大自然中最纯净的元素，以蜂蜜，花粉及植物精油为主，给肌肤注入鲜活生命力。Melvita的明星产品有机花水，都是经过蒸馏花瓣提炼的，在保湿舒缓肌肤的同时，还可以提升肌肤免疫力。<br />\r\n <br />\r\n- 优惠内容 - <br />\r\n爱Shopping巴黎用户在Melvita巴黎门店购买任意产品 (套装除外) 可享受9折优惠。<br />\r\n<br />\r\n- 使用细则 -<br />\r\n爱Shopping巴黎用户在Melvita巴黎门店购买任意产品 (套装除外) ，结账时使用折扣码AISHOPPING10，即可享受9折优惠。本福利不可与其他优惠叠加使用，本福利不适用于礼品卡。最终解释权归品牌所有。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/melvita3.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\nMelvita Opéra店<br />\r\n地址：1 rue Auber, 75009 Paris <br />\r\n电话：+33 1 42 65 27 52<br />\r\n营业时间：周一至周六 11：00-20：00<br />\r\n                  周日：12：00-14：00，15：00-19：00<br />\r\n<br />\r\nMelvita Montparnasse店<br />\r\n地址：144 rue de Rennes , 75006 Paris <br />\r\n电话：+33 1 43 20 97 62<br />\r\n营业时间：周一: 11：00-14：00 ，15：00-19：30<br />\r\n                  周二: 10：30-14：00，15：00-19：30<br />\r\n                  周三至周六: 10：30-19：30<br />\r\n<br />\r\nMelvita Les Halles店<br />\r\n地址：Forum des Halles, Niveau -3, 101 Porte Berger, 75001 Paris <br />\r\n电话：+33 1 40 26 64 05<br />\r\n营业时间：周一至周六 : 10：00-20：30<br />\r\n                  周日 : 11：00-19：00<br />\r\n<br />\r\nMelvita Italie Deux店<br />\r\n地址：Centre commercial Italie Deux, 30 avenue d'Italie, 75013 Paris<br />\r\n电话：+33 1 42 28 93 22<br />\r\n营业时间：周一至周六 : 10：00-21：00<br />\r\n                  周日 : 11：00 -19：00<br />\r\n<br />\r\nMelvita Vélizy 2店<br />\r\n地址：Centre commercial Velizy 2, Niveau 2, 2 Avenue de l'Europe, 78140 Vélizy-Villacoublay <br />\r\n营业地址：周一至周六: 10：00-21：00<br />\r\n                  周日: 11：00 -19：00<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ -10% sur toute la boutique avec le code AISHOPPING10 (Offre non cumulable avec les autres offres en cours. Hors coffrets et cartes cadeaux)."
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/MELVITA.png",
+      "weight": 4,
+      "type": "good_deals"
+    },
+    "6965": {
+      "id": 6965,
+      "name": "每周好物 | Midori手帐",
+      "title": null,
+      "image": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/Midori%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90_0.png",
+      "website": null,
+      "validity": null,
+      "description": null,
+      "brands": [
+        306
+      ],
+      "shops": [
+        1441
+      ],
+      "productType": [
+        27
+      ],
+      "article": [
+        {
+          "type": "text",
+          "content": "本周想要推荐的是日本顶级生活文具品牌Midori的TN手帐本。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/1_15.png"
+        },
+        {
+          "type": "text",
+          "content": "牛皮质的外套，打开以后内芯可选条纹也可选全空白。因为没有订书，采用的是皮筋 活线设计，所以用完以后还可根据自己的需求自行添加内芯。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/2_13.png"
+        },
+        {
+          "type": "text",
+          "content": "比起其他花花绿绿可爱外表的手账本，Midori这样极度冷淡低调的，但却也能那么好看。更何况，牛皮芯越旧越有质感，这也是Midori能为我带来的“情怀作用”。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/3_15.png"
+        },
+        {
+          "type": "text",
+          "content": "而Midori手帐本的质量所带来的惊喜，可以说是秒杀了其他品牌。喜欢用钢笔写字或者用水彩作画的小伙伴估计多多少少都会遇到过洇墨的苦恼吧，像我之前用Moleskin的本子就有这样的问题。Midori的纸质单拉出来讲的话，就是厚实，顺滑，写起来一气呵成"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/5_12.png"
+        },
+        {
+          "type": "text",
+          "content": "如果你有喜欢收藏各种票的习惯的话，你还可以给本子加各种内夹："
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/4_19.png"
+        },
+        {
+          "type": "text",
+          "content": "而内芯啊，胶带这一类的文具很多时候都是在BHV的生活馆里购入，选择确实很多，当然Midori的很多其他小物也这可以在BHV找到啦。<br />\r\n<br />\r\n最后送上Midori品牌的slogan给你们：<br />\r\n<br />\r\nFor all the traveler's who have a free spirit<br />\r\n<br />\r\n给有着自由灵魂的你们，祝你们走在路上的同时，能一直有着高质量的陪伴。<br />\r\n<br />\r\n"
+        },
+        {
+          "type": "text",
+          "content": "-进店福利-<br />\r\n巴黎人最爱的BHV巴诗威百货公司里，去Midori的专柜，现值打折季期间，低至6折，凭借以下条形码，还可折上85折，游客还能退税！！！就趁78月了，再迟就没有这么好的优惠啦！<br />\r\n<br />\r\n此外，至BHV 0层的退税柜台，同时出示下方礼品券和你的购物小票，还可免费领取精美礼品托特包一个。"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/BHV%20bar%20code.png"
+        },
+        {
+          "type": "image",
+          "content": "https://aishoppingparis.com/backend/sites/default/files/application-data/images/BHV%20Coupons.png"
+        },
+        {
+          "type": "text",
+          "content": "- 商户地址 -<br />\r\n52 rue de Rivoli，75004，PARIS<br />\r\n地铁站：1/11号线 Hôtel de ville<br />\r\n<br />\r\n- 法语说明 -<br />\r\n◆ Bénéficiez de 15% de remise pour tout achat sauf points rouges. Offre cumulable avec les autres promotions en cours. Montrez votre ticket de caisse ainsi que le coupon à la détaxe pour obtenir un cadeau"
+        }
+      ],
+      "favorite": 0,
+      "shareImage": "https://aishoppingparis.com/backend/sites/default/files/styles/wechat_share/public/application-data/images/Midori%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90_0.png",
+      "weight": 2036,
+      "type": "good_deals"
+    }
+  }
+}

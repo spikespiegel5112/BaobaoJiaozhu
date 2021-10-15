@@ -1,0 +1,132 @@
+{
+  "tags": {
+    "5": {
+      "name": "皮具",
+      "type": "product"
+    },
+    "6": {
+      "name": "女装",
+      "type": "product"
+    },
+    "7": {
+      "name": "男装",
+      "type": "product"
+    },
+    "8": {
+      "name": "童装",
+      "type": "product"
+    },
+    "9": {
+      "name": "内衣/泳装",
+      "type": "product"
+    },
+    "10": {
+      "name": "女鞋",
+      "type": "product"
+    },
+    "11": {
+      "name": "男鞋",
+      "type": "product"
+    },
+    "12": {
+      "name": "美妆香水个护",
+      "type": "product"
+    },
+    "13": {
+      "name": "配饰",
+      "type": "product"
+    },
+    "14": {
+      "name": "珠宝首饰",
+      "type": "product"
+    },
+    "15": {
+      "name": "家居",
+      "type": "product"
+    },
+    "16": {
+      "name": "美食",
+      "type": "product"
+    },
+    "17": {
+      "name": "百年老店",
+      "type": "brand"
+    },
+    "18": {
+      "name": "设计师品牌",
+      "type": "brand"
+    },
+    "19": {
+      "name": "年轻潮牌",
+      "type": "brand"
+    },
+    "20": {
+      "name": "奢侈品牌",
+      "type": "brand"
+    },
+    "21": {
+      "name": "轻奢品牌",
+      "type": "brand"
+    },
+    "22": {
+      "name": "亲民品牌",
+      "type": "brand"
+    },
+    "23": {
+      "name": "买手店/概念店",
+      "type": "brand"
+    },
+    "24": {
+      "name": "快时尚",
+      "type": "brand"
+    },
+    "25": {
+      "name": "专业连锁店",
+      "type": "brand"
+    },
+    "26": {
+      "name": "运动休闲",
+      "type": "product"
+    },
+    "27": {
+      "name": "书店 ／ 文具店",
+      "type": "product"
+    },
+    "28": {
+      "name": "腕表",
+      "type": "product"
+    },
+    "29": {
+      "name": "旅行箱包",
+      "type": "product"
+    },
+    "30": {
+      "name": "百货公司",
+      "type": "brand"
+    },
+    "31": {
+      "name": "多品牌店",
+      "type": "brand"
+    },
+    "34": {
+      "name": "免税店",
+      "type": "brand"
+    },
+    "35": {
+      "name": "药妆店",
+      "type": "brand"
+    },
+    "36": {
+      "name": "眼镜店",
+      "type": "brand"
+    },
+    "37": {
+      "name": "巴黎",
+      "type": "region"
+    },
+    "38": {
+      "name": "波尔多",
+      "type": "region"
+    }
+  }
+}

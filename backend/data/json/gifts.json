@@ -1,0 +1,22 @@
+{
+  "gifts": {
+    "4673": {
+      "id": 4673,
+      "name": "Caroline Najman - 绿松石手环",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/caroline%20najman1.jpg",
+      "description": "精致镀金手环，搭配4mm和6mm绿松石各一颗，尽显异域风情。",
+      "points": 1300,
+      "weight": 1,
+      "type": "gifts"
+    },
+    "4674": {
+      "id": 4674,
+      "name": "Bangle Up - 珐琅细镯",
+      "image": "https://aishoppingparis.com/backend/sites/default/files/bangle%20up%20gift1.jpg",
+      "description": "极简风镀金珐琅细镯，法式小心机的代名词。",
+      "points": 1300,
+      "weight": 0,
+      "type": "gifts"
+    }
+  }
+}

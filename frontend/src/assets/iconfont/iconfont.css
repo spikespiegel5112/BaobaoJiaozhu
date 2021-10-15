@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 1550928 */
+  src: url('iconfont.woff2?t=1626242948356') format('woff2'),
+       url('iconfont.woff?t=1626242948356') format('woff'),
+       url('iconfont.ttf?t=1626242948356') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+  content: "\eab2";
+}
+
+.icon-location:before {
+  content: "\e60b";
+}
+
+.icon-phone:before {
+  content: "\e60c";
+}
+
+.icon-merchantmanagement:before {
+  content: "\e60a";
+}
+
+.icon-shanghu1:before {
+  content: "\e634";
+}
+
+.icon-dashboard:before {
+  content: "\e7c9";
+}
+
+.icon-yibiaopan1:before {
+  content: "\e711";
+}
+
+.icon-rolemanagement:before {
+  content: "\e609";
+}
+
+.icon-functionaility:before {
+  content: "\e84a";
+}
+
+.icon-createorder:before {
+  content: "\e62a";
+}
+
+.icon-product:before {
+  content: "\e601";
+}
+
+.icon-merchant:before {
+  content: "\e602";
+}
+
+.icon-user:before {
+  content: "\e603";
+}
+
+.icon-productmanagement:before {
+  content: "\e604";
+}
+
+.icon-distributedproduct:before {
+  content: "\e605";
+}
+
+.icon-ordermanagement:before {
+  content: "\e606";
+}
+
+.icon-authoritysettings:before {
+  content: "\e607";
+}
+
+.icon-order:before {
+  content: "\e608";
+}
+
+.icon-usermanagement:before {
+  content: "\e600";
+}
+
+.icon-qrcode:before {
+  content: "\e6a4";
+}
+
+.icon-hamburger:before {
+  content: "\e6a3";
+}
+

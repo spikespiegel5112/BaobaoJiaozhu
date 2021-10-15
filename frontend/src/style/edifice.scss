@@ -1,0 +1,170 @@
+.edifice_main_container {
+    .sortlist {
+        overflow: auto;
+        box-shadow: 0 0 15px inset #ccc;
+        > li {
+            margin: 20px auto;
+            width: 98%;
+            height: 230px;
+            .floornumber {
+                margin: 20px auto;
+                text-align: center;
+                //width: 100%;
+                //position: absolute;
+                //left: 0;
+                span {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    font-size: 25px;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    p {
+                        //display: inline-block;
+                        //vertical-align: bottom;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .minus {
+            display: block;
+            margin: 30px 0 0 0;
+        }
+    }
+    .buildingname {
+        margin: 10px 15px;
+        min-height: 50px;
+        font-size: 15px;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        label {
+            font-size: 15px;
+        }
+    }
+    .floordesc {
+        > li {
+            display: inline-block;
+        }
+        .brandmeta {
+            display: inline-block;
+            width: 240px;
+            height: 40px;
+            label {
+                //font-size: 16px;
+                display: inline-block;
+                width: 120px;
+                text-align: right;
+                vertical-align: middle;
+            }
+            span {
+                //display: inline-block;
+                //width: 200px;
+                //font-size: 16px;
+                //vertical-align: middle;
+            }
+        }
+    }
+    .advertisedesc {
+        display: block;
+        width: 100%;
+        .brandicon {
+            display: inline-block;
+            //flex:1;
+            //   width: 300px;
+            vertical-align: top;
+        }
+        .advertiselist {
+            display: inline-block;
+            width: 1150px;
+            //width: 600px;
+            vertical-align: top;
+            > label {
+                display: inline-block;
+                vertical-align: top;
+            }
+            .content {
+                display: inline-block;
+                vertical-align: top;
+
+                > ul {
+                    .brandmeta {
+                        display: inline-block;
+                        margin: 0 10px 0 0;
+                        width: 360px;
+                        img {
+                            display: inline-block;
+                            width: 120px;
+                        }
+                        .advertisemeta {
+                            display: inline-block;
+                            vertical-align: top;
+                            .location {
+                                width: 100px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .operation {
+        float: right;
+    }
+}
+
+.edifice_sortadvertise_wrapper {
+    li {
+        display: inline-block;
+        margin: 10px;
+        width: 135px;
+        height: 135px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        vertical-align: middle;
+        img {
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+        }
+        &:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &:hover {
+            cursor: move;
+        }
+    }
+}
+
+.edifice_addminusadvertise_wrapper {
+    margin: 10px 0;
+    position: relative;
+    text-align: right;
+    .minus {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        position: absolute;
+        right: -40px;
+        top: 0;
+        a {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            text-align: center;
+            color: orangered;
+            vertical-align: middle;
+        }
+    }
+}

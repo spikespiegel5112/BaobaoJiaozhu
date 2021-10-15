@@ -1,0 +1,702 @@
+[
+    {
+        "value": 0,
+        "name": "",
+        "points": []
+    },
+    {
+        "value": 0,
+        "name": "x",
+        "unicode": 120,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 20,
+                "y": 20
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 50,
+                "y": 20
+            },
+            {
+                "lastPointOfContour": true,
+                "onCurve": true,
+                "x": 50,
+                "y": -20
+            }
+        ]
+    },
+    {
+        "value": 6,
+        "name": "uniE5AD",
+        "unicode": 58797,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 420,
+                "y": 535
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 408,
+                "y": 574
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 386,
+                "y": 597
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 349,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 290,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 253,
+                "y": 635
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 220,
+                "y": 612
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 190,
+                "y": 580
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 154,
+                "y": 522
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 141,
+                "y": 492
+            }
+        ]
+    },
+    {
+        "value": 1,
+        "name": "uniF14E",
+        "unicode": 61774,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 329,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 334,
+                "y": 149
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": -2,
+                "y": 149
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 13,
+                "y": 232
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 334,
+                "y": 712
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 414,
+                "y": 720
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 421,
+                "y": 232
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 520,
+                "y": 243
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 515,
+                "y": 149
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 431,
+                "y": 149
+            }
+        ]
+    },
+    {
+        "value": 3,
+        "name": "uniEAF5",
+        "unicode": 60149,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 133,
+                "y": 180
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 148,
+                "y": 103
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 221,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 276,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 340,
+                "y": 45
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 384,
+                "y": 79
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 433,
+                "y": 123
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 427,
+                "y": 188
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 435,
+                "y": 250
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 387,
+                "y": 290
+            }
+        ]
+    },
+    {
+        "value": 1,
+        "name": "uniEF51",
+        "unicode": 61265,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 387,
+                "y": -31
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 292,
+                "y": -14
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 292,
+                "y": 547
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 246,
+                "y": 519
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 206,
+                "y": 486
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 153,
+                "y": 446
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 111,
+                "y": 442
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 122,
+                "y": 523
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 186,
+                "y": 559
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 249,
+                "y": 625
+            }
+        ]
+    },
+    {
+        "value": 0,
+        "name": "uniE77F",
+        "unicode": 59263,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 43,
+                "y": 331
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 43,
+                "y": 468
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 69,
+                "y": 544
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 95,
+                "y": 624
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 148,
+                "y": 665
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 202,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 273,
+                "y": 699
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 398,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 459,
+                "y": 617
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 499,
+                "y": 574
+            }
+        ]
+    },
+    {
+        "value": 2,
+        "name": "uniF5AD",
+        "unicode": 62893,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 515,
+                "y": 60
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 515,
+                "y": -26
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 31,
+                "y": -14
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 26,
+                "y": 6
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 42,
+                "y": 36
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 52,
+                "y": 73
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 66,
+                "y": 85
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 80,
+                "y": 110
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 100,
+                "y": 136
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 105,
+                "y": 158
+            }
+        ]
+    },
+    {
+        "value": 5,
+        "name": "uniE810",
+        "unicode": 59408,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 137,
+                "y": 173
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 147,
+                "y": 103
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 179,
+                "y": 69
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 222,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 291,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 343,
+                "y": 24
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 388,
+                "y": 84
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 433,
+                "y": 136
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 433,
+                "y": 208
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 436,
+                "y": 292
+            }
+        ]
+    },
+    {
+        "value": 8,
+        "name": "uniE7EB",
+        "unicode": 59371,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 168,
+                "y": 371
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 71,
+                "y": 412
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 71,
+                "y": 521
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 71,
+                "y": 603
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 128,
+                "y": 656
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 178,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 282,
+                "y": 721
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 376,
+                "y": 710
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 436,
+                "y": 654
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 495,
+                "y": 596
+            }
+        ]
+    },
+    {
+        "value": 8,
+        "name": "uniF551",
+        "unicode": 62801,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 48,
+                "y": 611
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 48,
+                "y": 698
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 523,
+                "y": 696
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 538,
+                "y": 627
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 487,
+                "y": 590
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 453,
+                "y": 536
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 419,
+                "y": 493
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 384,
+                "y": 429
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 364,
+                "y": 367
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 320,
+                "y": 304
+            }
+        ]
+    },
+    {
+        "value": 9,
+        "name": "uniF135",
+        "unicode": 61749,
+        "points": [
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 135,
+                "y": 151
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 154,
+                "y": 89
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 215,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 264,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 307,
+                "y": 35
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 331,
+                "y": 52
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 368,
+                "y": 73
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 388,
+                "y": 105
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": false,
+                "x": 408,
+                "y": 124
+            },
+            {
+                "lastPointOfContour": false,
+                "onCurve": true,
+                "x": 422,
+                "y": 191
+            }
+        ]
+    }
+]
