@@ -233,8 +233,8 @@ const login = (req, res, next) => {
       console.log('login+++++++', req);
       if (responsePassword === requestPassword) {
         req.session.loginName = req.body.loginName;
-        res.cookie('sessionId', req.session.id, { domain: req.headers.Referer, maxAge: 900000, httpOnly: true, signed: false });
-
+        const sessionId = req.session.id;
+        res.cookie('sessionId', sessionId, { domain: req.headers.Referer, maxAge: 900000, httpOnly: true, signed: false });
         res.status(200).json({
           data: req.body
         });
@@ -253,22 +253,11 @@ const login = (req, res, next) => {
 };
 
 const logout = (req, res, next) => {
-  UserModel.findOne({
-    where: {
-      loginName: req.body.loginName
-    }
-  })
-    .then((response) => {
-      res.status(200).json({
-        message: '注销成功',
-        data: response
-      });
-    })
-    .catch((error) => {
-      res.status(500).json({
-        error
-      });
-    });
+  res.clearCookie('loginName');
+  res.status(200).json({
+    message: '注销成功',
+    session: req.session
+  });
 };
 
 exports.createOrUpdate = createOrUpdate;

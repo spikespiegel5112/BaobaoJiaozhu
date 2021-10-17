@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 const csrf = require('csurf');
 const session = require('express-session');
+const cookieSession = require('cookie-session');
 // const observe = require('object.observe');
 const sequelize = require('./util/database');
 const cookieParser = require('cookie-parser');
@@ -41,15 +42,10 @@ app.use(
 app.use(cookieParser('123456'));
 
 app.use(
-  session({
-    secret: 'my secret',
-    resave: false,
-    saveUninitialized: false, // 是否保存未初始化的会话
-    cookie: {
-      secure: true,
-      rolling: true,
-      maxAge: 1000 * 60 * 3 // 设置 session 的有效时间，单位毫秒
-    }
+  cookieSession({
+    name: 'mycookie',
+    keys: ['aa', 'bb', 'cc'],
+    maxAge: 1000 * 50
   })
 );
 
@@ -72,11 +68,14 @@ app.all('/*', (req, res, next) => {
   req.headers.origin = req.headers.origin || req.headers.host;
   console.log('session++++++', req.session);
   console.log('cookies++++++', req.cookies);
+  console.log('req++++++', req);
+  console.log('res++++++', res);
 
   const sessionId = req.cookies.sessionId;
+  const loginName = req.cookies.loginName;
   const cookiesStr = req.headers.cookie;
   const cookieName = 'connect.sid';
-
+  //   debugger;
   if (req.path === '/user/login' || req.path === '/user/register') {
     next();
     return;

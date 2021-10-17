@@ -2,7 +2,11 @@
   <el-menu class="navbar" mode="horizontal">
     <el-row>
       <el-col :span="18">
-        <Hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="$store.state.app.sidebar.opened === 1" />
+        <Hamburger
+          class="hamburger-container"
+          :toggleClick="toggleSideBar"
+          :isActive="$store.state.app.sidebar.opened === 1"
+        />
         <Breadcrumb />
       </el-col>
       <el-col :span="6" class="alignright right-menu">
@@ -18,7 +22,7 @@
               <el-dropdown-item>Home</el-dropdown-item>
             </RouterLink>
             <el-dropdown-item divided>
-              <span @click="logout">Logout</span>
+              <span @click="handleLogout">Logout</span>
             </el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
@@ -41,7 +45,10 @@ export default {
   },
   data() {
     return {
-      avatarImage: !!this.$store.state.user.image ? this.$store.state.user.image + '-style_100x100' : require('@/assets/img/default/defaultavatar_60_60.png')
+      logoutRequest: 'user/logout',
+      avatarImage: !!this.$store.state.user.image
+        ? this.$store.state.user.image + '-style_100x100'
+        : require('@/assets/img/default/defaultavatar_60_60.png')
     };
   },
   computed: {
@@ -54,11 +61,19 @@ export default {
     toggleSideBar() {
       this.$store.dispatch('ToggleSideBar');
     },
-    logout() {
+    handleLogout() {
       // 为了重新实例化vue-router对象 避免bug
-      this.$router.push({
-        name: 'login'
-      });
+      this.$http
+        .post(this.logoutRequest)
+        .then(response => {
+          this.$message.success('注销成功');
+          //   this.$router.push({
+          //     name: 'Login'
+          //   });
+        })
+        .catch(error => {
+          console.log(error);
+        });
       //   this.$store.dispatch('Logout').then(() => {
       //     location.reload();
       //   });

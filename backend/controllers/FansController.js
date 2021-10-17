@@ -201,6 +201,7 @@ const addPeriod = (req, res, next) => {
 
 const getPeriodHistory = (req, res, next) => {
   FansPeriodHistoryModel.findAll({
+    order: [['expireDate', 'DESC']],
     where: {
       fanId: req.query.fanId
     }
