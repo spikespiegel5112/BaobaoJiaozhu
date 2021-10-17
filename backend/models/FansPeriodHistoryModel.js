@@ -2,8 +2,8 @@ const Sequelize = require('sequelize');
 
 const sequelize = require('../util/database');
 
-const Fans = sequelize.define(
-  'Fans',
+const FansPeriodHistory = sequelize.define(
+  'FansPeriodHistory',
   {
     id: {
       type: Sequelize.INTEGER,
@@ -11,28 +11,16 @@ const Fans = sequelize.define(
       allowNull: true,
       primaryKey: true
     },
-    nickName: {
+    fanId: {
       type: Sequelize.STRING,
       allowNull: true
     },
-    email: {
-      type: Sequelize.STRING,
-      allowNull: true
-    },
-    phone: {
-      type: Sequelize.STRING,
-      allowNull: true
-    },
-    isExpire: {
+    period: {
       type: Sequelize.STRING,
       allowNull: true
     },
     expireDate: {
       type: Sequelize.DATE,
-      allowNull: true
-    },
-    type: {
-      type: Sequelize.STRING,
       allowNull: true
     }
   },
@@ -41,4 +29,4 @@ const Fans = sequelize.define(
   }
 );
 
-module.exports = Fans;
+module.exports = FansPeriodHistory;

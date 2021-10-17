@@ -49,7 +49,7 @@
       :data="params"
       :disabled="disabled">
 
-      <el-button v-waves size="small" type="primary" :disabled="disabled">点击上传</el-button>
+      <el-button  size="small" type="primary" :disabled="disabled">点击上传</el-button>
       <div v-if="fileType!==''" slot="tip" class="el-upload__tip">
         只能上传{{fileTypeDictionary.filter(item => item.name === this.fileType)[0].suffixList.join('、')}}文件，且不超过10MB
       </div>

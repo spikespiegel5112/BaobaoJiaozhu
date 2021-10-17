@@ -7,7 +7,7 @@
           icon="el-icon-plus"
           size="mini"
           type="primary"
-          v-waves
+          
         >
           新建
         </el-button>
@@ -16,7 +16,7 @@
           icon="el-icon-delete"
           size="mini"
           type="danger"
-          v-waves
+          
         >
           批量删除
         </el-button>
@@ -146,7 +146,7 @@
         </el-col>
       </el-row>
       <div class="dialog-footer" slot="footer">
-        <el-button @click="dialogFormVisible = false" v-waves>{{
+        <el-button @click="dialogFormVisible = false" >{{
           $t('table.cancel')
         }}</el-button>
         <el-button
@@ -155,7 +155,7 @@
           v-if="dialogStatus === 'create'"
           >{{ $t('table.confirm') }}</el-button
         >
-        <el-button @click="updateData" type="primary" v-else v-waves>{{
+        <el-button @click="updateData" type="primary" v-else >{{
           $t('table.confirm')
         }}</el-button>
       </div>
@@ -187,10 +187,10 @@
         </el-col>
       </el-row>
       <div class="dialog-footer" slot="footer">
-        <el-button @click="valueViewerFlag = false" v-waves>{{
+        <el-button @click="valueViewerFlag = false" >{{
           $t('table.cancel')
         }}</el-button>
-        <el-button @click="updateValue" type="primary" v-waves>{{
+        <el-button @click="updateValue" type="primary" >{{
           $t('table.confirm')
         }}</el-button>
       </div>

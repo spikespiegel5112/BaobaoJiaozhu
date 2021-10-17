@@ -5,7 +5,7 @@
         <el-form class="basearea">
           <ul class="pull-left">
             <li>
-              <el-button size="mini" type="primary" icon="el-icon-plus" @click="handleCreate" v-waves>新增</el-button>
+              <el-button size="mini" type="primary" icon="el-icon-plus" @click="handleCreate" >新增</el-button>
             </li>
           </ul>
         </el-form>
@@ -51,9 +51,9 @@
           <el-row>
             <el-col :span="23" pull-right>
               <el-form-item class="pull-right">
-                <el-button type="primary" size="mini" icon="el-icon-search" @click="search" v-waves>搜索
+                <el-button type="primary" size="mini" icon="el-icon-search" @click="search" >搜索
                 </el-button>
-                <el-button type="primary" size="mini" icon="el-icon-refresh" @click="reset" v-waves>重置
+                <el-button type="primary" size="mini" icon="el-icon-refresh" @click="reset" >重置
                 </el-button>
               </el-form-item>
             </el-col>

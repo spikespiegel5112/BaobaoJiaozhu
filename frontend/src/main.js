@@ -9,20 +9,16 @@ import App from './App';
 import router from './router/router';
 
 import store from './store/store';
-import i18n from './lang'; // Internationalization
 import util from './utils/util';
 import '@/permission'; // permission control
-import waves from '@/directive/waves'; // 水波纹指令
 
 
 import '@/utils/globalComponents';
 
 // import locale from 'element-ui/lib/locale/lang/zh-CN' // lang i18n
-Vue.use(waves);
 
 Vue.use(ElementUI, {
   size: 'medium', // set element-ui default size
-  i18n: (key, value) => i18n.t(key, value)
 });
 // Vue.use(layout)
 // Vue.use(row)
@@ -49,7 +45,6 @@ const VueInstance = new Vue({
   el: '#app',
   router,
   store,
-  i18n,
   render: h => h(App)
 }).$mount('#app');
 

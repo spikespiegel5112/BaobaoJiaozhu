@@ -7,7 +7,7 @@
           icon="el-icon-plus"
           size="mini"
           type="primary"
-          v-waves
+          
         >
           添加角色
         </el-button>
@@ -16,7 +16,7 @@
           icon="el-icon-delete"
           size="mini"
           type="danger"
-          v-waves
+          
         >
           批量删除
         </el-button>

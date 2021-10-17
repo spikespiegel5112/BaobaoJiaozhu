@@ -1,4 +1,5 @@
 const FansModel = require('../models/FansModel');
+const FansPeriodHistoryModel = require('../models/FansPeriodHistoryModel');
 const uuidv1 = require('uuid/v1');
 const uuidv4 = require('uuid/v4');
 const uuidv5 = require('uuid/v5');
@@ -40,44 +41,54 @@ const getListByPagination = (req, res, next) => {
     });
 };
 
-const getVotingOptions = (req, res, next) => {
-  const votingId = req.query.votingId;
-  _getVotingOptionsPromise(votingId)
-    .then((result) => {
+const getFansInfo = (req, res, next) => {
+  FansModel.findOne({
+    where: {
+      id: req.query.id
+    }
+  })
+    .then(async (data) => {
+      console.log(data);
+
       res.status(200).json({
-        data: result
+        message: 'Updated successful',
+        result: {
+          nickName: data.nickName,
+          email: data.email,
+          phone: data.phone,
+          expireDate: data.expireDate,
+          period: data.period
+        }
       });
     })
     .catch((error) => {
+      console.log(error);
       res.status(500).json({
+        message: 'Failed',
+        req: req.body,
         error
       });
     });
 };
 
-
-
 const createOrUpdate = (req, res, next) => {
   const id = req.body.id;
-  console.log('settingId', req.body);
   if (!id || id === '') {
     FansModel.create({
       id: uuidv1(),
-      name: req.body.name,
-      title: req.body.title,
-      type: req.body.type,
-      isMultiple: req.body.isMultiple
+      nickName: req.body.nickName,
+      email: req.body.email,
+      phone: req.body.phone
     })
       .then(async (result) => {
         console.log('result+++++', result);
-        await _createOrUpdateOptionById(req);
-
         res.status(200).json({
           message: 'Created successful',
           result
         });
       })
       .catch((error) => {
+        console.log(error);
         res.status(500).json({
           message: 'Failed',
           error
@@ -85,6 +96,7 @@ const createOrUpdate = (req, res, next) => {
       });
   } else {
     console.log('id', id);
+    console.log('req.body', req.body);
 
     FansModel.findOne({
       where: {
@@ -93,12 +105,11 @@ const createOrUpdate = (req, res, next) => {
     })
       .then(async (data) => {
         console.log(data);
-        data.name = req.body.name;
-        data.title = req.body.title;
-        data.isMultiple = req.body.isMultiple;
-
+        data.nickName = req.body.nickName;
+        data.email = req.body.email;
+        data.phone = req.body.phone;
         await data.save();
-        await _createOrUpdateOptionById(req);
+
         res.status(200).json({
           message: 'Updated successful',
           result: data
@@ -115,22 +126,21 @@ const createOrUpdate = (req, res, next) => {
   }
 };
 
-
 const deleteItems = (req, res, next) => {
   console.log(req.body);
   console.log(req.params);
   const id = req.body.id;
-  console.log(id instanceof Array);
-  if (id instanceof Array) {
-    id.forEach((item, index) => {
-      FansModel.findAll({
+
+  if (req.body instanceof Array) {
+    req.body.forEach((item, index) => {
+      FansModel.findOne({
         where: {
-          id: item
+          id: item.id
         }
       })
         .then(async (response) => {
           const result = await response.destroy();
-          if (index + 1 === req.body.settingId.length) {
+          if (index + 1 === req.body.length) {
             res.status(200).json({
               message: 'Delete successful',
               body: result
@@ -167,7 +177,92 @@ const deleteItems = (req, res, next) => {
   }
 };
 
+const addPeriod = (req, res, next) => {
+  FansModel.findOne({
+    id: req.body.id
+  })
+    .then(async (data) => {
+      data.expireDate = req.body.expireDate;
+      await data.save();
+      await _addFanPeriodHistroyPromise(req);
+      res.status(200).json({
+        message: 'Created successful',
+        data
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(500).json({
+        message: 'Failed',
+        error
+      });
+    });
+};
+
+const getPeriodHistory = (req, res, next) => {
+  FansPeriodHistoryModel.findAll({
+    where: {
+      fanId: req.query.fanId
+    }
+  })
+    .then(async (data) => {
+      res.status(200).json({
+        message: 'Created successful',
+        data
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(500).json({
+        message: 'Failed',
+        error
+      });
+    });
+};
+
+const _addFanPeriodHistroyPromise = (req, res, next) => {
+  return new Promise((resolve, reject) => {
+    FansPeriodHistoryModel.create({
+      fanId: req.body.id,
+      period: req.body.period,
+      expireDate: req.body.expireDate
+    })
+      .then(async (data) => {
+        resolve();
+      })
+      .catch((error) => {
+        console.log(error);
+        reject();
+      });
+  });
+};
+
+const deletePeriod = (req, res, next) => {
+  const id = req.body.id;
+  FansPeriodHistoryModel.destroy({
+    where: {
+      id
+    }
+  })
+    .then((result) => {
+      console.log('result+++++', result);
+      res.status(200).json({
+        message: 'Delete successful',
+        id
+      });
+    })
+    .catch((error) => {
+      res.status(500).json({
+        message: 'Delete failed',
+        error
+      });
+    });
+};
+
+exports.getFansInfo = getFansInfo;
 exports.createOrUpdate = createOrUpdate;
+exports.addPeriod = addPeriod;
 exports.getListByPagination = getListByPagination;
 exports.deleteItems = deleteItems;
-exports.getVotingOptions = getVotingOptions;
+exports.getPeriodHistory = getPeriodHistory;
+exports.deletePeriod = deletePeriod;

@@ -2,10 +2,10 @@
   <el-row>
     <CommonQuery>
       <template slot="button1">
-        <el-button @click="handleCreate" icon="el-icon-plus" size="mini" type="primary" v-waves>
+        <el-button @click="handleCreate" icon="el-icon-plus" size="mini" type="primary" >
           添加用户
         </el-button>
-        <el-button @click="handleMultipleDelete" icon="el-icon-delete" size="mini" type="danger" v-waves>
+        <el-button @click="handleMultipleDelete" icon="el-icon-delete" size="mini" type="danger" >
           批量删除
         </el-button>
       </template>

@@ -59,7 +59,7 @@
       :headers="headers"
       :disabled="disabled"
     >
-      <el-button v-waves size="small" type="primary" :disabled="disabled"
+      <el-button  size="small" type="primary" :disabled="disabled"
         >点击上传</el-button
       >
       <div v-if="fileType !== ''" slot="tip" class="el-upload__tip">

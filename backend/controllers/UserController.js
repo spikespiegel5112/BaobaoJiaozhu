@@ -8,7 +8,6 @@ const getUserInfo = (req, res, next) => {
 
   //   const loginName = req.session.loginName;
   const loginName = res.cookie.name;
-    debugger
   UserModel.findOne({
     where: {
       loginName

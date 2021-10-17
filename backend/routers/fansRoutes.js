@@ -1,10 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
-const VotingController = require('../controllers/FansController');
+const FansController = require('../controllers/FansController');
 
-router.get('/getListByPagination', VotingController.getListByPagination);
-router.post('/createOrUpdate', VotingController.createOrUpdate);
-router.delete('/deleteItems', VotingController.deleteItems);
+router.get('/getListByPagination', FansController.getListByPagination);
+router.get('/getPeriodHistory', FansController.getPeriodHistory);
+router.post('/createOrUpdate', FansController.createOrUpdate);
+router.post('/addPeriod', FansController.addPeriod);
+router.get('/getFansInfo', FansController.getFansInfo);
+router.delete('/deleteItems', FansController.deleteItems);
+router.delete('/deletePeriod', FansController.deletePeriod);
 
 module.exports = router;
