@@ -200,15 +200,24 @@ const addPeriod = (req, res, next) => {
 };
 
 const getPeriodHistory = (req, res, next) => {
-  FansPeriodHistoryModel.findAll({
+  const pagination = {
+    limit: Number(req.query.limit),
+    page: Number(req.query.page),
+    offset: req.query.limit * (req.query.page - 1)
+  };
+  const query = {
     order: [['expireDate', 'DESC']],
     where: {
       fanId: req.query.fanId
     }
-  })
+  };
+  FansPeriodHistoryModel.findAll(Object.assign(query, pagination))
     .then(async (data) => {
       res.status(200).json({
         message: 'Created successful',
+        pagination: {
+          total: await FansPeriodHistoryModel.count()
+        },
         data
       });
     })

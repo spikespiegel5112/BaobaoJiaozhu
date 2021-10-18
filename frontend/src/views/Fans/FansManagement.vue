@@ -76,14 +76,20 @@
             @click="handleUpdateFanInfo(scope)"
             size="mini"
             type="primary"
+            icon="el-icon-edit-outline"
           >
             编辑基本信息
           </el-button>
-          <el-button @click="handleAddPeriod(scope)" size="mini" type="primary">
-            录入会费
+          <el-button
+            @click="handleAddPeriod(scope)"
+            size="mini"
+            type="primary"
+            icon="el-icon-edit"
+          >
+            录入时长
           </el-button>
           <el-button @click="handleDelete(scope)" size="mini" type="danger">
-            删除粉丝
+            删除
           </el-button>
         </template>
       </el-table-column>
@@ -153,6 +159,8 @@
       :visible.sync="dialogrRecordPaymentVisible"
       @close="handleCloseRecordPeriod"
       top="5vh"
+      width='1200px'
+      :close-on-click-modal="false"
     >
       <el-form
         ref="formData2"
@@ -197,6 +205,7 @@
             <el-row>
               <el-col :span="24">
                 <ul class="duration">
+                  <li>粉丝昵称：{{ formData.nickName }}</li>
                   <li>
                     是否到期:
                     <el-tag v-if="expireStatus === 'expired'" type="danger">
@@ -225,7 +234,7 @@
                     {{
                       $isNotEmpty(formData2.expireDate)
                         ? $moment(formData2.expireDate).format('YYYY-MM-DD')
-                        : ''
+                        : '-'
                     }}
                   </li>
                 </ul>
@@ -233,6 +242,13 @@
             </el-row>
           </el-col>
         </el-row>
+        <el-button
+          type="primary"
+          :disabled="submitingFlag"
+          @click="submitAddPeriod"
+        >
+          保存
+        </el-button>
         <whiteSpace size="xl" />
         <el-form-item label="权益记录">
           <el-table
@@ -260,33 +276,55 @@
             <el-table-column
               align="center"
               fixed
-              label="结束时间"
+              label="开始时间"
               prop="createdAt"
             >
               <template slot-scope="scope">
                 {{
-                  $moment(scope.row.expireDate).format('YYYY-MM-DD hh:mm:ss')
+                  $moment(
+                    getTheDayBeforeOffsetTimestamp({
+                      dateString: scope.row.expireDate,
+                      offsetDays: scope.row.period
+                    }) * 1000
+                  ).format('YYYY-MM-DD')
                 }}
               </template>
             </el-table-column>
             <el-table-column
               align="center"
               fixed
-              label="录入时间"
+              label="结束时间"
               prop="createdAt"
             >
               <template slot-scope="scope">
-                {{ $moment(scope.row.createdAt).format('YYYY-MM-DD hh:mm:ss') }}
+                {{ $moment(scope.row.expireDate).format('YYYY-MM-DD') }}
+              </template>
+            </el-table-column>
+            <el-table-column
+              align="center"
+              fixed
+              label="进行状态"
+              prop="createdAt"
+            >
+              <template slot-scope="scope">
+                {{ checkProgressStatus(scope) }}
               </template>
             </el-table-column>
             <el-table-column
               align="center"
               fixed
               label="录入时间"
+              width="200"
               prop="createdAt"
             >
               <template slot-scope="scope">
+                {{ $moment(scope.row.createdAt).format('YYYY-MM-DD hh:mm:ss') }}
+              </template>
+            </el-table-column>
+            <el-table-column align="center" fixed label="操作">
+              <template slot-scope="scope">
                 <el-button
+                  v-if="checkIsNotStartedRecord(scope)"
                   type="danger"
                   size="mini"
                   icon="el-icon-delete"
@@ -294,23 +332,33 @@
                 >
                   删除此权益
                 </el-button>
+                <el-button
+                  v-if="checkIsExpiredRecord(scope)"
+                  size="mini"
+                  icon="el-icon-delete"
+                  @click="handleDeletePeriod(scope)"
+                >
+                  删除此记录
+                </el-button>
               </template>
             </el-table-column>
           </el-table>
+          <whiteSpace size="xl" />
+          <el-pagination
+            :current-page.sync="pagination2.page"
+            :page-size="pagination2.limit"
+            :total="pagination2.total"
+            @current-change="handleCurrentChange2"
+            @size-change="handleSizeChange2"
+            background
+            layout="total, prev, pager, next, jumper"
+          >
+          </el-pagination>
         </el-form-item>
       </el-form>
 
-      <whiteSpace size="xl" />
-
       <div class="footer alignright">
-        <el-button
-          type="primary"
-          :disabled="submitingFlag"
-          @click="submitAddPeriod"
-        >
-          保存
-        </el-button>
-        <el-button @click="handleCloseRecordPeriod">取消</el-button>
+        <el-button @click="handleCloseRecordPeriod">关闭</el-button>
       </div>
     </el-dialog>
   </el-row>
@@ -398,6 +446,11 @@ export default {
         ],
         period: [{ required: true, message: '此项为必填项', trigger: 'change' }]
       },
+      pagination2: {
+        limit: 5,
+        page: 1,
+        total: 0
+      },
       periodHistoryData: [],
       currentPickerData: null,
       storedExpireDate: null,
@@ -422,9 +475,33 @@ export default {
       return this.formData2.startDate;
     },
     pickerOptions() {
+      const that = this;
       return {
+        shortcuts: [
+          {
+            text: '今天',
+            onClick(picker) {
+              picker.$emit('pick', new Date());
+            }
+          },
+          {
+            text: '到期日后一天',
+            onClick(picker) {
+              // 先从最近到期日转成秒级时间戳，然后加一天，然后转成毫秒级，然后用new Date()转换成时间对象
+              if (that.$isNotEmpty(that.lastExpireDateString)) {
+                const theDayAfterLastExpireDayTimestamp =
+                  that.$moment(that.lastExpireDateString).unix() + 24 * 3600;
+                picker.$emit(
+                  'pick',
+                  new Date(theDayAfterLastExpireDayTimestamp * 1000)
+                );
+              }
+            }
+          }
+        ],
         disabledDate: time => {
-          return this.$isNotEmpty(this.lastExpireDateString)
+          return this.$isNotEmpty(this.lastExpireDateString) &&
+            this.expireStatus === 'not_expired'
             ? time.getTime() < this.$moment(this.lastExpireDateString)
             : false;
         }
@@ -477,6 +554,14 @@ export default {
       this.pagination.page = val;
       this.getTableData();
     },
+    handleSizeChange2(val) {
+      this.pagination2.limit = val;
+      this.getPeriodHistory();
+    },
+    handleCurrentChange2(val) {
+      this.pagination2.page = val;
+      this.getPeriodHistory();
+    },
 
     createData() {
       this.formData.id = '';
@@ -525,23 +610,21 @@ export default {
     async handleAddPeriod(scope) {
       await this.$nextTick();
       this.dialogrRecordPaymentVisible = true;
-      //   this.formData2.expireDate = null;
       this.storedExpireDate = scope.row.expireDate;
+      this.formData.nickName = scope.row.nickName;
       this.formData2.id = scope.row.id;
 
-      await this.getPeriodHistory(scope.row.id);
+      await this.getPeriodHistory();
       this.defaultTime = this.getDefaultTime();
-      this.expireStatus = this.checkIsExpired();
     },
     submitAddPeriod() {
       this.$refs.formData2.validate().then(valid => {
         this.$http
           .post(this.addPeriodRequest, this.formData2)
-          .then(response => {
+          .then(async response => {
             console.log(response);
             this.$message.success('提交成功');
-            this.getTableData();
-            this.dialogrRecordPaymentVisible = false;
+            await this.getPeriodHistory();
           })
           .catch(error => {
             console.log(error);
@@ -567,20 +650,48 @@ export default {
           });
       });
     },
-    getPeriodHistory(fanId) {
+    getPeriodHistory() {
       return new Promise((resolve, reject) => {
         this.$http
           .get(this.getPeriodHistoryRequest, {
             params: {
-              fanId
+              limit: this.pagination2.limit,
+              page: this.pagination2.page,
+              fanId: this.formData2.id
             }
           })
           .then(response => {
-            this.periodHistoryData = response.data;
-            if (response.data.length > 0) {
-              this.lastExpireDateString = response.data[0].expireDate;
-            }
             console.log('getPeriodHistory++++', response);
+            this.periodHistoryData = response.data;
+            this.defaultTime = this.getDefaultTime();
+            this.pagination2.total = response.pagination.total;
+            this.getLastExpireDateString();
+            resolve();
+          })
+          .catch(error => {
+            console.log(error);
+            reject();
+          });
+      });
+    },
+    getLastExpireDateString() {
+      return new Promise((resolve, reject) => {
+        this.$http
+          .get(this.getPeriodHistoryRequest, {
+            params: {
+              limit: 9999999,
+              page: 1,
+              fanId: this.formData2.id
+            }
+          })
+          .then(response => {
+            this.lastExpireDateString = response.data[0]
+              ? response.data[0].expireDate
+              : '';
+            console.log('lastExpireDateString++++', this.lastExpireDateString);
+
+            this.expireStatus = this.checkIsExpired();
+
             resolve();
           })
           .catch(error => {
@@ -715,18 +826,26 @@ export default {
         .add(this.formData2.period, 'days')
         .format('YYYY-MM-DD');
     },
-
+    getTheDayAfterOffsetTimestamp(options) {
+      const offsetDaysTimestamp = options.offsetDays * 24 * 3600;
+      return this.$moment(options.dateString).unix() + offsetDaysTimestamp;
+    },
+    getTheDayBeforeOffsetTimestamp(options) {
+      const offsetDaysTimestamp = options.offsetDays * 24 * 3600;
+      return this.$moment(options.dateString).unix() - offsetDaysTimestamp;
+    },
     checkIsExpired() {
-      const expandDateTimeStamp = this.formData2.period * 24 * 3600;
-      const lastExpireDateTimeStamp =
-        this.$moment(this.lastExpireDateString).unix() + expandDateTimeStamp;
-      const currentDateTimeStamp = this.$moment().unix();
+      const lastExpireDateTimestamp = this.getTheDayAfterOffsetTimestamp({
+        dateString: this.lastExpireDateString,
+        offsetDays: this.formData2.period
+      });
+      const currentDateTimestamp = this.$moment().unix();
       let result;
-      if (this.$isEmpty(lastExpireDateTimeStamp)) {
+      if (this.$isEmpty(lastExpireDateTimestamp)) {
         result = 'new_fan';
-      } else if (lastExpireDateTimeStamp - currentDateTimeStamp < 0) {
+      } else if (lastExpireDateTimestamp - currentDateTimestamp < 0) {
         result = 'expired';
-      } else if (lastExpireDateTimeStamp - currentDateTimeStamp >= 0) {
+      } else if (lastExpireDateTimestamp - currentDateTimestamp >= 0) {
         result = 'not_expired';
       }
       return result;
@@ -741,6 +860,7 @@ export default {
       this.$refs.formData2.resetFields();
       this.formData2.expireDate = null;
       this.periodHistoryData = [];
+      this.pagination2.page = 1;
       this.dialogrRecordPaymentVisible = false;
     },
     async handleCloseFansInfoDialog() {
@@ -763,26 +883,47 @@ export default {
             id: scope.row.id
           }
         })
-        .then(response => {
+        .then(async response => {
           this.$message({
             type: 'success',
             message: '权益删除成功'
           });
-          this.getPeriodHistory(scope.row.fanId);
-          this.defaultTime = this.getDefaultTime();
+          await this.getPeriodHistory();
         })
         .catch(error => {
           console.log(error);
         });
+    },
+    checkIsNotStartedRecord(scope) {
+      const todayTimestamp = this.$moment().unix();
+      const theDayBeforeOffsetTimestamp = this.getTheDayBeforeOffsetTimestamp({
+        dateString: scope.row.expireDate,
+        offsetDays: scope.row.period
+      });
+      return theDayBeforeOffsetTimestamp >= todayTimestamp;
+    },
+
+    checkIsExpiredRecord(scope) {
+      const todayTimestamp = this.$moment().unix();
+      const theDayAfterOffsetTimestamp = this.getTheDayAfterOffsetTimestamp({
+        dateString: scope.row.expireDate,
+        offsetDays: scope.row.period
+      });
+      return theDayAfterOffsetTimestamp < todayTimestamp;
+    },
+    checkProgressStatus(scope) {
+      if (this.checkIsNotStartedRecord(scope)) {
+        return '未开始';
+      } else if (this.checkIsExpiredRecord(scope)) {
+        return '已结束';
+      } else {
+        return '进行中';
+      }
     }
   }
 };
 </script>
 <style lang="scss" scoped>
-.dialog_wrapper {
-  overflow: auto;
-}
-
 .duration {
   li {
     margin: 0 0 25px 0;
