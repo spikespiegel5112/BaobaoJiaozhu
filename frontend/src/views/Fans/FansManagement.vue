@@ -214,7 +214,11 @@
                   </li>
                   <li>
                     当前有效期至:
-                    {{ $moment(lastExpireDateString).format('YYYY-MM-DD') }}
+                    {{
+                      $isNotEmpty(lastExpireDateString)
+                        ? $moment(lastExpireDateString).format('YYYY-MM-DD')
+                        : '-'
+                    }}
                   </li>
                   <li>
                     添加后有效期至:
@@ -573,7 +577,9 @@ export default {
           })
           .then(response => {
             this.periodHistoryData = response.data;
-            this.lastExpireDateString = response.data[0].expireDate;
+            if (response.data.length > 0) {
+              this.lastExpireDateString = response.data[0].expireDate;
+            }
             console.log('getPeriodHistory++++', response);
             resolve();
           })
