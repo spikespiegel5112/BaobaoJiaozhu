@@ -153,6 +153,7 @@
       :visible.sync="dialogrRecordPaymentVisible"
       @close="handleCloseRecordPeriod"
       top="5vh"
+      :close-on-click-modal="false"
     >
       <el-form
         ref="formData2"
@@ -197,6 +198,7 @@
             <el-row>
               <el-col :span="24">
                 <ul class="duration">
+                  <li>粉丝昵称：{{ formData.nickName }}</li>
                   <li>
                     是否到期:
                     <el-tag v-if="expireStatus === 'expired'" type="danger">
@@ -214,14 +216,18 @@
                   </li>
                   <li>
                     当前有效期至:
-                    {{ $moment(lastExpireDateString).format('YYYY-MM-DD') }}
+                    {{
+                      $isNotEmpty(lastExpireDateString)
+                        ? $moment(lastExpireDateString).format('YYYY-MM-DD')
+                        : '-'
+                    }}
                   </li>
                   <li>
                     添加后有效期至:
                     {{
                       $isNotEmpty(formData2.expireDate)
                         ? $moment(formData2.expireDate).format('YYYY-MM-DD')
-                        : ''
+                        : '-'
                     }}
                   </li>
                 </ul>
@@ -229,6 +235,13 @@
             </el-row>
           </el-col>
         </el-row>
+        <el-button
+          type="primary"
+          :disabled="submitingFlag"
+          @click="submitAddPeriod"
+        >
+          保存
+        </el-button>
         <whiteSpace size="xl" />
         <el-form-item label="权益记录">
           <el-table
@@ -275,38 +288,38 @@
                 {{ $moment(scope.row.createdAt).format('YYYY-MM-DD hh:mm:ss') }}
               </template>
             </el-table-column>
-            <el-table-column
-              align="center"
-              fixed
-              label="录入时间"
-              prop="createdAt"
-            >
+            <el-table-column align="center" fixed label="操作">
               <template slot-scope="scope">
                 <el-button
-                  type="danger"
+                  v-if="checkDeletePeriodButton(scope)"
+                  :type="checkIsExpiredRecord(scope) ? '' : 'danger'"
                   size="mini"
                   icon="el-icon-delete"
                   @click="handleDeletePeriod(scope)"
                 >
-                  删除此权益
+                  {{
+                    checkIsExpiredRecord(scope) ? '删除此记录' : '删除此权益'
+                  }}
                 </el-button>
               </template>
             </el-table-column>
           </el-table>
+          <whiteSpace size="xl" />
+          <el-pagination
+            :current-page.sync="pagination2.page"
+            :page-size="pagination2.limit"
+            :total="pagination2.total"
+            @current-change="handleCurrentChange2"
+            @size-change="handleSizeChange2"
+            background
+            layout="total, prev, pager, next, jumper"
+          >
+          </el-pagination>
         </el-form-item>
       </el-form>
 
-      <whiteSpace size="xl" />
-
       <div class="footer alignright">
-        <el-button
-          type="primary"
-          :disabled="submitingFlag"
-          @click="submitAddPeriod"
-        >
-          保存
-        </el-button>
-        <el-button @click="handleCloseRecordPeriod">取消</el-button>
+        <el-button @click="handleCloseRecordPeriod">关闭</el-button>
       </div>
     </el-dialog>
   </el-row>
@@ -394,6 +407,11 @@ export default {
         ],
         period: [{ required: true, message: '此项为必填项', trigger: 'change' }]
       },
+      pagination2: {
+        limit: 5,
+        page: 1,
+        total: 0
+      },
       periodHistoryData: [],
       currentPickerData: null,
       storedExpireDate: null,
@@ -418,9 +436,33 @@ export default {
       return this.formData2.startDate;
     },
     pickerOptions() {
+      const that = this;
       return {
+        shortcuts: [
+          {
+            text: '今天',
+            onClick(picker) {
+              picker.$emit('pick', new Date());
+            }
+          },
+          {
+            text: '到期日后一天',
+            onClick(picker) {
+              // 先从最近到期日转成秒级时间戳，然后加一天，然后转成毫秒级，然后用new Date()转换成时间对象
+              if (that.$isNotEmpty(that.lastExpireDateString)) {
+                const theDayAfterLastExpireDayTimestamp =
+                  that.$moment(that.lastExpireDateString).unix() + 24 * 3600;
+                picker.$emit(
+                  'pick',
+                  new Date(theDayAfterLastExpireDayTimestamp * 1000)
+                );
+              }
+            }
+          }
+        ],
         disabledDate: time => {
-          return this.$isNotEmpty(this.lastExpireDateString)
+          return this.$isNotEmpty(this.lastExpireDateString) &&
+            this.expireStatus === 'not_expired'
             ? time.getTime() < this.$moment(this.lastExpireDateString)
             : false;
         }
@@ -473,6 +515,14 @@ export default {
       this.pagination.page = val;
       this.getTableData();
     },
+    handleSizeChange2(val) {
+      this.pagination2.limit = val;
+      this.getPeriodHistory();
+    },
+    handleCurrentChange2(val) {
+      this.pagination2.page = val;
+      this.getPeriodHistory();
+    },
 
     createData() {
       this.formData.id = '';
@@ -521,23 +571,21 @@ export default {
     async handleAddPeriod(scope) {
       await this.$nextTick();
       this.dialogrRecordPaymentVisible = true;
-      //   this.formData2.expireDate = null;
       this.storedExpireDate = scope.row.expireDate;
+      this.formData.nickName = scope.row.nickName;
       this.formData2.id = scope.row.id;
 
-      await this.getPeriodHistory(scope.row.id);
+      await this.getPeriodHistory();
       this.defaultTime = this.getDefaultTime();
-      this.expireStatus = this.checkIsExpired();
     },
     submitAddPeriod() {
       this.$refs.formData2.validate().then(valid => {
         this.$http
           .post(this.addPeriodRequest, this.formData2)
-          .then(response => {
+          .then(async response => {
             console.log(response);
             this.$message.success('提交成功');
-            this.getTableData();
-            this.dialogrRecordPaymentVisible = false;
+            await this.getPeriodHistory();
           })
           .catch(error => {
             console.log(error);
@@ -563,18 +611,26 @@ export default {
           });
       });
     },
-    getPeriodHistory(fanId) {
+    getPeriodHistory() {
       return new Promise((resolve, reject) => {
         this.$http
           .get(this.getPeriodHistoryRequest, {
             params: {
-              fanId
+              limit: this.pagination2.limit,
+              page: this.pagination2.page,
+              fanId: this.formData2.id
             }
           })
           .then(response => {
             this.periodHistoryData = response.data;
-            this.lastExpireDateString = response.data[0].expireDate;
+            this.lastExpireDateString = response.data[0]
+              ? response.data[0].expireDate
+              : '';
+            this.defaultTime = this.getDefaultTime();
+            this.pagination2.total = response.pagination.total;
+            this.expireStatus = this.checkIsExpired();
             console.log('getPeriodHistory++++', response);
+            console.log('lastExpireDateString++++', this.lastExpireDateString);
             resolve();
           })
           .catch(error => {
@@ -709,18 +765,22 @@ export default {
         .add(this.formData2.period, 'days')
         .format('YYYY-MM-DD');
     },
-
+    getTheDayWithOffsetTimestamp(options) {
+      const offsetDaysTimestamp = options.offsetDays * 24 * 3600;
+      return this.$moment(options.startDateString).unix() + offsetDaysTimestamp;
+    },
     checkIsExpired() {
-      const expandDateTimeStamp = this.formData2.period * 24 * 3600;
-      const lastExpireDateTimeStamp =
-        this.$moment(this.lastExpireDateString).unix() + expandDateTimeStamp;
-      const currentDateTimeStamp = this.$moment().unix();
+      const lastExpireDateTimestamp = this.getTheDayWithOffsetTimestamp({
+        startDateString: this.lastExpireDateString,
+        offsetDays: this.formData2.period
+      });
+      const currentDateTimestamp = this.$moment().unix();
       let result;
-      if (this.$isEmpty(lastExpireDateTimeStamp)) {
+      if (this.$isEmpty(lastExpireDateTimestamp)) {
         result = 'new_fan';
-      } else if (lastExpireDateTimeStamp - currentDateTimeStamp < 0) {
+      } else if (lastExpireDateTimestamp - currentDateTimestamp < 0) {
         result = 'expired';
-      } else if (lastExpireDateTimeStamp - currentDateTimeStamp >= 0) {
+      } else if (lastExpireDateTimestamp - currentDateTimestamp >= 0) {
         result = 'not_expired';
       }
       return result;
@@ -735,6 +795,7 @@ export default {
       this.$refs.formData2.resetFields();
       this.formData2.expireDate = null;
       this.periodHistoryData = [];
+      this.pagination2.page = 1;
       this.dialogrRecordPaymentVisible = false;
     },
     async handleCloseFansInfoDialog() {
@@ -757,26 +818,33 @@ export default {
             id: scope.row.id
           }
         })
-        .then(response => {
+        .then(async response => {
           this.$message({
             type: 'success',
             message: '权益删除成功'
           });
-          this.getPeriodHistory(scope.row.fanId);
-          this.defaultTime = this.getDefaultTime();
+          await this.getPeriodHistory();
         })
         .catch(error => {
           console.log(error);
         });
+    },
+    checkDeletePeriodButton(scope) {
+      const rowIndex = scope.$index;
+      return rowIndex === 0 || this.checkIsExpiredRecord(scope);
+    },
+    checkIsExpiredRecord(scope) {
+      const todayTimestamp = this.$moment().unix();
+      const theDayWithOffsetTimestamp = this.getTheDayWithOffsetTimestamp({
+        startDateString: scope.row.expireDate,
+        offsetDays: scope.row.period
+      });
+      return theDayWithOffsetTimestamp < todayTimestamp;
     }
   }
 };
 </script>
 <style lang="scss" scoped>
-.dialog_wrapper {
-  overflow: auto;
-}
-
 .duration {
   li {
     margin: 0 0 25px 0;
