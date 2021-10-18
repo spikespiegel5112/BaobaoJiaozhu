@@ -86,7 +86,7 @@
             type="primary"
             icon="el-icon-edit"
           >
-            录入会费
+            录入时长
           </el-button>
           <el-button @click="handleDelete(scope)" size="mini" type="danger">
             删除
@@ -159,6 +159,7 @@
       :visible.sync="dialogrRecordPaymentVisible"
       @close="handleCloseRecordPeriod"
       top="5vh"
+      width='1200px'
       :close-on-click-modal="false"
     >
       <el-form
