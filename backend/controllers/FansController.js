@@ -1,5 +1,6 @@
 const FansModel = require('../models/FansModel');
 const FansPeriodHistoryModel = require('../models/FansPeriodHistoryModel');
+const moment = require('moment');
 const uuidv1 = require('uuid/v1');
 const uuidv4 = require('uuid/v4');
 const uuidv5 = require('uuid/v5');
@@ -199,6 +200,26 @@ const addPeriod = (req, res, next) => {
     });
 };
 
+const _checkEquityStatus = (data) => {
+  console.log('_checkEquityStatus', data);
+  const currentDateTimestamp = moment().unix();
+  const expireDateTimestamp = moment(data.expireDate).unix();
+
+  //   console.log('data.expireDate+++++', data.expireDate)
+  //   console.log('currentDateTimestamp+++++', currentDateTimestamp)
+  //   console.log('expireDateTimestamp+++++', expireDateTimestamp)
+  const periodTimestamp = data.period * 24 * 3600;
+  let result = '';
+  if (expireDateTimestamp - periodTimestamp > currentDateTimestamp) {
+    result = 'not_started';
+  } else if (expireDateTimestamp > currentDateTimestamp && expireDateTimestamp - periodTimestamp < currentDateTimestamp) {
+    result = 'in_progress';
+  } else if (expireDateTimestamp + periodTimestamp < currentDateTimestamp) {
+    result = 'finished';
+  }
+  return result;
+};
+
 const getPeriodHistory = (req, res, next) => {
   const pagination = {
     limit: Number(req.query.limit),
@@ -213,12 +234,18 @@ const getPeriodHistory = (req, res, next) => {
   };
   FansPeriodHistoryModel.findAll(Object.assign(query, pagination))
     .then(async (data) => {
+      _checkEquityStatus(data);
       res.status(200).json({
         message: 'Created successful',
         pagination: {
           total: await FansPeriodHistoryModel.count()
         },
-        data
+        data: data.map((item) => {
+          return {
+            ...item.dataValues,
+            equityStatus: _checkEquityStatus(item)
+          };
+        })
       });
     })
     .catch((error) => {
@@ -228,6 +255,13 @@ const getPeriodHistory = (req, res, next) => {
         error
       });
     });
+};
+
+const _checkAvailableEquityStatus = (req, res, next) => {
+  return new Promise((resolve, reject) => {
+    
+
+  });
 };
 
 const _addFanPeriodHistroyPromise = (req, res, next) => {

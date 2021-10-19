@@ -29,6 +29,7 @@
     "express-session": "^1.17.2",
     "fast-csv": "^3.4.0",
     "json2csv": "^4.5.1",
+    "moment": "^2.29.1",
     "mysql2": "^1.6.5",
     "node-fetch": "^2.6.0",
     "object.observe": "^0.2.6",

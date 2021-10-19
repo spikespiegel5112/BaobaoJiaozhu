@@ -207,7 +207,7 @@
                 <ul class="duration">
                   <li>粉丝昵称：{{ formData.nickName }}</li>
                   <li>
-                    是否到期:
+                    权益状态:
                     <el-tag v-if="expireStatus === 'expired'" type="danger">
                       已到期
                     </el-tag>
@@ -222,7 +222,7 @@
                     </el-tag>
                   </li>
                   <li>
-                    当前有效期至:
+                    当前权益有效期至:
                     {{
                       $isNotEmpty(lastExpireDateString)
                         ? $moment(lastExpireDateString).format('YYYY-MM-DD')
