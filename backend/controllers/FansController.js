@@ -232,14 +232,12 @@ const getPeriodHistory = (req, res, next) => {
       fanId: req.query.fanId
     }
   };
-  FansPeriodHistoryModel.findAll(Object.assign(query, pagination))
+  FansPeriodHistoryModel.findAll(Object.assign(query, {}))
     .then(async (data) => {
       _checkEquityStatus(data);
       res.status(200).json({
         message: 'Created successful',
-        pagination: {
-          total: await FansPeriodHistoryModel.count()
-        },
+        total: await FansPeriodHistoryModel.count(),
         data: data.map((item) => {
           return {
             ...item.dataValues,
@@ -258,10 +256,7 @@ const getPeriodHistory = (req, res, next) => {
 };
 
 const _checkAvailableEquityStatus = (req, res, next) => {
-  return new Promise((resolve, reject) => {
-    
-
-  });
+  return new Promise((resolve, reject) => {});
 };
 
 const _addFanPeriodHistroyPromise = (req, res, next) => {

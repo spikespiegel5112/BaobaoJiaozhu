@@ -159,7 +159,7 @@
       :visible.sync="dialogrRecordPaymentVisible"
       @close="handleCloseRecordPeriod"
       top="5vh"
-      width='1200px'
+      width="1200px"
       :close-on-click-modal="false"
     >
       <el-form
@@ -253,7 +253,7 @@
         <el-form-item label="权益记录">
           <el-table
             class="common_table_wrapper"
-            :data="periodHistoryData"
+            :data="periodHistoryTableData"
             border
             element-loading-text="Loading"
             fit
@@ -663,6 +663,7 @@ export default {
           .then(response => {
             console.log('getPeriodHistory++++', response);
             this.periodHistoryData = response.data;
+            this.getPeriodHistoryTableData()
             this.defaultTime = this.getDefaultTime();
             this.pagination2.total = response.pagination.total;
             this.getLastExpireDateString();
@@ -673,6 +674,14 @@ export default {
             reject();
           });
       });
+    },
+    getPeriodHistoryTableData() {
+      const offset = this.pagination2.limit;
+      const page = this.pagination2.page;
+      this.periodHistoryTableData = this.periodHistoryData.filter(
+        (item, index) => index > page * offset && page * (offset + 1)
+      );
+      debugger
     },
     getLastExpireDateString() {
       return new Promise((resolve, reject) => {
