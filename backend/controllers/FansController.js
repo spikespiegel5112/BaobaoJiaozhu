@@ -234,7 +234,6 @@ const getPeriodHistory = (req, res, next) => {
   };
   FansPeriodHistoryModel.findAll(Object.assign(query, {}))
     .then(async (data) => {
-      _checkEquityStatus(data);
       res.status(200).json({
         message: 'Created successful',
         total: await FansPeriodHistoryModel.count(),
@@ -267,7 +266,18 @@ const _addFanPeriodHistroyPromise = (req, res, next) => {
       expireDate: req.body.expireDate
     })
       .then(async (data) => {
-        resolve();
+        FansModel.findOne({
+          id: req.body.id
+        })
+          .then(async (data) => {
+            data.expireDate = req.body.expireDate;
+            await data.save();
+            resolve();
+          })
+          .catch((error) => {
+            console.log(error);
+            reject();
+          });
       })
       .catch((error) => {
         console.log(error);

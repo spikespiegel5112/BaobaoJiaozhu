@@ -100,7 +100,7 @@
         :current-page.sync="pagination.page"
         :page-size="pagination.limit"
         :page-sizes="[10, 20, 30, 50, 100]"
-        :total="total"
+        :total="pagination.total"
         @current-change="handleCurrentChange"
         @size-change="handleSizeChange"
         background
@@ -180,6 +180,7 @@
                     @change="handleChangeStartDate"
                     :picker-options="pickerOptions"
                     :default-value="defaultTime"
+                    :editable="false"
                   >
                   </el-date-picker>
                 </el-form-item>
@@ -195,6 +196,7 @@
                       :key="index"
                       :label="item.title"
                       :value="item.value"
+                      :disabled="item.disabled"
                     ></el-option>
                   </el-select>
                 </el-form-item>
@@ -208,17 +210,23 @@
                   <li>粉丝昵称：{{ formData.nickName }}</li>
                   <li>
                     权益状态:
-                    <el-tag v-if="expireStatus === 'expired'" type="danger">
-                      已到期
+                    <el-tag v-if="expireStatus === 'new_fan'" type="info">
+                      新粉丝
                     </el-tag>
                     <el-tag
-                      v-else-if="expireStatus === 'not_expired'"
+                      v-else-if="expireStatus === 'not_started'"
+                      type="info"
+                    >
+                      未开始
+                    </el-tag>
+                    <el-tag
+                      v-else-if="expireStatus === 'in_progress'"
                       type="success"
                     >
-                      未到期
+                      进行中
                     </el-tag>
-                    <el-tag v-else-if="expireStatus === 'new_fan'" type="info">
-                      新粉丝
+                    <el-tag v-if="expireStatus === 'expired'" type="danger">
+                      已到期
                     </el-tag>
                   </li>
                   <li>
@@ -348,7 +356,7 @@
             :current-page.sync="pagination2.page"
             :page-size="pagination2.limit"
             :total="pagination2.total"
-            @current-change="handleCurrentChange2"
+            @current-change="getPeriodHistoryTableData"
             @size-change="handleSizeChange2"
             background
             layout="total, prev, pager, next, jumper"
@@ -452,6 +460,7 @@ export default {
         total: 0
       },
       periodHistoryData: [],
+      periodHistoryTableData: [],
       currentPickerData: null,
       storedExpireDate: null,
       defaultTime: null,
@@ -500,10 +509,8 @@ export default {
           }
         ],
         disabledDate: time => {
-          return this.$isNotEmpty(this.lastExpireDateString) &&
-            this.expireStatus === 'not_expired'
-            ? time.getTime() < this.$moment(this.lastExpireDateString)
-            : false;
+          const currentTimestamp = time.getTime() / 1000;
+          return this.checkDateAvailable(currentTimestamp);
         }
       };
     }
@@ -520,6 +527,16 @@ export default {
     currentAdvertisementTabIndex(value) {
       console.log(value);
     }
+    // 'formData2.startDate': {
+    //   handler(value) {
+    //     this.periodDictionary = this.periodDictionary.map(item => {
+    //       return {
+    //         ...item,
+    //         disabled: this.$isEmpty(value)
+    //       };
+    //     });
+    //   },
+    // }
   },
   async mounted() {
     this.getTableData();
@@ -535,12 +552,27 @@ export default {
         .then(response => {
           console.log('getListByPaginationRequest', response);
           this.tableList = response.data;
-          this.total = response.pagination.total;
+          this.pagination.total = response.pagination.total;
           this.listLoading = false;
         })
         .catch(error => {
           console.log(error);
         });
+    },
+    checkDateAvailable(timestamp) {
+      let result = false;
+      this.periodHistoryTableData.forEach(item => {
+        const periodTimestamp = item.period * 24 * 3600;
+        const endDateTimestamp = this.$moment(item.expireDate).unix();
+        const startDateTimestamp = endDateTimestamp - periodTimestamp;
+        if (
+          startDateTimestamp < timestamp + 24 * 3600 &&
+          endDateTimestamp > timestamp
+        ) {
+          result = true;
+        }
+      });
+      return result;
     },
     handleFilter() {
       this.pagination.page = 1;
@@ -614,6 +646,7 @@ export default {
       this.formData.nickName = scope.row.nickName;
       this.formData2.id = scope.row.id;
 
+      this.getTableData();
       await this.getPeriodHistory();
       this.defaultTime = this.getDefaultTime();
     },
@@ -663,9 +696,9 @@ export default {
           .then(response => {
             console.log('getPeriodHistory++++', response);
             this.periodHistoryData = response.data;
-            this.getPeriodHistoryTableData()
+            this.getPeriodHistoryTableData(1);
             this.defaultTime = this.getDefaultTime();
-            this.pagination2.total = response.pagination.total;
+            this.pagination2.total = response.total;
             this.getLastExpireDateString();
             resolve();
           })
@@ -675,39 +708,19 @@ export default {
           });
       });
     },
-    getPeriodHistoryTableData() {
+    getPeriodHistoryTableData(page) {
+      page = page || this.pagination2.page;
       const offset = this.pagination2.limit;
-      const page = this.pagination2.page;
+      page = page - 1;
       this.periodHistoryTableData = this.periodHistoryData.filter(
-        (item, index) => index > page * offset && page * (offset + 1)
+        (item, index) => index >= page * offset && index < (page + 1) * offset
       );
-      debugger
     },
     getLastExpireDateString() {
-      return new Promise((resolve, reject) => {
-        this.$http
-          .get(this.getPeriodHistoryRequest, {
-            params: {
-              limit: 9999999,
-              page: 1,
-              fanId: this.formData2.id
-            }
-          })
-          .then(response => {
-            this.lastExpireDateString = response.data[0]
-              ? response.data[0].expireDate
-              : '';
-            console.log('lastExpireDateString++++', this.lastExpireDateString);
-
-            this.expireStatus = this.checkIsExpired();
-
-            resolve();
-          })
-          .catch(error => {
-            console.log(error);
-            reject();
-          });
-      });
+      this.lastExpireDateString = this.periodHistoryData[0]
+        ? this.periodHistoryData[0].expireDate
+        : '';
+      this.expireStatus = this.checkSchedule();
     },
     handleSelectionChange(val) {
       this.multipleSelection = val;
@@ -825,15 +838,98 @@ export default {
       this.formData.optionList.splice(index, 1);
     },
 
-    handleChangeStartDate(dateObj, aaa, bbb, ccc) {
+    handleChangeStartDate(dateObj) {
       this.storedExpireDate = dateObj;
+      this.formData2.period = '';
       this.calculateDuration();
+      this.filterPeriodDictionary();
+    },
+    filterPeriodDictionary() {
+      this.periodDictionary = this.periodDictionary.map(item => {
+        return {
+          ...item,
+          disabled: this.$isEmpty(this.formData2.startDate)
+            ? true
+            : !this.checkAvailableDuration(item.value)
+        };
+      });
     },
     calculateDuration() {
       if (!this.storedExpireDate || !this.formData2.period) return;
       this.formData2.expireDate = this.$moment(this.storedExpireDate)
         .add(this.formData2.period, 'days')
         .format('YYYY-MM-DD');
+    },
+    checkAvailableDuration(period) {
+      let result = false;
+
+      const allStartDateTimestampList = this.periodHistoryData
+        .sort((item1, item2) => {
+          const expireDateTimestamp1 = this.$moment(item1.expireDate).unix();
+          const expireDateTimestamp2 = this.$moment(item2.expireDate).unix();
+          if (expireDateTimestamp1 < expireDateTimestamp2) {
+            return -1;
+          }
+          if (expireDateTimestamp1 > expireDateTimestamp2) {
+            return 1;
+          }
+          return 0;
+        })
+        .map(item => {
+          return {
+            startDateTimestamp:
+              this.$moment(item.expireDate).unix() - item.period * 24 * 3600,
+            endDateTimestamp: this.$moment(item.expireDate).unix()
+          };
+        });
+
+      if (this.periodHistoryData.length === 0) {
+        result = this.periodHistoryData.length === 0;
+      } else {
+        for (let index = 0; index < allStartDateTimestampList.length; index++) {
+          const item = allStartDateTimestampList[index];
+          let chosenPeriod = period || this.formData2.period;
+          chosenPeriod = this.$isNotEmpty(chosenPeriod)
+            ? chosenPeriod
+            : this.periodDictionary[0].value;
+          const chosenPeriodTimestamp = chosenPeriod * 24 * 3600;
+          const chosenStartDateTimestamp = this.$moment(
+            this.storedExpireDate
+          ).unix();
+          const chosenEndDateTimestamp =
+            chosenStartDateTimestamp + chosenPeriodTimestamp;
+          const previousEndDateTimestamp =
+            index > 0
+              ? allStartDateTimestampList[index - 1].endDateTimestamp
+              : null;
+          const firstStartDateTimestamp =
+            allStartDateTimestampList[0].startDateTimestamp;
+          const lastEndDateTimestamp =
+            allStartDateTimestampList[allStartDateTimestampList.length - 1]
+              .endDateTimestamp;
+
+          if (
+            chosenStartDateTimestamp < firstStartDateTimestamp &&
+            chosenEndDateTimestamp < firstStartDateTimestamp
+          ) {
+            result = true;
+            break;
+          } else if (
+            chosenStartDateTimestamp > firstStartDateTimestamp &&
+            chosenStartDateTimestamp < lastEndDateTimestamp &&
+            chosenStartDateTimestamp > previousEndDateTimestamp &&
+            chosenEndDateTimestamp < item.startDateTimestamp
+          ) {
+            result = true;
+            break;
+          } else if (chosenStartDateTimestamp > lastEndDateTimestamp) {
+            result = true;
+            break;
+          }
+        }
+      }
+
+      return result;
     },
     getTheDayAfterOffsetTimestamp(options) {
       const offsetDaysTimestamp = options.offsetDays * 24 * 3600;
@@ -843,25 +939,48 @@ export default {
       const offsetDaysTimestamp = options.offsetDays * 24 * 3600;
       return this.$moment(options.dateString).unix() - offsetDaysTimestamp;
     },
-    checkIsExpired() {
+    checkSchedule() {
+      let result = '';
       const lastExpireDateTimestamp = this.getTheDayAfterOffsetTimestamp({
         dateString: this.lastExpireDateString,
         offsetDays: this.formData2.period
       });
       const currentDateTimestamp = this.$moment().unix();
-      let result;
-      if (this.$isEmpty(lastExpireDateTimestamp)) {
+
+      if (this.periodHistoryData.length === 0) {
         result = 'new_fan';
       } else if (lastExpireDateTimestamp - currentDateTimestamp < 0) {
         result = 'expired';
-      } else if (lastExpireDateTimestamp - currentDateTimestamp >= 0) {
-        result = 'not_expired';
+      } else if (this.checkIfOnProgress()) {
+        result = 'in_progress';
+      } else if (!this.checkIfOnProgress()) {
+        result = 'not_started';
       }
+      return result;
+    },
+    checkIfOnProgress() {
+      let result = false;
+      this.periodHistoryData.forEach(item => {
+        const startDateTimestamp = this.getTheDayBeforeOffsetTimestamp({
+          dateString: item.expireDate,
+          offsetDays: item.period
+        });
+        const endDateTimestamp = this.$moment(item.expireDate).unix();
+        const currentDateTimestamp = this.$moment().unix();
+        // console.log('startDateTimestamp', startDateTimestamp);
+        // console.log('endDateTimestamp', endDateTimestamp);
+        if (
+          currentDateTimestamp <= endDateTimestamp &&
+          currentDateTimestamp >= startDateTimestamp
+        ) {
+          result = true;
+        }
+      });
       return result;
     },
     getDefaultTime() {
       const currentDate = this.$moment();
-      return this.checkIsExpired() === 'not_expired'
+      return this.checkSchedule() === 'not_expired'
         ? this.$moment(this.lastExpireDateString)
         : currentDate;
     },
@@ -914,11 +1033,8 @@ export default {
 
     checkIsExpiredRecord(scope) {
       const todayTimestamp = this.$moment().unix();
-      const theDayAfterOffsetTimestamp = this.getTheDayAfterOffsetTimestamp({
-        dateString: scope.row.expireDate,
-        offsetDays: scope.row.period
-      });
-      return theDayAfterOffsetTimestamp < todayTimestamp;
+      const expireDateTimestamp = this.$moment(scope.row.expireDate).unix();
+      return expireDateTimestamp < todayTimestamp;
     },
     checkProgressStatus(scope) {
       if (this.checkIsNotStartedRecord(scope)) {
