@@ -21,9 +21,11 @@
             <RouterLink class="inlineBlock" to="/">
               <el-dropdown-item>Home</el-dropdown-item>
             </RouterLink>
-            <el-dropdown-item divided>
-              <span @click="handleLogout">Logout</span>
-            </el-dropdown-item>
+            <div @click="handleLogout">
+              <el-dropdown-item divided>
+                Logout
+              </el-dropdown-item>
+            </div>
           </el-dropdown-menu>
         </el-dropdown>
       </el-col>
@@ -45,8 +47,8 @@ export default {
   },
   data() {
     return {
-      logoutRequest: 'user/logout',
-      avatarImage: !!this.$store.state.user.image
+      userLogoutRequest: 'user/logout',
+      avatarImage: this.$isNotEmpty(this.$store.state.user.image)
         ? this.$store.state.user.image + '-style_100x100'
         : require('@/assets/img/default/defaultavatar_60_60.png')
     };
@@ -62,21 +64,17 @@ export default {
       this.$store.dispatch('ToggleSideBar');
     },
     handleLogout() {
-      // 为了重新实例化vue-router对象 避免bug
       this.$http
-        .post(this.logoutRequest)
+        .post(this.userLogoutRequest)
         .then(response => {
           this.$message.success('注销成功');
-          //   this.$router.push({
-          //     name: 'Login'
-          //   });
+          this.$router.push({
+            name: 'Login'
+          });
         })
         .catch(error => {
           console.log(error);
         });
-      //   this.$store.dispatch('Logout').then(() => {
-      //     location.reload();
-      //   });
     }
   }
 };

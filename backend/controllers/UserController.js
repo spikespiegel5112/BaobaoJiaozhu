@@ -232,9 +232,10 @@ const login = (req, res, next) => {
       const requestPassword = await encryptPromise(req.body.password);
       console.log('login+++++++', req);
       if (responsePassword === requestPassword) {
-        req.session.loginName = req.body.loginName;
-        const sessionId = req.session.id;
-        res.cookie('sessionId', sessionId, { domain: req.headers.Referer, maxAge: 900000, httpOnly: true, signed: false });
+        const loginName = req.body.loginName;
+        // req.session.loginName = loginName;
+        // const sessionId = req.session.id;
+        // res.cookie('token', loginName, { domain: req.headers.Referer, maxAge: 24 * 3600, httpOnly: true, signed: false });
         res.status(200).json({
           data: req.body
         });
@@ -253,10 +254,11 @@ const login = (req, res, next) => {
 };
 
 const logout = (req, res, next) => {
-  res.clearCookie('loginName');
-  res.status(200).json({
-    message: '注销成功',
-    session: req.session
+  req.session.destroy(function (err) {
+    res.status(200).json({
+      message: '注销成功',
+      session: req.session
+    });
   });
 };
 

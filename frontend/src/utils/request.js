@@ -3,7 +3,10 @@ import store from '../store/store';
 import { Message } from 'element-ui';
 import Router from '@/router/router';
 
-const baseUrl = process.env.NODE_ENV === 'production' ? 'http://antisony.org:3001/' : 'http://localhost:3000/';
+const baseUrl =
+  process.env.NODE_ENV === 'production'
+    ? 'http://antisony.org:3001/'
+    : 'http://localhost:3000/';
 // const baseUrl = 'http://antisony.org:3001/'
 
 // 创建axios实例
@@ -38,7 +41,7 @@ service.interceptors.request.use(
   },
   error => {
     // Do something with request error
-    console.log(error); // for debug
+    console.log(error);
     Promise.reject(error);
   }
 );
@@ -49,9 +52,9 @@ service.interceptors.response.use(
     return response.data;
   },
   error => {
-    console.log(error); // for debug
-    console.log(error.message); // for debug
-    console.log(error.response); // for debug
+    console.log(error);
+    console.log(error.message);
+    console.log(error.response);
     const response = error.response;
     const status = response.status;
     if (status === 401) {

@@ -1,7 +1,13 @@
 <template>
   <div class="login_container">
     <div class="maincontent">
-      <el-form autoComplete="on" :model="formData" :rules="rules" ref="formData" label-position="right">
+      <el-form
+        autoComplete="on"
+        :model="formData"
+        :rules="rules"
+        ref="formData"
+        label-position="right"
+      >
         <h3 class="title">
           趣谷
           <div class="common_environmenthint_item" v-if="$prodEnv">
@@ -10,23 +16,43 @@
         </h3>
 
         <el-form-item prop="loginName">
-          <el-input type="text" v-model="formData.loginName" autoComplete="on" placeholder="username">
+          <el-input
+            type="text"
+            v-model="formData.loginName"
+            autoComplete="on"
+            placeholder="username"
+          >
             <span class="iconfont icon-user" slot="prefix"> </span>
           </el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input :type="pwdType" @keyup.enter.native="handleLogin" v-model="formData.password" autoComplete="on" placeholder="password">
+          <el-input
+            :type="pwdType"
+            @keyup.enter.native="handleLogin"
+            v-model="formData.password"
+            autoComplete="on"
+            placeholder="password"
+          >
             <span class="iconfont icon-user" slot="prefix"> </span>
-            <span slot="suffix" @click="showPwd" class="iconfont icon-user"> </span>
+            <span slot="suffix" @click="showPwd" class="iconfont icon-user">
+            </span>
           </el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" :loading="loading" @click.native.prevent="handleLogin" style="width:100%">
+          <el-button
+            type="primary"
+            :loading="loggingFlag"
+            @click.native.prevent="handleLogin"
+            style="width:100%"
+          >
             Sign in
           </el-button>
         </el-form-item>
         <el-form-item>
-          <el-button :loading="loading" @click="handleRegister" style="width:100%">
+          <el-button
+            @click="handleRegister"
+            style="width:100%"
+          >
             Register
           </el-button>
         </el-form-item>
@@ -50,7 +76,7 @@ export default {
         loginName: [{ required: true, trigger: 'change' }],
         password: [{ required: true, trigger: 'change' }]
       },
-      loading: false,
+      loggingFlag: false,
       pwdType: 'password'
     };
   },
@@ -65,11 +91,14 @@ export default {
     handleLogin() {
       this.$refs.formData.validate(valid => {
         if (valid) {
+          this.loggingFlag = true;
           this.$http
             .post(this.$baseUrl + this.userLoginRequest, this.formData)
             .then(response => {
               console.log(response);
+              this.$message.success('登录成功');
               this.$router.push({ path: '/' });
+              this.loggingFlag = false;
             })
             .catch(error => {
               console.log(error);
@@ -100,7 +129,8 @@ $light_gray: #eee;
   min-height: 100vh;
   position: relative;
   text-align: right;
-  background: url('../assets/img/register.jpg');
+  //   background: url('../assets/img/register.jpg');
+  background-color: #2d3a4b;
   background-position: top center;
   .maincontent {
     display: inline-block;
