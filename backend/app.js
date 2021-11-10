@@ -4,11 +4,8 @@ const cors = require('cors');
 const csrf = require('csurf');
 const session = require('express-session');
 const SessionFileStore = require('session-file-store')(session);
-const cookieSession = require('cookie-session');
-// const observe = require('object.observe');
 const sequelize = require('./util/database');
 const cookieParser = require('cookie-parser');
-const crypto = require('crypto');
 
 const DictionaryModel = require('./models/DictionaryModel');
 const LogModel = require('./models/LogModel');

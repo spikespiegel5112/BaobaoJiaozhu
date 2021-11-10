@@ -103,6 +103,7 @@ export default {
             .catch(error => {
               console.log(error);
               this.$message.error(error.data.message);
+              this.loggingFlag = false;
             });
         } else {
           console.log('error submit!!');
