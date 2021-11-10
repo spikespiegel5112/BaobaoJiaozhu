@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.7ec28a0ee5a66a69e1e6ab4d9e797180.js"
+  "jiaozhu/precache-manifest.80b2f045373d3b173354aea50b63b4d1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "BaobaoJiaozhu-frontend"});
