@@ -10,7 +10,7 @@ module.exports = {
   lintOnSave: false, //配置关闭eslint
   assetsDir: 'static',
   publicPath:
-    process.env.NODE_ENV === 'production' ? '/jiaozhu/' : '/',
+    process.env.NODE_ENV === 'production' ? './jiaozhu/' : '/',
   configureWebpack: {
     name: name,
     resolve: {
