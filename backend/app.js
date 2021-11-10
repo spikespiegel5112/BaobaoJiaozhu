@@ -36,7 +36,7 @@ app.use(
   cors((req, callback) => {
     console.log('cors+++++++', req);
     callback(null, {
-      origin: req.headers.origin,
+      origin: true,
       credentials: true
     });
   })
