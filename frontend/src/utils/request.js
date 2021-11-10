@@ -5,8 +5,8 @@ import Router from '@/router/router';
 
 const baseUrl =
   process.env.NODE_ENV === 'production'
-    ? 'http://antisony.org:3001/'
-    : 'http://localhost:3000/';
+    ? 'http://antisony.org:3002/'
+    : 'http://localhost:3002/';
 // const baseUrl = 'http://antisony.org:3001/'
 
 // 创建axios实例
