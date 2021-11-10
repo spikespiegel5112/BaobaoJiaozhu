@@ -108,7 +108,7 @@ app.use('/role', roleRoutes);
 sequelize
   .sync()
   .then((result) => {
-    app.listen(3000);
+    app.listen(3002);
   })
   .catch((error) => {
     console.log(error);
