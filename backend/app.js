@@ -3,11 +3,9 @@ const app = express();
 const cors = require('cors');
 const csrf = require('csurf');
 const session = require('express-session');
-const cookieSession = require('cookie-session');
-// const observe = require('object.observe');
+const SessionFileStore = require('session-file-store')(session);
 const sequelize = require('./util/database');
 const cookieParser = require('cookie-parser');
-const crypto = require('crypto');
 
 const DictionaryModel = require('./models/DictionaryModel');
 const LogModel = require('./models/LogModel');
@@ -29,23 +27,29 @@ const csrfProtection = csrf({
   cookie: true
 });
 
+const secret = '123456';
+
 app.use(
   cors((req, callback) => {
     console.log('cors+++++++', req);
     callback(null, {
-      origin: req.headers.origin,
+      origin: true,
       credentials: true
     });
   })
 );
 
-app.use(cookieParser('123456'));
+app.use(cookieParser(secret));
 
 app.use(
-  cookieSession({
-    name: 'mycookie',
-    keys: ['aa', 'bb', 'cc'],
-    maxAge: 1000 * 50
+  session({
+    secret: secret, // 用来对session id相关的cookie进行签名
+    store: new SessionFileStore(), // 本地存储session（文本文件，也可以选择其他store，比如redis或者mongodb）
+    saveUninitialized: true, // 是否自动保存未初始化的会话，一定是true
+    resave: false, // 是否每次都重新保存会话，建议false
+    cookie: {
+      maxAge: 3600 * 1000 // 有效期，单位是毫秒
+    }
   })
 );
 
@@ -71,44 +75,17 @@ app.all('/*', (req, res, next) => {
   console.log('req++++++', req);
   console.log('res++++++', res);
 
-  const sessionId = req.cookies.sessionId;
-  const loginName = req.cookies.loginName;
-  const cookiesStr = req.headers.cookie;
-  const cookieName = 'connect.sid';
-  //   debugger;
+  const sessionId = req.sessionID;
+  const signedCookies = req.signedCookies;
+  const currentCookie = Object.values(signedCookies)[0];
+
   if (req.path === '/user/login' || req.path === '/user/register') {
     next();
     return;
   }
-  if (cookiesStr) {
-    const getCookie = (cookiesStr) => {
-      const result = {};
-      cookiesStr.split(';').forEach((item) => {
-        if (!item) return;
-        const arr = item.split('=');
-        const key = arr[0].trim();
-        const val = arr[1];
-        result[key] = val;
-      });
 
-      return result;
-    };
-    const cookieObj = getCookie(cookiesStr);
-
-    console.log('sessionId+++++++', sessionId);
-    console.log('cookieObj[cookieName]+++++++', cookieObj[cookieName]);
-    // my secret
-    // let left = 's:' + sessionId + '.' + crypto.createHash('SHA256').update('my secret').digest('hex').base64();
-    // left = crypto.createHash('SHA256').update('my secret').digest('hex').base64();
-
-    // let right = connect.sid.split('.')[1];
-    if (sessionId === cookieObj['sessionId']) {
-      next();
-    } else {
-      res.status(401).json({
-        data: 401
-      });
-    }
+  if (sessionId === currentCookie) {
+    next();
   } else {
     res.status(401).json({
       data: 401
@@ -128,7 +105,7 @@ app.use('/role', roleRoutes);
 sequelize
   .sync()
   .then((result) => {
-    app.listen(3000);
+    app.listen(3002);
   })
   .catch((error) => {
     console.log(error);
