@@ -70,7 +70,7 @@
       </el-table-column>
       <el-table-column align="center" label="到期时间" prop="expireDate">
       </el-table-column>
-      <el-table-column align="center" fixed="right" label="操作" width="350">
+      <el-table-column align="center" fixed="right" label="操作" width="360">
         <template slot-scope="scope">
           <el-button
             @click="handleUpdateFanInfo(scope)"
@@ -159,7 +159,7 @@
       :visible.sync="dialogrRecordPaymentVisible"
       @close="handleCloseRecordPeriod"
       top="5vh"
-      width='1200px'
+      width="1200px"
       :close-on-click-modal="false"
     >
       <el-form
@@ -919,6 +919,65 @@ export default {
       } else {
         return '进行中';
       }
+    },
+    checkProgressStatus2(scope) {
+      setTimeout(() => {
+        console.log(1);
+      });
+      new Promise(resolve => {
+        console.log(2);
+        resolve();
+        console.log(3);
+      })
+        .then(() => {
+          console.log(4);
+        })
+        .then(() => {
+          console.log(5);
+        });
+      console.log(6);
+    },
+    checkProgressStatus2(scope) {
+      var fullName = 'a';
+      var obj = {
+        fullName: 'b',
+        prop: {
+          fullName: 'c',
+          getFullName: () => {
+            return this.fullName;
+          }
+          //   getFullName: function() {
+          //     return this.fullName;
+          //   }
+        }
+      };
+
+      console.log(obj.prop.getFullName());
+      var test = obj.prop.getFullName;
+      console.log(test());
+    },
+    checkProgressStatus3(scope) {
+      var aaa = '';
+      var bbb = true;
+      var ccc = function() {};
+      var ddd = Date;
+      var eee = [];
+      console.log(typeof aaa);
+      console.log(typeof bbb);
+      console.log(typeof ccc);
+      console.log(typeof ddd);
+      console.log(typeof eee);
+    },
+    checkProgressStatus4(scope) {
+      var aaa = '';
+      var bbb = true;
+      var ccc = 5;
+      var ddd = function() {};
+      ddd.prototype.aaa = 'aaaaa';
+      console.log(aaa.__proto__);
+      console.log(bbb.__proto__);
+      console.log(ccc.__proto__);
+      console.log(ddd.prototype);
     }
   }
 };
