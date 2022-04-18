@@ -143,43 +143,57 @@ const deleteItems = (req, res, next) => {
 };
 
 const getListByPagination = (req, res, next) => {
-  let pagination = {};
-  let query = {};
+  let query = { raw: true };
 
-  pagination = {
+  const pagination = {
     limit: Number(req.query.limit),
     page: Number(req.query.page),
     offset: req.query.limit * (req.query.page - 1)
   };
+
   if (req.query.type) {
-    query = {
-      where: {
-        type: req.query.type
-      }
-    };
+    query = Object.assign(
+      {
+        where: {
+          type: req.query.type
+        }
+      },
+      query
+    );
   }
+
   UserModel.findAll(Object.assign(query, pagination))
     .then(async (response) => {
       console.log('getListByPagination+++++', response);
-      response = response.map((item) => {
-        const password = decrypt(item.password || '');
-        return {
-          ...item,
-          password
-        };
-      });
-      res.status(200).json({
-        pagination: {
-          total: await UserModel.count()
-        },
+      let aaa = [];
+      for (let i = 0; i < response.legnth; i++) {
+        // const password = await decrypt(response[i].password || '');
+        const password = response[i].password;
+        aaa.push(
+          Object.assign(response[i], {
+            password
+          })
+        );
+      }
+      //   debugger;
+
+      console.log(aaa);
+
+      const pagination = {
+        total: await UserModel.count()
+      };
+      const result = {
+        pagination,
         data: response
-      });
+      };
+      res.status(200).json(result);
     })
     .catch((error) => {
-      console.log(error);
+      console.log('getListByPagination error', error);
+      debugger;
+
       res.status(500).json({
-        error,
-        req: pagination
+        error
       });
     });
 };
@@ -254,7 +268,8 @@ const login = (req, res, next) => {
 };
 
 const logout = (req, res, next) => {
-  req.session.destroy(function (err) {
+  req.session.destroy((error) => {
+    res.clearCookie();
     res.status(200).json({
       message: '注销成功',
       session: req.session

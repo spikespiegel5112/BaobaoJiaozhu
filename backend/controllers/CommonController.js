@@ -23,13 +23,44 @@ const encryptPromise = (password) => {
 };
 
 const decrypt = (text) => {
-  const algorithm = 'aes-192-cbc';
-  let src = '';
-  const iv = Buffer.from('1234567812345678', 'utf8');
-  const cipher = crypto.createDecipheriv(algorithm, key, iv);
-  src += cipher.update(text, 'hex', 'utf8');
-  src += cipher.final('utf8');
-  return src;
+  return new Promise((resolve, reject) => {
+    // Node.js program to demonstrate the
+    // crypto.createDecipheriv() method
+
+    // Includes crypto module
+    const crypto = require('crypto');
+
+    // Defining algorithm
+    const algorithm = 'aes-192-cbc';
+
+    // Defining password
+    const password = 'bncaskdbvasbvlaslslasfhj';
+
+    // Defining key
+    const key = crypto.scryptSync(password, 'GfG', 24);
+
+    // Defininf iv
+    const iv = Buffer.alloc(16, 0);
+
+    // Creating decipher
+    const decipher = crypto.createDecipheriv(algorithm, key, iv);
+    // Declaring decrypted
+    let decrypted = '';
+
+    // Reading data
+    decipher.on('readable', () => {
+      let chunk;
+      while (null !== (chunk = decipher.read())) {
+        decrypted += chunk.toString('utf8');
+      }
+    });
+
+    // Handling end event
+    decipher.on('end', () => {
+      console.log('decipher.on(end', decrypted);
+      resolve(decrypted);
+    });
+  });
 };
 
 const _getBase64DataFromPagePromise = (req) => {

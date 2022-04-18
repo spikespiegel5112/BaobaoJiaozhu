@@ -20,7 +20,7 @@
         </div>
       </template>
     </CommonQuery>
-    <el-table :data="tableDAta" :height="tableHeight" @selection-change="handleSelectionChange" border element-loading-text="Loading" fit highlight-current-row v-loading.body="listLoading">
+    <el-table :data="tableData" :height="tableHeight" @selection-change="handleSelectionChange" border element-loading-text="Loading" fit highlight-current-row v-loading.body="listLoading">
       <el-table-column fixed="left" type="selection" width="30"></el-table-column>
       <el-table-column align="center" fixed label="No" type="index" width="45"></el-table-column>
       <el-table-column align="center" label="登录名称" prop="loginName"></el-table-column>
@@ -135,7 +135,7 @@ export default {
       limitMode: '',
       tableKey: 0,
 
-      tableDAta: [],
+      tableData: [],
       total: null,
       listLoading: true,
       availabilityFlag: false,
@@ -208,7 +208,7 @@ export default {
         .then(response => {
           console.log('getListByPaginationRequest', response);
 
-          this.tableDAta = response.data;
+          this.tableData = response.data;
           this.total = response.pagination.total;
           this.listLoading = false;
         })

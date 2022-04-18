@@ -1045,7 +1045,7 @@ export default {
         return '进行中';
       }
     },
-    checkProgressStatus2(scope) {
+    interview1() {
       setTimeout(() => {
         console.log(1);
       });
@@ -1062,7 +1062,7 @@ export default {
         });
       console.log(6);
     },
-    checkProgressStatus2(scope) {
+    interview2() {
       var fullName = 'a';
       var obj = {
         fullName: 'b',
@@ -1081,7 +1081,7 @@ export default {
       var test = obj.prop.getFullName;
       console.log(test());
     },
-    checkProgressStatus3(scope) {
+    interview3() {
       var aaa = '';
       var bbb = true;
       var ccc = function() {};
@@ -1093,7 +1093,7 @@ export default {
       console.log(typeof ddd);
       console.log(typeof eee);
     },
-    checkProgressStatus4(scope) {
+    interview4() {
       var aaa = '';
       var bbb = true;
       var ccc = 5;
@@ -1103,6 +1103,45 @@ export default {
       console.log(bbb.__proto__);
       console.log(ccc.__proto__);
       console.log(ddd.prototype);
+    },
+    interview5() {
+      // 求出一个数组中重复次数最多和最少的数字
+      // 这道题的最简便思路是：
+      // 1 先去重，得出不重复的数组，并标记好值和重复字数字段
+      // 2 遍历去重过后的数组，让其中的每一项和源数据进行filter处理，得出的长度就是重复的次数
+      const startTime1 = new Date().valueOf();
+      const arr = [1, 1, 1, 2, 3, 3, 3, 2, 3, 1, 4, 2, 5, 1, 2, 3, 4, 3, 5, 5];
+      const simplifiedArr = new Set(arr); //  直接用Set方法去重
+      const index = [];
+      simplifiedArr.forEach(item => {
+        index.push({
+          value: item,
+          count: 0
+        });
+      });
+
+      // 直接这么写就可以得出结果
+      const result3 = index
+        .map(item => {
+          return {
+            value: item.value,
+            count: arr.filter(item2 => item2 === item.value).length
+          };
+        })
+        .sort((a, b) => {
+          if (a.count < b.count) {
+            return -1;
+          }
+          if (a.count > b.count) {
+            return 1;
+          }
+          return 0;
+        });
+      console.log('result3', result3);
+      const startTime2 = new Date().valueOf();
+      console.log(startTime1);
+      console.log(startTime2);
+      console.log(startTime2 - startTime1);
     }
   }
 };
