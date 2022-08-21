@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('sq_voting', 'sq_voting', 'I9R7C9F1', {
+const sequelize = new Sequelize('jiaozhu', 'jiaozhu', '123456', {
   dialect: 'mysql',
-  host: 'mysql.sql168.cdncenter.net',
+  host: 'antisony.org',
   timezone: '+08:00'
 });
 

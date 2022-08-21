@@ -18,6 +18,7 @@ const VotingOptionsModel = require('./models/VotingOptionsModel');
 const errorController = require('./controllers/errorController');
 const commonRoutes = require('./routers/commonRoutes');
 const fansRoutes = require('./routers/fansRoutes');
+const fileDownloaderRoutes = require('./routers/fileDownloaderRoutes');
 const roleRoutes = require('./routers/roleRoutes');
 const settingsRoutes = require('./routers/settingsRoutes');
 const dictionaryRoutes = require('./routers/dictionary');
@@ -70,10 +71,10 @@ app.use((err, req, res, next) => {
 
 app.all('/*', (req, res, next) => {
   req.headers.origin = req.headers.origin || req.headers.host;
-  console.log('session++++++', req.session);
-  console.log('cookies++++++', req.cookies);
-  console.log('req++++++', req);
-  console.log('res++++++', res);
+  // console.log('session++++++', req.session);
+  // console.log('cookies++++++', req.cookies);
+  // console.log('req++++++', req);
+  // console.log('res++++++', res);
 
   const sessionId = req.sessionID;
   const signedCookies = req.signedCookies;
@@ -95,6 +96,7 @@ app.all('/*', (req, res, next) => {
 
 app.use('/settings', settingsRoutes);
 app.use('/fans', fansRoutes);
+app.use('/fileDownloader', fileDownloaderRoutes);
 app.use('/dictionary', dictionaryRoutes);
 app.use('/common', commonRoutes);
 app.use('/user', userRoutes);

@@ -55,6 +55,20 @@ export const constantRouterMap = [
     ]
   },
   {
+    path: '/FileDownloader',
+    component: Layout,
+    name: 'FileDownloader',
+    hidden: false,
+    meta: { title: '文件下载', icon: 'iconfont icon-mail' },
+    children: [
+      {
+        path: 'FileDownloaderManagement',
+        component: () => import('@/views/FileDownloader/FileDownloaderManagement'),
+        meta: { title: '文件下载', icon: 'iconfont icon-mail' }
+      }
+    ]
+  },
+  {
     path: '/User',
     component: Layout,
     name: 'User',

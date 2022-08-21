@@ -32,7 +32,6 @@ const getUserInfo = (req, res, next) => {
 const createOrUpdate = (req, res, next) => {
   const id = req.body.id;
   let role = req.body.role;
-
   if (!id || id === '') {
     UserModel.create({
       id: uuidv1(),
@@ -190,7 +189,6 @@ const getListByPagination = (req, res, next) => {
     })
     .catch((error) => {
       console.log('getListByPagination error', error);
-      debugger;
 
       res.status(500).json({
         error
