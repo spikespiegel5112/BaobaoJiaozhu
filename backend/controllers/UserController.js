@@ -31,17 +31,19 @@ const getUserInfo = (req, res, next) => {
 
 const createOrUpdate = (req, res, next) => {
   const id = req.body.id;
-  let role = req.body.role;
+  let role = req.body.role || '';
   if (!id || id === '') {
+    console.log('req.body+++++', req.body);
+
     UserModel.create({
       id: uuidv1(),
       loginName: req.body.loginName,
       role: role,
       password: req.body.password,
-      description: req.body.description,
-      phone: req.body.phone,
-      address: req.body.address,
-      email: req.body.email
+      description: req.body.description || '',
+      phone: req.body.phone || 123,
+      address: req.body.address || '',
+      email: req.body.email || ''
     })
       .then(async (result) => {
         console.log('result+++++', result);
@@ -52,6 +54,7 @@ const createOrUpdate = (req, res, next) => {
       })
       .catch((error) => {
         console.log(error);
+        console.log('req.body+++++', req.body);
 
         res.status(500).json({
           message: 'Failed',

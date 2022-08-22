@@ -7,7 +7,7 @@ const VotingOptions = sequelize.define(
   {
     id: {
       type: Sequelize.STRING,
-      allowNull: true,
+      allowNull: false,
       primaryKey: true
     },
     votingId: {

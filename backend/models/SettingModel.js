@@ -7,8 +7,8 @@ const Setting = sequelize.define(
   {
     id: {
       type: Sequelize.INTEGER,
-      autoIncrement: true,
-      allowNull: true,
+      autoIncrement: false,
+      allowNull: false,
       primaryKey: true
     },
     settingId: {

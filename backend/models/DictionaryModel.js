@@ -6,9 +6,9 @@ const Dictionary = sequelize.define(
   'Dictionary',
   {
     id: {
-      type: Sequelize.INTEGER,
-      autoIncrement: true,
-      allowNull: true,
+      type: Sequelize.STRING,
+      autoIncrement: false,
+      allowNull: false,
       primaryKey: true
     },
     dictionaryId: {
