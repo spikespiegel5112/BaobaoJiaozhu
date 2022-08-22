@@ -374,7 +374,6 @@ export default {
         }
       });
       console.log(result);
-      // debugger
       this.typeList = result;
     },
     handleFilter() {

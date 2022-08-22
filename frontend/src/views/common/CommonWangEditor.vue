@@ -76,7 +76,6 @@
       },
       config(value){
         console.log(value)
-        // debugger
         // this.editorInstance.menus = value;
         // this.editorInstance.create();
       },

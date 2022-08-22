@@ -80,7 +80,7 @@ export default {
   },
   watch: {
     isCollapse(value) {
-      //   debugger;
+      
       let result = [];
       this.$router.options.routes.forEach((item, index) => {
         this.$set(result, index, item);
