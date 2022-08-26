@@ -45,7 +45,7 @@ app.use(cookieParser(secret));
 app.use(
   session({
     secret: secret, // 用来对session id相关的cookie进行签名
-    store: new SessionFileStore(), // 本地存储session（文本文件，也可以选择其他store，比如redis或者mongodb）
+    // store: new SessionFileStore(), // 本地存储session（文本文件，也可以选择其他store，比如redis或者mongodb）
     saveUninitialized: true, // 是否自动保存未初始化的会话，一定是true
     resave: false, // 是否每次都重新保存会话，建议false
     cookie: {
@@ -89,7 +89,7 @@ app.all('/*', (req, res, next) => {
     next();
   } else {
     res.status(401).json({
-      data: 401
+      message: '登录已失效'
     });
   }
 });

@@ -6,6 +6,8 @@ const path = require('path');
 const http = require('http');
 // const sequelize = require('../util/database');
 
+// http://pp-jgxzq.oss-cn-qingdao.aliyuncs.com/ctzcf_entrance/entrance_
+// .jpg
 const getFile = (req, res, next) => {
   const dest = path.join('custom_path', 'filename.extname');
   const uri = req.query.filePath + req.query.fileName;
