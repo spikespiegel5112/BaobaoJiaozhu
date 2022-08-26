@@ -3,12 +3,20 @@
     <CommonQuery>
       <template slot="button1">
         <el-button
-          @click="handleCreateFan"
+          @click="handleDownloadSingleFile"
           icon="el-icon-plus"
           size="mini"
           type="primary"
         >
-          添加粉丝
+          单文件下载
+        </el-button>
+        <el-button
+          @click="handleDownloadSeriesFiles"
+          icon="el-icon-plus"
+          size="mini"
+          type="primary"
+        >
+          序列文件下载
         </el-button>
         <el-button
           @click="handleMultipleDelete"
@@ -112,7 +120,7 @@
     <!-- 123 -->
     <el-dialog
       :title="textMap[dialogStatus]"
-      :visible.sync="dialogFormVisible"
+      :visible.sync="dialogFormVisible1"
       top="5vh"
       @close="handleCloseFansInfoDialog"
     >
@@ -156,7 +164,7 @@
     <!-- 456 -->
     <el-dialog
       title="时长录入"
-      :visible.sync="dialogrRecordPaymentVisible"
+      :visible.sync="dialogFormVisible2"
       @close="handleCloseRecordPeriod"
       top="5vh"
       width="1200px"
@@ -166,206 +174,54 @@
         ref="formData2"
         :model="formData2"
         :rules="rules2"
-        label-position="top"
-        label-width="80px"
+        label-position="right"
+        label-width="135px"
       >
         <el-row>
+          <el-row>
+            <el-col :span="12">
+              <el-form-item label="文件路径左半部分" prop="fileNameLeftSide">
+                <el-input v-model="formData2.fileNameLeftSide"></el-input>
+              </el-form-item>
+            </el-col>
+            <el-col :span="12">
+              <el-form-item label="文件路径由半部分" prop="fileNameRightSide">
+                <el-input v-model="formData2.fileNameRightSide"></el-input>
+              </el-form-item>
+            </el-col>
+          </el-row>
+          <el-row>
+            <el-col :span="6">
+              <el-form-item label="起始数字" prop="seriesNumberStart">
+                <el-input v-model="formData2.seriesNumberStart"></el-input>
+              </el-form-item>
+            </el-col>
+            <el-col :span="6">
+              <el-form-item label="结束数字" prop="seriesNumberEnd">
+                <el-input v-model="formData2.seriesNumberEnd"></el-input>
+              </el-form-item>
+            </el-col>
+          </el-row>
           <el-col :span="12">
             <el-row>
-              <el-col :span="24">
-                <el-form-item label="起始日期" prop="startDate">
-                  <el-date-picker
-                    v-model="formData2.startDate"
-                    type="date"
-                    @change="handleChangeStartDate"
-                    :picker-options="pickerOptions"
-                    :default-value="defaultTime"
-                    :editable="false"
-                  >
-                  </el-date-picker>
-                </el-form-item>
-              </el-col>
-              <el-col :span="24">
-                <el-form-item label="时长" prop="period">
-                  <el-select
-                    v-model="formData2.period"
-                    @change="calculateDuration"
-                  >
-                    <el-option
-                      v-for="(item, index) in periodDictionary"
-                      :key="index"
-                      :label="item.title"
-                      :value="item.value"
-                      :disabled="item.disabled"
-                    ></el-option>
-                  </el-select>
-                </el-form-item>
-              </el-col>
-            </el-row>
-          </el-col>
-          <el-col :span="12">
-            <el-row>
-              <el-col :span="24">
-                <ul class="duration">
-                  <li>粉丝昵称：{{ formData.nickName }}</li>
-                  <li>
-                    权益状态:
-                    <el-tag v-if="expireStatus === 'new_fan'" type="info">
-                      新粉丝
-                    </el-tag>
-                    <el-tag
-                      v-else-if="expireStatus === 'not_started'"
-                      type="info"
-                    >
-                      未开始
-                    </el-tag>
-                    <el-tag
-                      v-else-if="expireStatus === 'in_progress'"
-                      type="success"
-                    >
-                      进行中
-                    </el-tag>
-                    <el-tag v-if="expireStatus === 'expired'" type="danger">
-                      已到期
-                    </el-tag>
-                  </li>
-                  <li>
-                    当前权益有效期至:
-                    {{
-                      $isNotEmpty(lastExpireDateString)
-                        ? $moment(lastExpireDateString).format('YYYY-MM-DD')
-                        : '-'
-                    }}
-                  </li>
-                  <li>
-                    添加后有效期至:
-                    {{
-                      $isNotEmpty(formData2.expireDate)
-                        ? $moment(formData2.expireDate).format('YYYY-MM-DD')
-                        : '-'
-                    }}
-                  </li>
-                </ul>
-              </el-col>
+              <el-col :span="24"> </el-col>
             </el-row>
           </el-col>
         </el-row>
+      </el-form>
+      <whiteSpace />
+      <el-progress :percentage="percentage"></el-progress>
+      <whiteSpace />
+
+      <div class="footer alignright">
+        <el-button @click="handleSaveDownloadInfo">保存信息</el-button>
         <el-button
           type="primary"
           :disabled="submitingFlag"
           @click="submitAddPeriod"
         >
-          保存
+          开始下载
         </el-button>
-        <whiteSpace size="xl" />
-        <el-form-item label="权益记录">
-          <el-table
-            class="common_table_wrapper"
-            :data="periodHistoryTableData"
-            border
-            element-loading-text="Loading"
-            fit
-            highlight-current-row
-            v-loading.body="listLoading"
-          >
-            <el-table-column
-              align="center"
-              fixed
-              label="No"
-              type="index"
-              width="45"
-            ></el-table-column>
-            <el-table-column
-              align="center"
-              fixed
-              label="周期"
-              prop="period"
-            ></el-table-column>
-            <el-table-column
-              align="center"
-              fixed
-              label="开始时间"
-              prop="createdAt"
-            >
-              <template slot-scope="scope">
-                {{
-                  $moment(
-                    getTheDayBeforeOffsetTimestamp({
-                      dateString: scope.row.expireDate,
-                      offsetDays: scope.row.period
-                    }) * 1000
-                  ).format('YYYY-MM-DD')
-                }}
-              </template>
-            </el-table-column>
-            <el-table-column
-              align="center"
-              fixed
-              label="结束时间"
-              prop="createdAt"
-            >
-              <template slot-scope="scope">
-                {{ $moment(scope.row.expireDate).format('YYYY-MM-DD') }}
-              </template>
-            </el-table-column>
-            <el-table-column
-              align="center"
-              fixed
-              label="进行状态"
-              prop="createdAt"
-            >
-              <template slot-scope="scope">
-                {{ checkProgressStatus(scope) }}
-              </template>
-            </el-table-column>
-            <el-table-column
-              align="center"
-              fixed
-              label="录入时间"
-              width="200"
-              prop="createdAt"
-            >
-              <template slot-scope="scope">
-                {{ $moment(scope.row.createdAt).format('YYYY-MM-DD hh:mm:ss') }}
-              </template>
-            </el-table-column>
-            <el-table-column align="center" fixed label="操作">
-              <template slot-scope="scope">
-                <el-button
-                  v-if="checkIsNotStartedRecord(scope)"
-                  type="danger"
-                  size="mini"
-                  icon="el-icon-delete"
-                  @click="handleDeletePeriod(scope)"
-                >
-                  删除此权益
-                </el-button>
-                <el-button
-                  v-if="checkIsExpiredRecord(scope)"
-                  size="mini"
-                  icon="el-icon-delete"
-                  @click="handleDeletePeriod(scope)"
-                >
-                  删除此记录
-                </el-button>
-              </template>
-            </el-table-column>
-          </el-table>
-          <whiteSpace size="xl" />
-          <el-pagination
-            :current-page.sync="pagination2.page"
-            :page-size="pagination2.limit"
-            :total="pagination2.total"
-            @current-change="getPeriodHistoryTableData"
-            @size-change="handleSizeChange2"
-            background
-            layout="total, prev, pager, next, jumper"
-          >
-          </el-pagination>
-        </el-form-item>
-      </el-form>
-
-      <div class="footer alignright">
         <el-button @click="handleCloseRecordPeriod">关闭</el-button>
       </div>
     </el-dialog>
@@ -400,9 +256,8 @@ export default {
           value: 365
         }
       ],
-      dialogFormVisible: false,
-      dialogrRecordPaymentVisible: false,
       tableList: [],
+      percentage: 0,
       total: null,
       listLoading: true,
       availabilityFlag: false,
@@ -421,7 +276,8 @@ export default {
       statusOptions: ['published', 'draft', 'deleted'],
       showReviewer: false,
       currentVotingFormdata: [],
-      dialogFormVisible: false,
+      dialogFormVisible1: false,
+      dialogFormVisible2: false,
       dialogStatus: '',
       textMap: {
         update: 'Edit',
@@ -435,24 +291,38 @@ export default {
         phone: ''
       },
       rules: {
-        nickName: [
+        fileNameLeftSide: [
           { required: true, message: '此项为必填项', trigger: 'change' }
         ],
-        email: [
-          { required: false, message: '此项为必填项', trigger: 'change' }
+        fileNameRightSide: [
+          { required: true, message: '此项为必填项', trigger: 'change' }
         ],
-        phone: [{ required: false, message: '此项为必填项', trigger: 'change' }]
+        seriesNumberStart: [
+          { required: true, message: '此项为必填项', trigger: 'change' }
+        ],
+        seriesNumberEnd: [
+          { required: true, message: '此项为必填项', trigger: 'change' }
+        ]
       },
       formData2: {
-        startDate: '',
-        period: '',
-        expireDate: ''
+        fileNameLeftSide: '',
+        fileNameRightSide: '',
+        seriesNumberStart: '',
+        seriesNumberEnd: ''
       },
       rules2: {
-        startDate: [
+        fileNameLeftSide: [
           { required: true, message: '此项为必填项', trigger: 'change' }
         ],
-        period: [{ required: true, message: '此项为必填项', trigger: 'change' }]
+        fileNameRightSide: [
+          { required: true, message: '此项为必填项', trigger: 'change' }
+        ],
+        seriesNumberStart: [
+          { required: true, message: '此项为必填项', trigger: 'change' }
+        ],
+        seriesNumberEnd: [
+          { required: true, message: '此项为必填项', trigger: 'change' }
+        ]
       },
       pagination2: {
         limit: 5,
@@ -611,7 +481,7 @@ export default {
               console.log(response);
               this.submitingFlag = false;
               this.$message.success('提交成功');
-              this.dialogFormVisible = false;
+              this.dialogFormVisible1 = false;
               this.getTableData();
             })
             .catch(error => {
@@ -625,7 +495,7 @@ export default {
     },
 
     async handleUpdateFanInfo(scope) {
-      this.dialogFormVisible = true;
+      this.dialogFormVisible1 = true;
       await this.$nextTick();
       console.log(scope);
       this.formData = {
@@ -641,7 +511,7 @@ export default {
     },
     async handleAddPeriod(scope) {
       await this.$nextTick();
-      this.dialogrRecordPaymentVisible = true;
+      this.dialogFormVisible2 = true;
       this.storedExpireDate = scope.row.expireDate;
       this.formData.nickName = scope.row.nickName;
       this.formData2.id = scope.row.id;
@@ -649,6 +519,20 @@ export default {
       this.getTableData();
       await this.getPeriodHistory();
       this.defaultTime = this.getDefaultTime();
+    },
+    handleSaveDownloadInfo() {
+      this.$refs.formData2.validate().then(valid => {
+        this.$http
+          .post(this.addPeriodRequest, this.formData2)
+          .then(async response => {
+            console.log(response);
+            this.$message.success('提交成功');
+            await this.getPeriodHistory();
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      });
     },
     submitAddPeriod() {
       this.$refs.formData2.validate().then(valid => {
@@ -823,9 +707,12 @@ export default {
         });
     },
 
-    handleCreateFan() {
-      this.dialogFormVisible = true;
+    handleDownloadSingleFile() {
+      this.dialogFormVisible1 = true;
       this.dialogStatus = 'create';
+    },
+    handleDownloadSeriesFiles() {
+      this.dialogFormVisible2 = true;
     },
     handleAddOption() {
       this.formData.optionList.push({
@@ -989,12 +876,12 @@ export default {
       this.formData2.expireDate = null;
       this.periodHistoryData = [];
       this.pagination2.page = 1;
-      this.dialogrRecordPaymentVisible = false;
+      this.dialogFormVisible2 = false;
     },
     async handleCloseFansInfoDialog() {
       this.$refs.formData.resetFields();
 
-      this.dialogFormVisible = false;
+      this.dialogFormVisible1 = false;
     },
     handleDeletePeriod(scope) {
       this.$alert('确认删除此条权益?', '警告', {

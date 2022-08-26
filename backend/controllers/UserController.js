@@ -237,35 +237,39 @@ const register = async (req, res, next) => {
 };
 
 const login = (req, res, next) => {
-  UserModel.findOne({
-    where: {
-      loginName: req.body.loginName
-    }
-  })
-    .then(async (response) => {
-      const responsePassword = response.password;
-      const requestPassword = await encryptPromise(req.body.password);
-      console.log('login+++++++', req);
-      if (responsePassword === requestPassword) {
-        const loginName = req.body.loginName;
-        // req.session.loginName = loginName;
-        // const sessionId = req.session.id;
-        // res.cookie('token', loginName, { domain: req.headers.Referer, maxAge: 24 * 3600, httpOnly: true, signed: false });
-        res.status(200).json({
-          data: req.body
-        });
-      } else {
-        res.status(400).json({
-          message: '密码不对'
-        });
-      }
-    })
-    .catch((error) => {
-      res.status(400).json({
-        message: error.message,
-        error
-      });
-    });
+  res.status(200).json({
+    // data: req.body
+    data: ''
+  });
+  // UserModel.findOne({
+  //   where: {
+  //     loginName: req.body.loginName
+  //   }
+  // })
+  //   .then(async (response) => {
+  //     const responsePassword = response.password;
+  //     const requestPassword = await encryptPromise(req.body.password);
+  //     console.log('login+++++++', req);
+  //     if (responsePassword === requestPassword) {
+  //       const loginName = req.body.loginName;
+  //       // req.session.loginName = loginName;
+  //       // const sessionId = req.session.id;
+  //       // res.cookie('token', loginName, { domain: req.headers.Referer, maxAge: 24 * 3600, httpOnly: true, signed: false });
+  //       res.status(200).json({
+  //         data: req.body
+  //       });
+  //     } else {
+  //       res.status(400).json({
+  //         message: '密码不对'
+  //       });
+  //     }
+  //   })
+  //   .catch((error) => {
+  //     res.status(400).json({
+  //       message: error.message,
+  //       error
+  //     });
+  //   });
 };
 
 const logout = (req, res, next) => {

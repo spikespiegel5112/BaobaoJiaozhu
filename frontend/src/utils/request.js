@@ -63,7 +63,7 @@ service.interceptors.response.use(
         path: '/login'
       });
       Message({
-        message: response.data,
+        message: response.data.message,
         type: 'error',
         duration: 5 * 1000
       });
