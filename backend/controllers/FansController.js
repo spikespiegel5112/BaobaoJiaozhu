@@ -28,6 +28,7 @@ const getListByPagination = (req, res, next) => {
   FansModel.findAll(Object.assign(query, pagination))
     .then(async (data) => {
       res.status(200).json({
+        message: 'Operation successful',
         pagination: {
           total: await FansModel.count()
         },

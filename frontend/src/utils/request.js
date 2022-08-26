@@ -49,6 +49,7 @@ service.interceptors.request.use(
 // respone拦截器
 service.interceptors.response.use(
   response => {
+    console.log(response);
     return response.data;
   },
   error => {
@@ -56,7 +57,7 @@ service.interceptors.response.use(
     console.log(error.message);
     console.log(error.response);
     const response = error.response;
-    const status = response.status;
+    const status = error.status;
     if (status === 401) {
       Router.push({
         path: '/login'

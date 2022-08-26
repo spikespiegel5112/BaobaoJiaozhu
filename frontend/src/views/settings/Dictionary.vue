@@ -7,7 +7,6 @@
           icon="el-icon-plus"
           size="mini"
           type="primary"
-          
         >
           新建
         </el-button>
@@ -16,7 +15,6 @@
           icon="el-icon-delete"
           size="mini"
           type="danger"
-          
         >
           批量删除
         </el-button>
@@ -150,7 +148,7 @@
         </el-col>
       </el-row>
       <div class="dialog-footer" slot="footer">
-        <el-button @click="createDialogFormVisible = false" >{{
+        <el-button @click="createDialogFormVisible = false">{{
           $t('table.cancel')
         }}</el-button>
         <el-button @click="updateData" type="primary">{{
@@ -207,10 +205,10 @@
         </el-col>
       </el-row>
       <div class="dialog-footer" slot="footer">
-        <el-button @click="dialogFormVisible = false" >{{
+        <el-button @click="dialogFormVisible = false">{{
           $t('table.cancel')
         }}</el-button>
-        <el-button @click="updateData" type="primary" >{{
+        <el-button @click="updateData" type="primary">{{
           $t('table.confirm')
         }}</el-button>
       </div>
@@ -243,10 +241,10 @@
         </el-col>
       </el-row>
       <div class="dialog-footer" slot="footer">
-        <el-button @click="addTypeFlag = false" >{{
+        <el-button @click="addTypeFlag = false">{{
           $t('table.cancel')
         }}</el-button>
-        <el-button @click="createType" type="primary" >{{
+        <el-button @click="createType" type="primary">{{
           $t('table.confirm')
         }}</el-button>
       </div>
