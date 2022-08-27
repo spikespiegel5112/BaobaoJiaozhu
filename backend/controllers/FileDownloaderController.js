@@ -1,17 +1,19 @@
-const FansModel = require('../models/FansModel');
-const FansPeriodHistoryModel = require('../models/FansPeriodHistoryModel');
 const moment = require('moment');
+const uuidv1 = require('uuid/v1');
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
+const FileDownloaderModel = require('../models/FileDownloaderModel');
 // const sequelize = require('../util/database');
 
 // http://pp-jgxzq.oss-cn-qingdao.aliyuncs.com/ctzcf_entrance/entrance_
 // .jpg
 const getFile = (req, res, next) => {
-  const dest = path.join('custom_path', 'filename.extname');
-  const uri = req.query.filePath + req.query.fileName;
-  http.get(uri, (res) => {
+  const filePathArr = req.query.filePath.join('');
+  const filePath = filePathArr[filePathArr.length - 1] !== '/' ? filePath + '/' : filePath;
+  const dest = path.join(req.query.filePath, req.query.fileName);
+  // const uri = req.query.filePath + req.query.fileName;
+  http.get(dest, (res) => {
     if (res.statusCode !== 200) {
       console.log(res);
       return;
@@ -110,87 +112,63 @@ const deleteFile = (req, res, next) => {
   }
 };
 
-const _checkEquityStatus = (data) => {
-  console.log('_checkEquityStatus', data);
-  const currentDateTimestamp = moment().unix();
-  const expireDateTimestamp = moment(data.expireDate).unix();
-
-  //   console.log('data.expireDate+++++', data.expireDate)
-  //   console.log('currentDateTimestamp+++++', currentDateTimestamp)
-  //   console.log('expireDateTimestamp+++++', expireDateTimestamp)
-  const periodTimestamp = data.period * 24 * 3600;
-  let result = '';
-  if (expireDateTimestamp - periodTimestamp > currentDateTimestamp) {
-    result = 'not_started';
-  } else if (expireDateTimestamp > currentDateTimestamp && expireDateTimestamp - periodTimestamp < currentDateTimestamp) {
-    result = 'in_progress';
-  } else if (expireDateTimestamp + periodTimestamp < currentDateTimestamp) {
-    result = 'finished';
-  }
-  return result;
-};
-
-const getPeriodHistory = (req, res, next) => {
-  const pagination = {
-    limit: Number(req.query.limit),
-    page: Number(req.query.page),
-    offset: req.query.limit * (req.query.page - 1)
-  };
-  const query = {
-    order: [['expireDate', 'DESC']],
-    where: {
-      fanId: req.query.fanId
-    }
-  };
-  FansPeriodHistoryModel.findAll(Object.assign(query, {}))
-    .then(async (data) => {
-      res.status(200).json({
-        message: 'Created successful',
-        total: await FansPeriodHistoryModel.count(),
-        data: data.map((item) => {
-          return {
-            ...item.dataValues,
-            equityStatus: _checkEquityStatus(item)
-          };
-        })
-      });
+const createOrUpdate = (req, res, next) => {
+  const id = req.body.id;
+  if (!id || id === '') {
+    FileDownloaderModel.create({
+      id: uuidv1(),
+      fileNameLeftSide: req.body.fileNameLeftSide,
+      fileNameRightSide: req.body.fileNameRightSide,
+      seriesNumberStart: req.body.seriesNumberStart,
+      seriesNumberEnd: req.body.seriesNumberEnd
     })
-    .catch((error) => {
-      console.log(error);
-      res.status(500).json({
-        message: 'Failed',
-        error
-      });
-    });
-};
-
-const _addFanPeriodHistroyPromise = (req, res, next) => {
-  return new Promise((resolve, reject) => {
-    FansPeriodHistoryModel.create({
-      fanId: req.body.id,
-      period: req.body.period,
-      expireDate: req.body.expireDate
-    })
-      .then(async (data) => {
-        FansModel.findOne({
-          id: req.body.id
-        })
-          .then(async (data) => {
-            data.expireDate = req.body.expireDate;
-            await data.save();
-            resolve();
-          })
-          .catch((error) => {
-            console.log(error);
-            reject();
-          });
+      .then(async (result) => {
+        console.log('result+++++', result);
+        res.status(200).json({
+          message: 'Created successful',
+          result
+        });
       })
       .catch((error) => {
         console.log(error);
-        reject();
+        res.status(500).json({
+          message: 'Failed',
+          error
+        });
       });
-  });
+  } else {
+    console.log('id', id);
+    console.log('req.body', req.body);
+
+    FileDownloaderModel.findOne({
+      where: {
+        id
+      }
+    })
+      .then(async (data) => {
+        console.log(data);
+        data.fileNameLeftSide = req.body.fileNameLeftSide;
+        data.fileNameRightSide = req.body.fileNameRightSide;
+        data.seriesNumberStart = req.body.seriesNumberStart;
+        data.seriesNumberEnd = req.body.seriesNumberEnd;
+        await data.save();
+
+        res.status(200).json({
+          message: 'Updated successful',
+          result: data
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        res.status(500).json({
+          message: 'Failed',
+          req: req.body,
+          error
+        });
+      });
+  }
 };
 
 exports.getFile = getFile;
 exports.deleteFile = deleteFile;
+exports.createOrUpdate = createOrUpdate;

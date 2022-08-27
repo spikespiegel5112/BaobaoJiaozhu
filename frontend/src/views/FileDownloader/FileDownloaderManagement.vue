@@ -160,10 +160,10 @@
       </div>
     </el-dialog>
 
-    <!-- 时长录入 -->
+    <!-- 序列文件下载 -->
     <!-- 456 -->
     <el-dialog
-      title="时长录入"
+      title="序列文件下载"
       :visible.sync="dialogFormVisible2"
       @close="handleCloseRecordPeriod"
       top="5vh"
@@ -352,62 +352,9 @@ export default {
     },
     period() {
       return this.formData2.startDate;
-    },
-    pickerOptions() {
-      const that = this;
-      return {
-        shortcuts: [
-          {
-            text: '今天',
-            onClick(picker) {
-              picker.$emit('pick', new Date());
-            }
-          },
-          {
-            text: '到期日后一天',
-            onClick(picker) {
-              // 先从最近到期日转成秒级时间戳，然后加一天，然后转成毫秒级，然后用new Date()转换成时间对象
-              if (that.$isNotEmpty(that.lastExpireDateString)) {
-                const theDayAfterLastExpireDayTimestamp =
-                  that.$moment(that.lastExpireDateString).unix() + 24 * 3600;
-                picker.$emit(
-                  'pick',
-                  new Date(theDayAfterLastExpireDayTimestamp * 1000)
-                );
-              }
-            }
-          }
-        ],
-        disabledDate: time => {
-          const currentTimestamp = time.getTime() / 1000;
-          return this.checkDateAvailable(currentTimestamp);
-        }
-      };
     }
   },
-  watch: {
-    effectiveDuration(value) {
-      console.log(value);
-      if (value === null) {
-        value = [];
-      }
-      this.formData.startDate = this.$moment(value[0]).format('YYYY-MM-DD');
-      this.formData.endDate = this.$moment(value[1]).format('YYYY-MM-DD');
-    },
-    currentAdvertisementTabIndex(value) {
-      console.log(value);
-    }
-    // 'formData2.startDate': {
-    //   handler(value) {
-    //     this.periodDictionary = this.periodDictionary.map(item => {
-    //       return {
-    //         ...item,
-    //         disabled: this.$isEmpty(value)
-    //       };
-    //     });
-    //   },
-    // }
-  },
+  watch: {},
   async mounted() {
     this.getTableData();
   },
@@ -428,21 +375,6 @@ export default {
         .catch(error => {
           console.log(error);
         });
-    },
-    checkDateAvailable(timestamp) {
-      let result = false;
-      this.periodHistoryTableData.forEach(item => {
-        const periodTimestamp = item.period * 24 * 3600;
-        const endDateTimestamp = this.$moment(item.expireDate).unix();
-        const startDateTimestamp = endDateTimestamp - periodTimestamp;
-        if (
-          startDateTimestamp < timestamp + 24 * 3600 &&
-          endDateTimestamp > timestamp
-        ) {
-          result = true;
-        }
-      });
-      return result;
     },
     handleFilter() {
       this.pagination.page = 1;

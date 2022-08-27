@@ -2,8 +2,8 @@ const Sequelize = require('sequelize');
 
 const sequelize = require('../util/database');
 
-const FileDownload = sequelize.define(
-  'FileDownload',
+const FileDownloader = sequelize.define(
+  'FileDownloader',
   {
     id: {
       type: Sequelize.STRING,
@@ -41,4 +41,4 @@ const FileDownload = sequelize.define(
   }
 );
 
-module.exports = Fans;
+module.exports = FileDownloader;

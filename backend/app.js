@@ -14,6 +14,7 @@ const UserModel = require('./models/UserModel');
 const RoleModel = require('./models/RoleModel');
 const FansModel = require('./models/FansModel');
 const VotingOptionsModel = require('./models/VotingOptionsModel');
+const FileDownloaderModel = require('./models/FileDownloaderModel');
 
 const errorController = require('./controllers/errorController');
 const commonRoutes = require('./routers/commonRoutes');
