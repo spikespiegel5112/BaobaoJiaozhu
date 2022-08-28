@@ -11,6 +11,14 @@ const FileDownloader = sequelize.define(
       allowNull: false,
       primaryKey: true
     },
+    name: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
+    type: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
     fileNameLeftSide: {
       type: Sequelize.STRING,
       allowNull: true
@@ -27,11 +35,7 @@ const FileDownloader = sequelize.define(
       type: Sequelize.STRING,
       allowNull: true
     },
-    expireDate: {
-      type: Sequelize.DATE,
-      allowNull: true
-    },
-    type: {
+    destDirectory: {
       type: Sequelize.STRING,
       allowNull: true
     }

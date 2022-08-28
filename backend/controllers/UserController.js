@@ -177,7 +177,6 @@ const getListByPagination = (req, res, next) => {
           })
         );
       }
-      //   debugger;
 
       console.log(aaa);
 

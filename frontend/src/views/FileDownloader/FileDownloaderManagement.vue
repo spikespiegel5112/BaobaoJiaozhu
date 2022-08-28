@@ -67,16 +67,31 @@
       ></el-table-column>
       <el-table-column
         align="center"
-        label="昵称"
-        prop="nickName"
-      ></el-table-column>
-      <el-table-column align="center" label="E-mail" prop="email">
+        label="文件名左侧"
+        prop="fileNameLeftSide"
+      >
       </el-table-column>
-      <el-table-column align="center" label="电话" prop="phone">
+      <el-table-column
+        align="center"
+        label="文件名右侧"
+        prop="fileNameRightSide"
+      >
       </el-table-column>
-      <el-table-column align="center" label="是否到期" prop="isExpire">
+      <el-table-column
+        align="center"
+        label="序列号起始值"
+        prop="seriesNumberStart"
+      >
       </el-table-column>
-      <el-table-column align="center" label="到期时间" prop="expireDate">
+      <el-table-column
+        align="center"
+        label="序列号结束值"
+        prop="seriesNumberEnd"
+      >
+      </el-table-column>
+      <el-table-column align="center" label="类型ƒ" prop="type">
+      </el-table-column>
+      <el-table-column align="center" label="目标位置" prop="destDirectory">
       </el-table-column>
       <el-table-column align="center" fixed="right" label="操作" width="360">
         <template slot-scope="scope">
@@ -180,6 +195,21 @@
         <el-row>
           <el-row>
             <el-col :span="12">
+              <el-form-item label="名称" prop="name">
+                <el-input v-model="formData2.name"></el-input>
+              </el-form-item>
+            </el-col>
+            <el-col :span="12">
+              <el-form-item label="类型" prop="type">
+                <el-select v-model="formData2.type">
+                  <el-option value="single" label="单文件">单文件</el-option>
+                  <el-option value="multiple" label="多文件">多文件</el-option>
+                </el-select>
+              </el-form-item>
+            </el-col>
+          </el-row>
+          <el-row>
+            <el-col :span="12">
               <el-form-item label="文件路径左半部分" prop="fileNameLeftSide">
                 <el-input v-model="formData2.fileNameLeftSide"></el-input>
               </el-form-item>
@@ -201,12 +231,12 @@
                 <el-input v-model="formData2.seriesNumberEnd"></el-input>
               </el-form-item>
             </el-col>
+            <el-col :span="12">
+              <el-form-item label="目标位置" prop="destDirectory">
+                <el-input v-model="formData2.destDirectory"></el-input>
+              </el-form-item>
+            </el-col>
           </el-row>
-          <el-col :span="12">
-            <el-row>
-              <el-col :span="24"> </el-col>
-            </el-row>
-          </el-col>
         </el-row>
       </el-form>
       <whiteSpace />
@@ -218,7 +248,7 @@
         <el-button
           type="primary"
           :disabled="submitingFlag"
-          @click="submitAddPeriod"
+          @click="submitDownlaoderInfo"
         >
           开始下载
         </el-button>
@@ -232,13 +262,14 @@
 export default {
   data() {
     return {
-      getListByPaginationRequest: 'fans/getListByPagination',
-      createOrUpdateRequest: 'fans/createOrUpdate',
-      deleteItemsRequest: 'fans/deleteItems',
-      addPeriodRequest: 'fans/addPeriod',
-      getFansInfoRequest: 'fans/getFansInfo',
-      getPeriodHistoryRequest: 'fans/getPeriodHistory',
-      deletePeriodRequest: 'fans/deletePeriod',
+      getDownloaderInfoByPaginationRequest:
+        'fileDownloader/getDownloaderInfoByPagination',
+      createOrUpdateRequest: 'fileDownloader/createOrUpdate',
+      deleteItemsRequest: 'fileDownloader/deleteItems',
+      getFansInfoRequest: 'fileDownloader/getFansInfo',
+      getSingleFileRequest: 'fileDownloader/getSingleFile',
+      getTableDataRequest: 'fileDownloader/getTableData',
+      deletePeriodRequest: 'fileDownloader/deletePeriod',
       periodDictionary: [
         {
           title: '90天',
@@ -305,23 +336,31 @@ export default {
         ]
       },
       formData2: {
+        name: '',
+        type: '',
         fileNameLeftSide: '',
         fileNameRightSide: '',
         seriesNumberStart: '',
-        seriesNumberEnd: ''
+        seriesNumberEnd: '',
+        destDirectory: ''
       },
       rules2: {
+        name: [{ required: false, message: '此项为必填项', trigger: 'change' }],
+        type: [{ required: false, message: '此项为必填项', trigger: 'change' }],
         fileNameLeftSide: [
-          { required: true, message: '此项为必填项', trigger: 'change' }
+          { required: false, message: '此项为必填项', trigger: 'change' }
         ],
         fileNameRightSide: [
-          { required: true, message: '此项为必填项', trigger: 'change' }
+          { required: false, message: '此项为必填项', trigger: 'change' }
         ],
         seriesNumberStart: [
-          { required: true, message: '此项为必填项', trigger: 'change' }
+          { required: false, message: '此项为必填项', trigger: 'change' }
         ],
         seriesNumberEnd: [
-          { required: true, message: '此项为必填项', trigger: 'change' }
+          { required: false, message: '此项为必填项', trigger: 'change' }
+        ],
+        destDirectory: [
+          { required: false, message: '此项为必填项', trigger: 'change' }
         ]
       },
       pagination2: {
@@ -363,11 +402,11 @@ export default {
       this.listLoading = true;
       this.queryModel = Object.assign(this.queryModel, this.pagination);
       this.$http
-        .get(this.getListByPaginationRequest, {
+        .get(this.getDownloaderInfoByPaginationRequest, {
           params: this.queryModel
         })
         .then(response => {
-          console.log('getListByPaginationRequest', response);
+          console.log('getDownloaderInfoByPaginationRequest', response);
           this.tableList = response.data;
           this.pagination.total = response.pagination.total;
           this.listLoading = false;
@@ -390,11 +429,11 @@ export default {
     },
     handleSizeChange2(val) {
       this.pagination2.limit = val;
-      this.getPeriodHistory();
+      this.getTableData();
     },
     handleCurrentChange2(val) {
       this.pagination2.page = val;
-      this.getPeriodHistory();
+      this.getTableData();
     },
 
     createData() {
@@ -413,7 +452,7 @@ export default {
               console.log(response);
               this.submitingFlag = false;
               this.$message.success('提交成功');
-              this.dialogFormVisible1 = false;
+              this.dialogFormVisible2 = false;
               this.getTableData();
             })
             .catch(error => {
@@ -427,19 +466,23 @@ export default {
     },
 
     async handleUpdateFanInfo(scope) {
-      this.dialogFormVisible1 = true;
+      this.dialogFormVisible2 = true;
       await this.$nextTick();
       console.log(scope);
-      this.formData = {
+      this.formData2 = {
         id: scope.row.id,
-        email: scope.row.email,
-        phone: scope.row.phone,
-        nickName: scope.row.nickName
+        name: scope.row.name,
+        type: scope.row.type,
+        fileNameLeftSide: scope.row.fileNameLeftSide,
+        fileNameRightSide: scope.row.fileNameRightSide,
+        seriesNumberStart: scope.row.seriesNumberStart,
+        seriesNumberEnd: scope.row.seriesNumberEnd,
+        destDirectory: scope.row.destDirectory
       };
-      console.log(this.formData);
+      console.log(this.formData2);
 
       this.dialogStatus = 'update';
-      this.$refs.formData.clearValidate();
+      this.$refs.formData2.clearValidate();
     },
     async handleAddPeriod(scope) {
       await this.$nextTick();
@@ -449,31 +492,35 @@ export default {
       this.formData2.id = scope.row.id;
 
       this.getTableData();
-      await this.getPeriodHistory();
+      await this.getTableData();
       this.defaultTime = this.getDefaultTime();
     },
     handleSaveDownloadInfo() {
       this.$refs.formData2.validate().then(valid => {
         this.$http
-          .post(this.addPeriodRequest, this.formData2)
+          .post(this.createOrUpdateRequest, this.formData2)
           .then(async response => {
             console.log(response);
             this.$message.success('提交成功');
-            await this.getPeriodHistory();
+            this.dialogFormVisible2 = false;
+            await this.getTableData();
           })
           .catch(error => {
             console.log(error);
           });
       });
     },
-    submitAddPeriod() {
+    submitDownlaoderInfo() {
       this.$refs.formData2.validate().then(valid => {
         this.$http
-          .post(this.addPeriodRequest, this.formData2)
+          .post(this.getSingleFileRequest, {
+            filePath:
+              this.formData2.fileNameLeftSide + this.formData2.fileNameRightSide
+          })
           .then(async response => {
             console.log(response);
             this.$message.success('提交成功');
-            await this.getPeriodHistory();
+            await this.getTableData();
           })
           .catch(error => {
             console.log(error);
@@ -499,39 +546,7 @@ export default {
           });
       });
     },
-    getPeriodHistory() {
-      return new Promise((resolve, reject) => {
-        this.$http
-          .get(this.getPeriodHistoryRequest, {
-            params: {
-              limit: this.pagination2.limit,
-              page: this.pagination2.page,
-              fanId: this.formData2.id
-            }
-          })
-          .then(response => {
-            console.log('getPeriodHistory++++', response);
-            this.periodHistoryData = response.data;
-            this.getPeriodHistoryTableData(1);
-            this.defaultTime = this.getDefaultTime();
-            this.pagination2.total = response.total;
-            this.getLastExpireDateString();
-            resolve();
-          })
-          .catch(error => {
-            console.log(error);
-            reject();
-          });
-      });
-    },
-    getPeriodHistoryTableData(page) {
-      page = page || this.pagination2.page;
-      const offset = this.pagination2.limit;
-      page = page - 1;
-      this.periodHistoryTableData = this.periodHistoryData.filter(
-        (item, index) => index >= page * offset && index < (page + 1) * offset
-      );
-    },
+
     getLastExpireDateString() {
       this.lastExpireDateString = this.periodHistoryData[0]
         ? this.periodHistoryData[0].expireDate
@@ -835,7 +850,7 @@ export default {
             type: 'success',
             message: '权益删除成功'
           });
-          await this.getPeriodHistory();
+          await this.getTableData();
         })
         .catch(error => {
           console.log(error);

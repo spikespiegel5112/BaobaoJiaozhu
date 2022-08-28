@@ -56,7 +56,7 @@ service.interceptors.response.use(
     console.log(error);
     console.log(error.message);
     console.log(error.response);
-    const response = error.response;
+    const response = error;
     const status = error.status;
     if (status === 401) {
       Router.push({
