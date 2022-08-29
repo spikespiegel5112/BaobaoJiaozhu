@@ -16,7 +16,7 @@
           size="mini"
           type="primary"
         >
-          序列文件下载
+          文件下载
         </el-button>
         <el-button
           @click="handleMultipleDelete"
@@ -65,16 +65,12 @@
         type="index"
         width="45"
       ></el-table-column>
-      <el-table-column
-        align="center"
-        label="文件名左侧"
-        prop="fileNameLeftSide"
-      >
+      <el-table-column align="center" label="文件名左侧" prop="fileUrlLeftSide">
       </el-table-column>
       <el-table-column
         align="center"
         label="文件名右侧"
-        prop="fileNameRightSide"
+        prop="fileUrlRightSide"
       >
       </el-table-column>
       <el-table-column
@@ -91,7 +87,7 @@
       </el-table-column>
       <el-table-column align="center" label="类型ƒ" prop="type">
       </el-table-column>
-      <el-table-column align="center" label="目标位置" prop="destDirectory">
+      <el-table-column align="center" label="目标位置" prop="destPath">
       </el-table-column>
       <el-table-column align="center" fixed="right" label="操作" width="360">
         <template slot-scope="scope">
@@ -101,15 +97,7 @@
             type="primary"
             icon="el-icon-edit-outline"
           >
-            编辑基本信息
-          </el-button>
-          <el-button
-            @click="handleAddPeriod(scope)"
-            size="mini"
-            type="primary"
-            icon="el-icon-edit"
-          >
-            录入时长
+            编辑
           </el-button>
           <el-button @click="handleDelete(scope)" size="mini" type="danger">
             删除
@@ -131,54 +119,11 @@
       >
       </el-pagination>
     </div>
-    <!-- 编辑 -->
+
+    <!-- 文件下载 -->
     <!-- 123 -->
     <el-dialog
-      :title="textMap[dialogStatus]"
-      :visible.sync="dialogFormVisible1"
-      top="5vh"
-      @close="handleCloseFansInfoDialog"
-    >
-      <el-row type="flex" justify="left">
-        <el-col :span="12">
-          <el-form
-            ref="formData"
-            :model="formData"
-            :rules="rules"
-            label-position="right"
-            label-width="80px"
-            class="dialog_wrapper"
-          >
-            <el-form-item label="粉丝昵称" prop="nickName">
-              <el-input v-model="formData.nickName"></el-input>
-            </el-form-item>
-            <el-form-item label="E-mail" prop="email">
-              <el-input v-model="formData.email"></el-input>
-            </el-form-item>
-            <el-form-item label="电话" prop="phone">
-              <el-input v-model="formData.phone"></el-input>
-            </el-form-item>
-          </el-form>
-        </el-col>
-      </el-row>
-
-      <whiteSpace size="xl" />
-      <div class="footer alignright">
-        <el-button
-          type="primary"
-          :disabled="submitingFlag"
-          @click="handleSaveFan"
-        >
-          保存
-        </el-button>
-        <el-button @click="handleCloseFansInfoDialog">取消</el-button>
-      </div>
-    </el-dialog>
-
-    <!-- 序列文件下载 -->
-    <!-- 456 -->
-    <el-dialog
-      title="序列文件下载"
+      title="文件下载"
       :visible.sync="dialogFormVisible2"
       @close="handleCloseRecordPeriod"
       top="5vh"
@@ -195,7 +140,7 @@
         <el-row>
           <el-row>
             <el-col :span="12">
-              <el-form-item label="名称" prop="name">
+              <el-form-item label="下载操作名称" prop="name">
                 <el-input v-model="formData2.name"></el-input>
               </el-form-item>
             </el-col>
@@ -208,32 +153,43 @@
               </el-form-item>
             </el-col>
           </el-row>
-          <el-row>
+          <el-row v-if="formData2.type === 'single'">
             <el-col :span="12">
-              <el-form-item label="文件路径左半部分" prop="fileNameLeftSide">
-                <el-input v-model="formData2.fileNameLeftSide"></el-input>
-              </el-form-item>
-            </el-col>
-            <el-col :span="12">
-              <el-form-item label="文件路径由半部分" prop="fileNameRightSide">
-                <el-input v-model="formData2.fileNameRightSide"></el-input>
+              <el-form-item label="文件路径" prop="fileUrlLeftSide">
+                <el-input v-model="formData2.fileUrl"></el-input>
               </el-form-item>
             </el-col>
           </el-row>
+          <div v-if="formData2.type === 'multiple'">
+            <el-row>
+              <el-col :span="12">
+                <el-form-item label="文件路径左半部分" prop="fileUrlLeftSide">
+                  <el-input v-model="formData2.fileUrlLeftSide"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="12">
+                <el-form-item label="文件路径由半部分" prop="fileUrlRightSide">
+                  <el-input v-model="formData2.fileUrlRightSide"></el-input>
+                </el-form-item>
+              </el-col>
+            </el-row>
+            <el-row>
+              <el-col :span="6">
+                <el-form-item label="起始数字" prop="seriesNumberStart">
+                  <el-input v-model="formData2.seriesNumberStart"></el-input>
+                </el-form-item>
+              </el-col>
+              <el-col :span="6">
+                <el-form-item label="结束数字" prop="seriesNumberEnd">
+                  <el-input v-model="formData2.seriesNumberEnd"></el-input>
+                </el-form-item>
+              </el-col>
+            </el-row>
+          </div>
           <el-row>
-            <el-col :span="6">
-              <el-form-item label="起始数字" prop="seriesNumberStart">
-                <el-input v-model="formData2.seriesNumberStart"></el-input>
-              </el-form-item>
-            </el-col>
-            <el-col :span="6">
-              <el-form-item label="结束数字" prop="seriesNumberEnd">
-                <el-input v-model="formData2.seriesNumberEnd"></el-input>
-              </el-form-item>
-            </el-col>
             <el-col :span="12">
-              <el-form-item label="目标位置" prop="destDirectory">
-                <el-input v-model="formData2.destDirectory"></el-input>
+              <el-form-item label="目标位置" prop="destPath">
+                <el-input v-model="formData2.destPath"></el-input>
               </el-form-item>
             </el-col>
           </el-row>
@@ -322,10 +278,10 @@ export default {
         phone: ''
       },
       rules: {
-        fileNameLeftSide: [
+        fileUrlLeftSide: [
           { required: true, message: '此项为必填项', trigger: 'change' }
         ],
-        fileNameRightSide: [
+        fileUrlRightSide: [
           { required: true, message: '此项为必填项', trigger: 'change' }
         ],
         seriesNumberStart: [
@@ -338,19 +294,23 @@ export default {
       formData2: {
         name: '',
         type: '',
-        fileNameLeftSide: '',
-        fileNameRightSide: '',
+        fileUrl: '',
+        fileUrlLeftSide: '',
+        fileUrlRightSide: '',
         seriesNumberStart: '',
         seriesNumberEnd: '',
-        destDirectory: ''
+        destPath: ''
       },
       rules2: {
         name: [{ required: false, message: '此项为必填项', trigger: 'change' }],
         type: [{ required: false, message: '此项为必填项', trigger: 'change' }],
-        fileNameLeftSide: [
+        fileUrl: [
+          { required: true, message: '此项为必填项', trigger: 'change' }
+        ],
+        fileUrlLeftSide: [
           { required: false, message: '此项为必填项', trigger: 'change' }
         ],
-        fileNameRightSide: [
+        fileUrlRightSide: [
           { required: false, message: '此项为必填项', trigger: 'change' }
         ],
         seriesNumberStart: [
@@ -359,7 +319,7 @@ export default {
         seriesNumberEnd: [
           { required: false, message: '此项为必填项', trigger: 'change' }
         ],
-        destDirectory: [
+        destPath: [
           { required: false, message: '此项为必填项', trigger: 'change' }
         ]
       },
@@ -473,11 +433,11 @@ export default {
         id: scope.row.id,
         name: scope.row.name,
         type: scope.row.type,
-        fileNameLeftSide: scope.row.fileNameLeftSide,
-        fileNameRightSide: scope.row.fileNameRightSide,
+        fileUrlLeftSide: scope.row.fileUrlLeftSide,
+        fileUrlRightSide: scope.row.fileUrlRightSide,
         seriesNumberStart: scope.row.seriesNumberStart,
         seriesNumberEnd: scope.row.seriesNumberEnd,
-        destDirectory: scope.row.destDirectory
+        destPath: scope.row.destPath
       };
       console.log(this.formData2);
 
@@ -512,19 +472,50 @@ export default {
     },
     submitDownlaoderInfo() {
       this.$refs.formData2.validate().then(valid => {
-        this.$http
-          .post(this.getSingleFileRequest, {
-            filePath:
-              this.formData2.fileNameLeftSide + this.formData2.fileNameRightSide
-          })
-          .then(async response => {
-            console.log(response);
-            this.$message.success('提交成功');
-            await this.getTableData();
-          })
-          .catch(error => {
-            console.log(error);
-          });
+        if (this.formData2.type === 'multiple') {
+          const times =
+            Number(this.formData2.seriesNumberEnd) -
+            Number(this.formData2.seriesNumberEnd);
+          let count = 0;
+          const loop = () => {
+            this.$http
+              .post(this.getSingleFileRequest, {
+                type: this.formData2.type,
+                filePath:
+                  this.formData2.fileUrlLeftSide +
+                  this.formData2.fileUrlRightSide
+              })
+              .then(async response => {
+                console.log(response);
+                this.$message.success('提交成功');
+                count++;
+                if (count < times) {
+                  loop();
+                }
+              })
+              .catch(error => {
+                console.log(error);
+              });
+          };
+        } else if (this.formData2.type === 'single') {
+          this.$http
+            .post(this.getSingleFileRequest, {
+              type: this.formData2.type,
+              fileUrl: this.formData2.fileUrl
+            })
+            .then(async response => {
+              console.log(response);
+              this.$message.success('提交成功');
+              await this.getTableData();
+            })
+            .catch(error => {
+              console.log(error);
+            });
+        }
+        const fileUrl =
+          this.formData2.type === 'multiple'
+            ? this.formData2.fileUrlLeftSides + this.formData2.fileUrlRightSide
+            : this.formData2.type;
       });
     },
     getFansInfo(scope) {

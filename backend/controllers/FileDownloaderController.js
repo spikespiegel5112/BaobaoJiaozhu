@@ -3,6 +3,7 @@ const uuidv1 = require('uuid/v1');
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
+const request = require('request');
 const FileDownloaderModel = require('../models/FileDownloaderModel');
 // const sequelize = require('../util/database');
 
@@ -10,29 +11,26 @@ const FileDownloaderModel = require('../models/FileDownloaderModel');
 // .jpg
 const getSingleFile = (req, res, next) => {
   console.log('getFIle+++++++', req.body);
-  const dest = req.body.filePath + req.body.fileName;
-  http.get(dest, (res) => {
-    if (res.statusCode !== 200) {
-      console.log(res);
-      return;
-    }
+  const dirPath = path.join(__dirname, '/website');
+  const requestPath = req.body.fileUrl;
+  const fileNameArr = requestPath.split('/');
+  const fileName = fileNameArr[fileNameArr.length];
+  console.log('fileNameArr+++++', fileNameArr);
+  console.log('fileName+++++', fileName);
+  const destFileName = path.join('/website/', 'aaa.jpg');
+  const steam = fs.createWriteStream(destFileName);
 
-    res.on('end', () => {
-      console.log('finish download');
-    });
-
-    // 进度、超时等
-
-    file
-      .on('finish', () => {
-        file.close();
-      })
-      .on('error', (err) => {
-        fs.unlink(dest);
+  request(requestPath, (error, response, body) => {
+    console.log('destFileName+++++', destFileName);
+    console.log(response);
+    console.log('error+++++', error);
+  })
+    .pipe(steam)
+    .on('close', () => {
+      res.status(200).json({
+        message: 'Operation successful'
       });
-
-    res.pipe(file);
-  });
+    });
 };
 
 const getMultipleFile = (req, res, next) => {
