@@ -19,11 +19,15 @@ const FileDownloader = sequelize.define(
       type: Sequelize.STRING,
       allowNull: true
     },
-    fileNameLeftSide: {
+    fileUrlLeftSide: {
       type: Sequelize.STRING,
       allowNull: true
     },
-    fileNameRightSide: {
+    fileUrlRightSide: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
+    fileUrl: {
       type: Sequelize.STRING,
       allowNull: true
     },
@@ -35,7 +39,7 @@ const FileDownloader = sequelize.define(
       type: Sequelize.STRING,
       allowNull: true
     },
-    destDirectory: {
+    destPath: {
       type: Sequelize.STRING,
       allowNull: true
     }

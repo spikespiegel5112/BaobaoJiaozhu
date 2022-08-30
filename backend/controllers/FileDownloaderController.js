@@ -7,23 +7,23 @@ const request = require('request');
 const FileDownloaderModel = require('../models/FileDownloaderModel');
 // const sequelize = require('../util/database');
 
-// http://pp-jgxzq.oss-cn-qingdao.aliyuncs.com/ctzcf_entrance/entrance_
+// http://pp-jgxzq.oss-cn-qingdao.aliyuncs.com/ctzcf_entrance/entrance_00
+// 209
 // .jpg
 const getSingleFile = (req, res, next) => {
-  console.log('getFIle+++++++', req.body);
-  const dirPath = path.join(__dirname, '/website');
   const requestPath = req.body.fileUrl;
   const fileNameArr = requestPath.split('/');
-  const fileName = fileNameArr[fileNameArr.length];
-  console.log('fileNameArr+++++', fileNameArr);
-  console.log('fileName+++++', fileName);
-  const destFileName = path.join('/website/', 'aaa.jpg');
+  const fileName = fileNameArr[fileNameArr.length - 1];
+  const destFileName = path.join(req.body.destPath, fileName);
   const steam = fs.createWriteStream(destFileName);
-
+  // index = ('000' + index).slice(-3);
   request(requestPath, (error, response, body) => {
-    console.log('destFileName+++++', destFileName);
-    console.log(response);
-    console.log('error+++++', error);
+    if (error) {
+      res.status(500).json({
+        message: 'Operation failed',
+        error
+      });
+    }
   })
     .pipe(steam)
     .on('close', () => {
@@ -33,38 +33,7 @@ const getSingleFile = (req, res, next) => {
     });
 };
 
-const getMultipleFile = (req, res, next) => {
-  console.log('getFIle+++++++', req.body);
-  const filePathArr = req.query.filePath.join('');
-  const filePath = filePathArr[filePathArr.length - 1] !== '/' ? filePath + '/' : filePath;
-  const dest = path.join(req.query.filePath, req.query.fileName);
-  // const uri = req.query.filePath + req.query.fileName;
-  http.get(dest, (res) => {
-    if (res.statusCode !== 200) {
-      console.log(res);
-      return;
-    }
-
-    res.on('end', () => {
-      console.log('finish download');
-    });
-
-    // 进度、超时等
-
-    file
-      .on('finish', () => {
-        file.close();
-      })
-      .on('error', (err) => {
-        fs.unlink(dest);
-      });
-
-    res.pipe(file);
-  });
-};
-
 const getDownloaderInfoByPagination = (req, res, next) => {
-  console.log('getListByPagination++++++++++++', req);
   let pagination = {};
   let query = {};
   if (Object.keys(pagination).length > 0) {
@@ -209,11 +178,12 @@ const createOrUpdate = (req, res, next) => {
       id: uuidv1(),
       name: req.body.name,
       type: req.body.type,
-      fileNameLeftSide: req.body.fileNameLeftSide,
-      fileNameRightSide: req.body.fileNameRightSide,
+      fileUrlLeftSide: req.body.fileUrlLeftSide,
+      fileUrlRightSide: req.body.fileUrlRightSide,
+      fileUrl: req.body.fileUrlRightSide,
       seriesNumberStart: req.body.seriesNumberStart,
       seriesNumberEnd: req.body.seriesNumberEnd,
-      destDirectory: req.body.destDirectory
+      destPath: req.body.destPath
     })
       .then(async (result) => {
         console.log('result+++++', result);
@@ -242,10 +212,12 @@ const createOrUpdate = (req, res, next) => {
         console.log(data);
         data.name = req.body.name;
         data.type = req.body.type;
-        data.fileNameLeftSide = req.body.fileNameLeftSide;
-        data.fileNameRightSide = req.body.fileNameRightSide;
+        data.fileUrlLeftSide = req.body.fileUrlLeftSide;
+        data.fileUrlRightSide = req.body.fileUrlRightSide;
+        data.fileUrl = req.body.fileUrl;
         data.seriesNumberStart = req.body.seriesNumberStart;
         data.seriesNumberEnd = req.body.seriesNumberEnd;
+        data.destPath = req.body.destPath;
         await data.save();
 
         res.status(200).json({

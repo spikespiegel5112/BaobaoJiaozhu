@@ -7,7 +7,6 @@ const uuidv5 = require('uuid/v5');
 const sequelize = require('../util/database');
 
 const getListByPagination = (req, res, next) => {
-  console.log('getListByPagination++++++++++++', req);
   let pagination = {};
   let query = {};
   if (Object.keys(pagination).length > 0) {

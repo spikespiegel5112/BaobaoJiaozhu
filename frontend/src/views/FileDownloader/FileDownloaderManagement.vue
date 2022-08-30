@@ -176,12 +176,18 @@
             <el-row>
               <el-col :span="6">
                 <el-form-item label="起始数字" prop="seriesNumberStart">
-                  <el-input v-model="formData2.seriesNumberStart"></el-input>
+                  <el-input
+                    v-model="formData2.seriesNumberStart"
+                    type="number"
+                  ></el-input>
                 </el-form-item>
               </el-col>
               <el-col :span="6">
                 <el-form-item label="结束数字" prop="seriesNumberEnd">
-                  <el-input v-model="formData2.seriesNumberEnd"></el-input>
+                  <el-input
+                    v-model="formData2.seriesNumberEnd"
+                    type="number"
+                  ></el-input>
                 </el-form-item>
               </el-col>
             </el-row>
@@ -439,7 +445,7 @@ export default {
         seriesNumberEnd: scope.row.seriesNumberEnd,
         destPath: scope.row.destPath
       };
-      console.log(this.formData2);
+      console.log('this.formData2+++++', this.formData2);
 
       this.dialogStatus = 'update';
       this.$refs.formData2.clearValidate();
@@ -475,28 +481,46 @@ export default {
         if (this.formData2.type === 'multiple') {
           const times =
             Number(this.formData2.seriesNumberEnd) -
-            Number(this.formData2.seriesNumberEnd);
+            Number(this.formData2.seriesNumberStart);
           let count = 0;
+          let prefixLength = (this.formData2.seriesNumberEnd + '')
+            .split('')
+            .map(item => '0')
+            .join('');
           const loop = () => {
-            this.$http
-              .post(this.getSingleFileRequest, {
+            count++;
+            if (count < times) {
+              const filledUpCount = (prefixLength + count).slice(-3);
+              console.log({
                 type: this.formData2.type,
-                filePath:
+                fileUrl:
                   this.formData2.fileUrlLeftSide +
-                  this.formData2.fileUrlRightSide
-              })
-              .then(async response => {
-                console.log(response);
-                this.$message.success('提交成功');
-                count++;
-                if (count < times) {
-                  loop();
-                }
-              })
-              .catch(error => {
-                console.log(error);
+                  filledUpCount +
+                  this.formData2.fileUrlRightSide,
+                destPath: this.formData2.destPath
               });
+              this.$http
+                .post(this.getSingleFileRequest, {
+                  type: this.formData2.type,
+                  fileUrl:
+                    this.formData2.fileUrlLeftSide +
+                    filledUpCount +
+                    this.formData2.fileUrlRightSide,
+                  destPath: this.formData2.destPath
+                })
+                .then(async response => {
+                  console.log(response);
+                  this.$message.success('提交成功');
+                  if (count < times) {
+                    loop();
+                  }
+                })
+                .catch(error => {
+                  console.log(error);
+                });
+            }
           };
+          loop();
         } else if (this.formData2.type === 'single') {
           this.$http
             .post(this.getSingleFileRequest, {
