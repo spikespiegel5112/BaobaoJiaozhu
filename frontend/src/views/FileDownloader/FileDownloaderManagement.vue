@@ -85,7 +85,7 @@
         prop="seriesNumberEnd"
       >
       </el-table-column>
-      <el-table-column align="center" label="类型ƒ" prop="type">
+      <el-table-column align="center" label="类型" prop="type">
       </el-table-column>
       <el-table-column align="center" label="目标位置" prop="destPath">
       </el-table-column>
@@ -163,12 +163,12 @@
           <div v-if="formData2.type === 'multiple'">
             <el-row>
               <el-col :span="12">
-                <el-form-item label="文件路径左半部分" prop="fileUrlLeftSide">
+                <el-form-item label="序列号起始值" prop="fileUrlLeftSide">
                   <el-input v-model="formData2.fileUrlLeftSide"></el-input>
                 </el-form-item>
               </el-col>
               <el-col :span="12">
-                <el-form-item label="文件路径由半部分" prop="fileUrlRightSide">
+                <el-form-item label="序列号结束值" prop="fileUrlRightSide">
                   <el-input v-model="formData2.fileUrlRightSide"></el-input>
                 </el-form-item>
               </el-col>
@@ -202,17 +202,47 @@
         </el-row>
       </el-form>
       <whiteSpace />
-      <el-progress :percentage="percentage"></el-progress>
+      <div class="progressgrid">
+        <ul>
+          <li
+            v-for="(item, index) in gridDictionary"
+            :key="index"
+            :class="item.status"
+          >
+            <el-popover
+              v-if="item.status === 'failed'"
+              placement="top-start"
+              trigger="hover"
+              :content="item.seriesNumber.toString()"
+            >
+              <template #reference>
+                <div></div>
+              </template>
+            </el-popover>
+            <div v-else></div>
+          </li>
+        </ul>
+      </div>
+      <whiteSpace />
+
+      <!-- <el-progress :percentage="percentage"></el-progress> -->
       <whiteSpace />
 
       <div class="footer alignright">
         <el-button @click="handleSaveDownloadInfo">保存信息</el-button>
         <el-button
           type="primary"
-          :disabled="submitingFlag"
-          @click="submitDownlaoderInfo"
+          :disabled="downloadingFlag"
+          @click="beginDownload"
         >
           开始下载
+        </el-button>
+        <el-button
+          type="danger"
+          :disabled="!downloadingFlag"
+          @click="stopDownload"
+        >
+          结束
         </el-button>
         <el-button @click="handleCloseRecordPeriod">关闭</el-button>
       </div>
@@ -221,6 +251,7 @@
 </template>
 
 <script>
+import VueInstance from '@/main';
 export default {
   data() {
     return {
@@ -278,6 +309,7 @@ export default {
       },
       dialogPvVisible: false,
       submitingFlag: false,
+      downloadingFlag: false,
       formData: {
         nickName: '',
         email: '',
@@ -307,28 +339,7 @@ export default {
         seriesNumberEnd: '',
         destPath: ''
       },
-      rules2: {
-        name: [{ required: false, message: '此项为必填项', trigger: 'change' }],
-        type: [{ required: false, message: '此项为必填项', trigger: 'change' }],
-        fileUrl: [
-          { required: true, message: '此项为必填项', trigger: 'change' }
-        ],
-        fileUrlLeftSide: [
-          { required: false, message: '此项为必填项', trigger: 'change' }
-        ],
-        fileUrlRightSide: [
-          { required: false, message: '此项为必填项', trigger: 'change' }
-        ],
-        seriesNumberStart: [
-          { required: false, message: '此项为必填项', trigger: 'change' }
-        ],
-        seriesNumberEnd: [
-          { required: false, message: '此项为必填项', trigger: 'change' }
-        ],
-        destPath: [
-          { required: false, message: '此项为必填项', trigger: 'change' }
-        ]
-      },
+      gridDictionary: [],
       pagination2: {
         limit: 5,
         page: 1,
@@ -344,6 +355,47 @@ export default {
     };
   },
   computed: {
+    rules2() {
+      return {
+        name: [{ required: false, message: '此项为必填项', trigger: 'change' }],
+        type: [{ required: false, message: '此项为必填项', trigger: 'change' }],
+        fileUrl: [
+          { required: true, message: '此项为必填项', trigger: 'change' }
+        ],
+        fileUrlLeftSide: [
+          { required: false, message: '此项为必填项', trigger: 'change' }
+        ],
+        fileUrlRightSide: [
+          { required: false, message: '此项为必填项', trigger: 'change' }
+        ],
+        seriesNumberStart: [
+          { required: false, message: '此项为必填项', trigger: 'change' }
+        ],
+        seriesNumberEnd: [
+          // { required: false, message: '此项为必填项', trigger: 'change' },
+          {
+            validator: (rule, value, callback) => {
+              value = Number(value);
+              console.log(this.formData2.seriesNumberStart);
+              const seriesNumberStart = Number(
+                this.formData2.seriesNumberStart
+              );
+              if (value === '' || !value) {
+                callback(new Error('此项为必填项'));
+              } else if (value < seriesNumberStart) {
+                callback(new Error('结束值必须比起始值大'));
+              } else {
+                callback();
+              }
+            },
+            trigger: 'change'
+          }
+        ],
+        destPath: [
+          { required: false, message: '此项为必填项', trigger: 'change' }
+        ]
+      };
+    },
     tableHeight() {
       return this.$store.state.app.tableHeight;
     },
@@ -446,9 +498,25 @@ export default {
         destPath: scope.row.destPath
       };
       console.log('this.formData2+++++', this.formData2);
-
+      this.makeProgressGrid();
       this.dialogStatus = 'update';
       this.$refs.formData2.clearValidate();
+    },
+    makeProgressGrid() {
+      const seriesNumberStart = Number(this.formData2.seriesNumberStart);
+      const seriesNumberEnd = Number(this.formData2.seriesNumberEnd);
+      const length = seriesNumberEnd - seriesNumberStart;
+      this.gridDictionary = [];
+      for (let i = 0; i < length; i++) {
+        this.gridDictionary.push({
+          seriesNumber: seriesNumberStart + i,
+          status: '' // success failed pending
+        });
+      }
+
+      console.log(length);
+      console.log(this.formData2.seriesNumberStart);
+      console.log(this.formData2.seriesNumberEnd);
     },
     async handleAddPeriod(scope) {
       await this.$nextTick();
@@ -476,29 +544,42 @@ export default {
           });
       });
     },
-    submitDownlaoderInfo() {
+    beginDownload() {
       this.$refs.formData2.validate().then(valid => {
+        this.downloadingFlag = true;
         if (this.formData2.type === 'multiple') {
+          const seriesNumberStart = Number(this.formData2.seriesNumberStart);
           const times =
             Number(this.formData2.seriesNumberEnd) -
-            Number(this.formData2.seriesNumberStart);
+            Number(this.formData2.seriesNumberStart) +
+            1;
           let count = 0;
           let prefixLength = (this.formData2.seriesNumberEnd + '')
             .split('')
             .map(item => '0')
             .join('');
           const loop = () => {
-            count++;
-            if (count < times) {
-              const filledUpCount = (prefixLength + count).slice(-3);
-              console.log({
-                type: this.formData2.type,
-                fileUrl:
-                  this.formData2.fileUrlLeftSide +
-                  filledUpCount +
-                  this.formData2.fileUrlRightSide,
-                destPath: this.formData2.destPath
-              });
+            if (count >= times) {
+              this.downloadingFlag = false;
+            }
+            if (!this.downloadingFlag) {
+              return;
+            }
+            let currentGridIndex = 0;
+            this.gridDictionary.forEach((item, index) => {
+              if (item.seriesNumber === count + seriesNumberStart) {
+                currentGridIndex = index;
+              }
+            });
+            console.log('currentGridIndex+++', currentGridIndex);
+            if (count <= times) {
+              this.gridDictionary[currentGridIndex].status = 'pending';
+
+              const filledUpCount = (
+                prefixLength +
+                (count + seriesNumberStart)
+              ).slice(-3);
+
               this.$http
                 .post(this.getSingleFileRequest, {
                   type: this.formData2.type,
@@ -510,16 +591,28 @@ export default {
                 })
                 .then(async response => {
                   console.log(response);
-                  this.$message.success('提交成功');
+                  this.gridDictionary[currentGridIndex].status = 'success';
+
                   if (count < times) {
                     loop();
+                  } else {
+                    this.$message.success('下载完成');
                   }
                 })
                 .catch(error => {
+                  this.$message.error('下载失败');
+                  this.gridDictionary[currentGridIndex].status = 'failed';
+                  if (count < times) {
+                    loop();
+                  } else {
+                    this.$message.success('下载完成');
+                  }
                   console.log(error);
                 });
             }
+            count++;
           };
+
           loop();
         } else if (this.formData2.type === 'single') {
           this.$http
@@ -540,6 +633,12 @@ export default {
           this.formData2.type === 'multiple'
             ? this.formData2.fileUrlLeftSides + this.formData2.fileUrlRightSide
             : this.formData2.type;
+      });
+    },
+    stopDownload() {
+      this.downloadingFlag = false;
+      this.gridDictionary.forEach(item => {
+        item.status = '';
       });
     },
     getFansInfo(scope) {
@@ -894,6 +993,7 @@ export default {
         return '进行中';
       }
     },
+
     interview1() {
       setTimeout(() => {
         console.log(1);
@@ -999,6 +1099,39 @@ export default {
 .duration {
   li {
     margin: 0 0 25px 0;
+  }
+}
+.progressgrid {
+  width: 100%;
+  ul {
+    li {
+      display: inline-block;
+      margin: 2px;
+      width: 15px;
+      height: 15px;
+      background-color: #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      div {
+        width: 100%;
+        height: 100%;
+      }
+      &.success {
+        div {
+          background-color: green;
+        }
+      }
+      &.failed {
+        div {
+          background-color: red;
+        }
+      }
+      &.pending {
+        div {
+          background-color: orange;
+        }
+      }
+    }
   }
 }
 </style>
