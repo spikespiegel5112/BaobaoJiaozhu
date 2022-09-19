@@ -31,6 +31,10 @@ const FileDownloader = sequelize.define(
       type: Sequelize.STRING,
       allowNull: true
     },
+    fileSuffix: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
     seriesNumberStart: {
       type: Sequelize.STRING,
       allowNull: true
