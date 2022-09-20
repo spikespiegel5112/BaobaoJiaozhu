@@ -63,7 +63,8 @@ export const constantRouterMap = [
     children: [
       {
         path: 'FileDownloaderManagement',
-        component: () => import('@/views/FileDownloader/FileDownloaderManagement'),
+        component: () =>
+          import('@/views/FileDownloader/FileDownloaderManagement'),
         meta: { title: '文件下载', icon: 'iconfont icon-mail' }
       }
     ]
@@ -109,8 +110,8 @@ export const constantRouterMap = [
 ];
 
 export default new Router({
-  mode: 'history', //后端支持可开
-  base: '/jiaozhu',
+  // mode: 'history', //后端支持可开
+  base: '',
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRouterMap
 });

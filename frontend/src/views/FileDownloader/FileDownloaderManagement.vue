@@ -155,8 +155,13 @@
           </el-row>
           <el-row v-if="formData2.type === 'single'">
             <el-col :span="12">
-              <el-form-item label="文件路径" prop="fileUrlLeftSide">
+              <el-form-item label="文件路径" prop="fileUrl">
                 <el-input v-model="formData2.fileUrl"></el-input>
+              </el-form-item>
+            </el-col>
+            <el-col :span="12">
+              <el-form-item label="文件后缀" prop="fileSuffix">
+                <el-input v-model="formData2.fileSuffix"></el-input>
               </el-form-item>
             </el-col>
           </el-row>
@@ -333,6 +338,7 @@ export default {
         name: '',
         type: '',
         fileUrl: '',
+        fileSuffix: '',
         fileUrlLeftSide: '',
         fileUrlRightSide: '',
         seriesNumberStart: '',
@@ -362,6 +368,13 @@ export default {
         fileUrl: [
           { required: true, message: '此项为必填项', trigger: 'change' }
         ],
+        fileSuffix: [
+          {
+            required: false,
+            message: '此项为必填项',
+            trigger: 'change'
+          }
+        ],
         fileUrlLeftSide: [
           { required: false, message: '此项为必填项', trigger: 'change' }
         ],
@@ -382,7 +395,10 @@ export default {
               );
               if (value === '' || !value) {
                 callback(new Error('此项为必填项'));
-              } else if (value < seriesNumberStart) {
+              } else if (
+                this.$isNotEmpty(seriesNumberStart) &&
+                value < seriesNumberStart
+              ) {
                 callback(new Error('结束值必须比起始值大'));
               } else {
                 callback();
@@ -491,6 +507,8 @@ export default {
         id: scope.row.id,
         name: scope.row.name,
         type: scope.row.type,
+        fileUrl: scope.row.fileUrl,
+        fileSuffix: scope.row.fileSuffix,
         fileUrlLeftSide: scope.row.fileUrlLeftSide,
         fileUrlRightSide: scope.row.fileUrlRightSide,
         seriesNumberStart: scope.row.seriesNumberStart,
@@ -627,7 +645,9 @@ export default {
           this.$http
             .post(this.getSingleFileRequest, {
               type: this.formData2.type,
-              fileUrl: this.formData2.fileUrl
+              fileUrl: this.formData2.fileUrl,
+              destPath: this.formData2.destPath,
+              fileSuffix: this.formData2.fileSuffix
             })
             .then(async response => {
               console.log(response);

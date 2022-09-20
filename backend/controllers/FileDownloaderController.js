@@ -12,26 +12,45 @@ const FileDownloaderModel = require('../models/FileDownloaderModel');
 // .jpg
 const getSingleFile = (req, res, next) => {
   const requestPath = req.body.fileUrl;
+  let fileSuffix = req.body.fileSuffix;
+  fileSuffix = !!fileSuffix && fileSuffix !== '' ? '.' + fileSuffix : '';
   const fileNameArr = requestPath.split('/');
-  const fileName = fileNameArr[fileNameArr.length - 1];
-  const destFileName = path.join(req.body.destPath, fileName);
+  console.log(fileNameArr);
+  let fileName = fileNameArr[fileNameArr.length - 1];
+  fileName = fileName.split('?')[0];
+  const destFileName = path.join(req.body.destPath, fileName + fileSuffix);
+  // const destFileName = path.join(req.body.destPath, 'aaa.jpg');
+  console.log(destFileName);
   const steam = fs.createWriteStream(destFileName);
-  // index = ('000' + index).slice(-3);
-  request(requestPath, (error, response, body) => {
-    if (error) {
-      console.log('error+++++', error)
-      res.status(500).json({
-        message: 'Operation failed',
-        error
-      });
-    }
-  })
-    .pipe(steam)
-    .on('close', () => {
-      res.status(200).json({
-        message: 'Operation successful'
-      });
+
+  console.log(fs.existsSync(destFileName));
+  console.log(fs.existsSync(destFileName));
+  console.log(fs.existsSync(destFileName));
+  steam.on('error', (error) => {
+    res.status(500).json({
+      message: error.message,
+      error
     });
+  });
+  steam.on('open', (fd) => {
+    console.log('文件已打开:', fd);
+    request(requestPath, (error, response, body) => {
+      console.log(response);
+      if (error) {
+        res.status(500).json({
+          message: 'Operation failed',
+          error
+        });
+      }
+    })
+      .pipe(steam)
+      .on('close', () => {
+        res.status(200).json({
+          message: 'Operation successful'
+        });
+      });
+  });
+  // index = ('000' + index).slice(-3);
 };
 
 const getDownloaderInfoByPagination = (req, res, next) => {
@@ -179,9 +198,10 @@ const createOrUpdate = (req, res, next) => {
       id: uuidv1(),
       name: req.body.name,
       type: req.body.type,
+      fileSuffix: req.body.fileSuffix,
       fileUrlLeftSide: req.body.fileUrlLeftSide,
       fileUrlRightSide: req.body.fileUrlRightSide,
-      fileUrl: req.body.fileUrlRightSide,
+      fileUrl: req.body.fileUrl,
       seriesNumberStart: req.body.seriesNumberStart,
       seriesNumberEnd: req.body.seriesNumberEnd,
       destPath: req.body.destPath
@@ -213,6 +233,7 @@ const createOrUpdate = (req, res, next) => {
         console.log(data);
         data.name = req.body.name;
         data.type = req.body.type;
+        data.fileSuffix = req.body.fileSuffix;
         data.fileUrlLeftSide = req.body.fileUrlLeftSide;
         data.fileUrlRightSide = req.body.fileUrlRightSide;
         data.fileUrl = req.body.fileUrl;
