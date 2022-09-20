@@ -507,7 +507,7 @@ export default {
       const seriesNumberEnd = Number(this.formData2.seriesNumberEnd);
       const length = seriesNumberEnd - seriesNumberStart;
       this.gridDictionary = [];
-      for (let i = 0; i < length; i++) {
+      for (let i = 0; i <= length; i++) {
         this.gridDictionary.push({
           seriesNumber: seriesNumberStart + i,
           status: '' // success failed pending
@@ -547,6 +547,10 @@ export default {
     beginDownload() {
       this.$refs.formData2.validate().then(valid => {
         this.downloadingFlag = true;
+        this.gridDictionary.forEach(item => {
+          item.status = '';
+        });
+        this.makeProgressGrid();
         if (this.formData2.type === 'multiple') {
           const seriesNumberStart = Number(this.formData2.seriesNumberStart);
           const times =
@@ -596,16 +600,21 @@ export default {
                   if (count < times) {
                     loop();
                   } else {
-                    this.$message.success('下载完成');
+                    this.downloadingFlag = false;
+                    this.$message.success('下载流程结束');
                   }
                 })
                 .catch(error => {
                   this.$message.error('下载失败');
-                  this.gridDictionary[currentGridIndex].status = 'failed';
+                  if (!!this.downloadingFlag) {
+                    this.gridDictionary[currentGridIndex].status = 'failed';
+                  }
+
                   if (count < times) {
                     loop();
                   } else {
-                    this.$message.success('下载完成');
+                    this.downloadingFlag = false;
+                    this.$message.success('下载流程结束');
                   }
                   console.log(error);
                 });
@@ -629,10 +638,6 @@ export default {
               console.log(error);
             });
         }
-        const fileUrl =
-          this.formData2.type === 'multiple'
-            ? this.formData2.fileUrlLeftSides + this.formData2.fileUrlRightSide
-            : this.formData2.type;
       });
     },
     stopDownload() {

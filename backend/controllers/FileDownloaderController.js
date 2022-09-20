@@ -19,6 +19,7 @@ const getSingleFile = (req, res, next) => {
   // index = ('000' + index).slice(-3);
   request(requestPath, (error, response, body) => {
     if (error) {
+      console.log('error+++++', error)
       res.status(500).json({
         message: 'Operation failed',
         error
