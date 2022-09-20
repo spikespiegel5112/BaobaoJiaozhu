@@ -3,6 +3,7 @@ const router = express.Router();
 
 const CommonController = require('../controllers/CommonController');
 
+router.get('/helloWorld', CommonController.helloWorld);
 router.post('/arrayBufferToBase64', CommonController.arrayBufferToBase64);
 router.post('/exportCSV', CommonController.exportCSV);
 router.post('/encryptPromise', CommonController.encryptPromise);

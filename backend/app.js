@@ -33,7 +33,6 @@ const secret = '123456';
 
 app.use(
   cors((req, callback) => {
-    // console.log('cors+++++++', req);
     callback(null, {
       origin: true,
       credentials: true

@@ -8,6 +8,13 @@ const atob = require('atob');
 const btoa = require('btoa');
 const { scrypt, randomFill, createCipheriv } = require('crypto');
 
+const helloWorld = (req, res, next) => {
+  res.status(200).json({
+    data: 'Hello World'
+  });
+}
+
+
 const encryptPromise = (password) => {
   const algorithm = 'aes-192-cbc';
   return new Promise((resolve, reject) => {
@@ -137,6 +144,7 @@ const exportCSV = (req, res) => {
     });
 };
 
+exports.helloWorld = helloWorld;
 exports.encryptPromise = encryptPromise;
 exports.decrypt = decrypt;
 exports.getBase64Data = getBase64Data;
