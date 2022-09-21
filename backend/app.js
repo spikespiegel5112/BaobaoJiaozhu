@@ -5,6 +5,8 @@ const csrf = require('csurf');
 const session = require('express-session');
 const SessionFileStore = require('session-file-store')(session);
 const sequelize = require('./util/database');
+const MongoClient = require('mongodb').MongoClient
+const MongoDBStore = require('connect-mongodb-session')(session);
 const cookieParser = require('cookie-parser');
 
 const DictionaryModel = require('./models/DictionaryModel');
@@ -50,7 +52,10 @@ app.use(
     resave: false, // 是否每次都重新保存会话，建议false
     cookie: {
       maxAge: 3600 * 1000 // 有效期，单位是毫秒
-    }
+    },
+    name: 'aaa', // 默认connect.sid
+    // 会话存储实例，默认为new MemoryStore 实例。
+    store: new MemoryStore(),
   })
 );
 
@@ -74,20 +79,27 @@ app.all('/*', (req, res, next) => {
   // console.log('session++++++', req.session);
   // console.log('cookies++++++', req.cookies);
   // console.log('req++++++', req);
-  // console.log('res++++++', res);
+  console.log('res++++++', res);
 
   const sessionId = req.sessionID;
   const signedCookies = req.signedCookies;
   const currentCookie = Object.values(signedCookies)[0];
 
   if (req.path === '/user/login' || req.path === '/user/register') {
+    debugger
+
     next();
     return;
   }
 
   if (sessionId === currentCookie) {
+    debugger
+
     next();
   } else {
+    console.log(req)
+    debugger
+
     res.status(401).json({
       message: '登录已失效'
     });
