@@ -55,7 +55,10 @@ app.use(
     },
     name: 'aaa', // 默认connect.sid
     // 会话存储实例，默认为new MemoryStore 实例。
-    store: new MemoryStore(),
+    store: new MongoDBStore({
+      uri: 'mongodb://jiaozhu@antisony:27017',
+      // collection: 'jiaozhu'
+    }),
   })
 );
 

@@ -439,13 +439,13 @@ export default {
         .get(this.getDownloaderInfoByPaginationRequest, {
           params: this.queryModel
         })
-        .then(response => {
+        .then((response) => {
           console.log('getDownloaderInfoByPaginationRequest', response);
           this.tableList = response.data;
           this.pagination.total = response.pagination.total;
           this.listLoading = false;
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
@@ -477,24 +477,24 @@ export default {
     handleSaveFan() {
       this.$refs.formData
         .validate()
-        .then(valid => {
+        .then((valid) => {
           this.submitingFlag = true;
           console.log(this.formData);
           this.$http
             .post(this.createOrUpdateRequest, this.formData)
-            .then(response => {
+            .then((response) => {
               console.log(response);
               this.submitingFlag = false;
               this.$message.success('提交成功');
               this.dialogFormVisible2 = false;
               this.getTableData();
             })
-            .catch(error => {
+            .catch((error) => {
               console.log(error);
               this.submitingFlag = false;
             });
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
@@ -548,24 +548,24 @@ export default {
       this.defaultTime = this.getDefaultTime();
     },
     handleSaveDownloadInfo() {
-      this.$refs.formData2.validate().then(valid => {
+      this.$refs.formData2.validate().then((valid) => {
         this.$http
           .post(this.createOrUpdateRequest, this.formData2)
-          .then(async response => {
+          .then(async (response) => {
             console.log(response);
             this.$message.success('提交成功');
             this.dialogFormVisible2 = false;
             await this.getTableData();
           })
-          .catch(error => {
+          .catch((error) => {
             console.log(error);
           });
       });
     },
     beginDownload() {
-      this.$refs.formData2.validate().then(valid => {
+      this.$refs.formData2.validate().then((valid) => {
         this.downloadingFlag = true;
-        this.gridDictionary.forEach(item => {
+        this.gridDictionary.forEach((item) => {
           item.status = '';
         });
         this.makeProgressGrid();
@@ -578,7 +578,7 @@ export default {
           let count = 0;
           let prefixLength = (this.formData2.seriesNumberEnd + '')
             .split('')
-            .map(item => '0')
+            .map((item) => '0')
             .join('');
           const loop = () => {
             if (count >= times) {
@@ -611,7 +611,7 @@ export default {
                     this.formData2.fileUrlRightSide,
                   destPath: this.formData2.destPath
                 })
-                .then(async response => {
+                .then(async (response) => {
                   console.log(response);
                   this.gridDictionary[currentGridIndex].status = 'success';
 
@@ -622,7 +622,7 @@ export default {
                     this.$message.success('下载流程结束');
                   }
                 })
-                .catch(error => {
+                .catch((error) => {
                   this.$message.error('下载失败');
                   if (!!this.downloadingFlag) {
                     this.gridDictionary[currentGridIndex].status = 'failed';
@@ -649,12 +649,12 @@ export default {
               destPath: this.formData2.destPath,
               fileSuffix: this.formData2.fileSuffix
             })
-            .then(async response => {
+            .then(async (response) => {
               console.log(response);
               this.$message.success('提交成功');
               await this.getTableData();
             })
-            .catch(error => {
+            .catch((error) => {
               console.log(error);
             });
         }
@@ -662,7 +662,7 @@ export default {
     },
     stopDownload() {
       this.downloadingFlag = false;
-      this.gridDictionary.forEach(item => {
+      this.gridDictionary.forEach((item) => {
         item.status = '';
       });
     },
@@ -674,12 +674,12 @@ export default {
               id: scope.row.id
             }
           })
-          .then(response => {
+          .then((response) => {
             console.log('getFansInfo++++++', response);
             this.formData = response.result;
             resolve();
           })
-          .catch(error => {
+          .catch((error) => {
             console.log(error);
             reject(error);
           });
@@ -705,7 +705,7 @@ export default {
         .then(() => {
           console.log('this.multipleSelection+++++', this.multipleSelection);
           this.deleteRecord(
-            this.multipleSelection.map(item => {
+            this.multipleSelection.map((item) => {
               return {
                 id: item.id
               };
@@ -743,12 +743,12 @@ export default {
         .delete(this.deleteItemsRequest, {
           data: params
         })
-        .then(response => {
+        .then((response) => {
           console.log(response);
           this.$message.success('删除成功');
           this.getTableData();
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
@@ -772,7 +772,7 @@ export default {
             name: this.chosenReward
           }
         })
-        .then(response => {
+        .then((response) => {
           console.log(response);
           this.loading = false;
           // this.total = response.total;
@@ -818,7 +818,7 @@ export default {
       this.filterPeriodDictionary();
     },
     filterPeriodDictionary() {
-      this.periodDictionary = this.periodDictionary.map(item => {
+      this.periodDictionary = this.periodDictionary.map((item) => {
         return {
           ...item,
           disabled: this.$isEmpty(this.formData2.startDate)
@@ -848,7 +848,7 @@ export default {
           }
           return 0;
         })
-        .map(item => {
+        .map((item) => {
           return {
             startDateTimestamp:
               this.$moment(item.expireDate).unix() - item.period * 24 * 3600,
@@ -933,7 +933,7 @@ export default {
     },
     checkIfOnProgress() {
       let result = false;
-      this.periodHistoryData.forEach(item => {
+      this.periodHistoryData.forEach((item) => {
         const startDateTimestamp = this.getTheDayBeforeOffsetTimestamp({
           dateString: item.expireDate,
           offsetDays: item.period
@@ -972,7 +972,7 @@ export default {
     handleDeletePeriod(scope) {
       this.$alert('确认删除此条权益?', '警告', {
         type: 'warning',
-        callback: async action => {
+        callback: async (action) => {
           this.deletePeriod(action, scope);
         }
       });
@@ -984,14 +984,14 @@ export default {
             id: scope.row.id
           }
         })
-        .then(async response => {
+        .then(async (response) => {
           this.$message({
             type: 'success',
             message: '权益删除成功'
           });
           await this.getTableData();
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
@@ -1023,7 +1023,7 @@ export default {
       setTimeout(() => {
         console.log(1);
       });
-      new Promise(resolve => {
+      new Promise((resolve) => {
         console.log(2);
         resolve();
         console.log(3);
@@ -1058,7 +1058,7 @@ export default {
     interview3() {
       var aaa = '';
       var bbb = true;
-      var ccc = function() {};
+      var ccc = function () {};
       var ddd = Date;
       var eee = [];
       console.log(typeof aaa);
@@ -1071,7 +1071,7 @@ export default {
       var aaa = '';
       var bbb = true;
       var ccc = 5;
-      var ddd = function() {};
+      var ddd = function () {};
       ddd.prototype.aaa = 'aaaaa';
       console.log(aaa.__proto__);
       console.log(bbb.__proto__);
@@ -1087,7 +1087,7 @@ export default {
       const arr = [1, 1, 1, 2, 3, 3, 3, 2, 3, 1, 4, 2, 5, 1, 2, 3, 4, 3, 5, 5];
       const simplifiedArr = new Set(arr); //  直接用Set方法去重
       const index = [];
-      simplifiedArr.forEach(item => {
+      simplifiedArr.forEach((item) => {
         index.push({
           value: item,
           count: 0
@@ -1096,10 +1096,10 @@ export default {
 
       // 直接这么写就可以得出结果
       const result3 = index
-        .map(item => {
+        .map((item) => {
           return {
             value: item.value,
-            count: arr.filter(item2 => item2 === item.value).length
+            count: arr.filter((item2) => item2 === item.value).length
           };
         })
         .sort((a, b) => {
