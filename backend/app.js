@@ -44,6 +44,14 @@ app.use(
 
 app.use(cookieParser(secret));
 
+const store = new MongoDBStore({
+  uri: 'mongodb://jiaozhu:123456@antisony.org:27017',
+  collection: 'mySessions'
+});
+store.on('error', error => {
+  console.log(error);
+});
+
 app.use(
   session({
     secret: secret, // 用来对session id相关的cookie进行签名
@@ -55,10 +63,7 @@ app.use(
     },
     name: 'aaa', // 默认connect.sid
     // 会话存储实例，默认为new MemoryStore 实例。
-    store: new MongoDBStore({
-      uri: 'mongodb://jiaozhu@antisony:27017',
-      // collection: 'jiaozhu'
-    }),
+    store
   })
 );
 
